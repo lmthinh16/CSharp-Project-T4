@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProjectT4.MainPage"
+              BackgroundColor="#FDF8F3"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- Main Scrollable Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="16" Padding="16">
+
+                <!-- Header Section -->
+                <Grid ColumnDefinitions="*,Auto">
+                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                        <Label Text="Welcome to"
+                               FontSize="14"
+                               TextColor="#8B7355" />
+                        <Label Text="Vĩnh Khánh"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#2D2016" />
+                    </VerticalStackLayout>
+
+                    <Border Grid.Column="1"
+                            StrokeShape="RoundRectangle 20"
+                            Stroke="Transparent"
+                            BackgroundColor="#FFFFFF"
+                            Padding="10"
+                            HeightRequest="40"
+                            WidthRequest="40">
+                        <Image Source="bell_icon.png"
+                               HeightRequest="20"
+                               WidthRequest="20" />
+                    </Border>
+                </Grid>
+
+                <!-- Search Bar -->
+                <Border StrokeShape="RoundRectangle 12"
+                        Stroke="#E8DFD5"
+                        BackgroundColor="#FFFFFF"
+                        Padding="12">
+                    <Grid ColumnDefinitions="Auto,*">
+                        <Image Source="search_icon.png"
+                               HeightRequest="20"
+                               WidthRequest="20"
+                               Margin="0,0,10,0" />
+                        <Entry Grid.Column="1"
+                               Placeholder="Search restaurants, dishes..."
+                               PlaceholderColor="#8B7355"
+                               TextColor="#2D2016"
+                               BackgroundColor="Transparent" />
+                    </Grid>
+                </Border>
+
+                <!-- Map Section -->
+                <Border StrokeShape="RoundRectangle 16"
+                        Stroke="Transparent"
+                        BackgroundColor="#E8F4E8"
+                        HeightRequest="180"
+                        Padding="0">
+                    <Grid>
+                        <!-- Map Background -->
+                        <BoxView Color="#E8F4E8" />
+
+                        <!-- Map Placeholder/Image -->
+                        <Image Source="map_placeholder.png"
+                               Aspect="AspectFill" />
+
+                        <!-- Map Overlay Content -->
+                        <VerticalStackLayout VerticalOptions="End"
+                                             Padding="16">
+                            <Border StrokeShape="RoundRectangle 8"
+                                    Stroke="Transparent"
+                                    BackgroundColor="#C75B39"
+                                    Padding="12,8"
+                                    HorizontalOptions="Start">
+                                <HorizontalStackLayout Spacing="6">
+                                    <Image Source="location_icon.png"
+                                           HeightRequest="16"
+                                           WidthRequest="16" />
+                                    <Label Text="12 restaurants nearby"
+                                           TextColor="White"
+                                           FontSize="12" />
+                                </HorizontalStackLayout>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <!-- Food Markers -->
+                        <Image Source="food_marker.png"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               TranslationX="50"
+                               TranslationY="-20" />
+                        <Image Source="food_marker.png"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               TranslationX="-30"
+                               TranslationY="10" />
+                        <Image Source="food_marker.png"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               TranslationX="80"
+                               TranslationY="30" />
+                    </Grid>
+                </Border>
+
+               
+
+                <!-- Restaurant Cards - Horizontal Scroll -->
+                <CollectionView x:Name="RestaurantsCollection"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="220">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border StrokeShape="RoundRectangle 16"
+                                    Stroke="Transparent"
+                                    BackgroundColor="White"
+                                    Margin="0,0,12,0"
+                                    WidthRequest="160"
+                                    Padding="0">
+                                <VerticalStackLayout>
+                                    <!-- Restaurant Image -->
+                                    <Border StrokeShape="RoundRectangle 16,16,0,0"
+                                            Stroke="Transparent"
+                                            HeightRequest="100">
+                                        <Image Source="{Binding ImageUrl}"
+                                               Aspect="AspectFill" />
+                                    </Border>
+
+                                    <!-- Restaurant Info -->
+                                    <VerticalStackLayout Padding="12" Spacing="4">
+                                        <Label Text="{Binding Name}"
+                                               FontSize="14"
+                                               FontAttributes="Bold"
+                                               TextColor="#2D2016"
+                                               LineBreakMode="TailTruncation" />
+                                        <Label Text="{Binding Specialty}"
+                                               FontSize="12"
+                                               TextColor="#8B7355"
+                                               LineBreakMode="TailTruncation" />
+
+                                        <!-- Rating -->
+                                        <HorizontalStackLayout Spacing="4" Margin="0,4,0,0">
+                                            <Image Source="star_icon.png"
+                                                   HeightRequest="14"
+                                                   WidthRequest="14" />
+                                            <Label Text="{Binding Rating}"
+                                                   FontSize="12"
+                                                   FontAttributes="Bold"
+                                                   TextColor="#2D2016" />
+                                            <Label Text="{Binding ReviewCount, StringFormat='({0})'}"
+                                                   FontSize="12"
+                                                   TextColor="#8B7355" />
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Food Categories Section Header -->
+                <Label Text="Food Categories"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#2D2016"
+                       Margin="0,8,0,0" />
+
+                <!-- Category Cards - Horizontal Scroll -->
+                <CollectionView x:Name="CategoriesCollection"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="100">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border StrokeShape="RoundRectangle 12"
+                                    Stroke="Transparent"
+                                    BackgroundColor="{Binding BackgroundColor}"
+                                    Margin="0,0,12,0"
+                                    WidthRequest="80"
+                                    HeightRequest="90"
+                                    Padding="8">
+                                <VerticalStackLayout VerticalOptions="Center"
+                                                     HorizontalOptions="Center"
+                                                     Spacing="8">
+                                    <Label Text="{Binding Icon}"
+                                           FontSize="28"
+                                           HorizontalOptions="Center" />
+                                    <Label Text="{Binding Name}"
+                                           FontSize="12"
+                                           TextColor="#2D2016"
+                                           HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Featured Banner -->
+                <Border StrokeShape="RoundRectangle 16"
+                        Stroke="Transparent"
+                        BackgroundColor="#C75B39"
+                        Padding="16"
+                        Margin="0,8,0,0">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <VerticalStackLayout Spacing="8">
+                            <Label Text="Night Food Tour"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="White" />
+                            <Label Text="Experience the best of Vĩnh Khánh after dark"
+                                   FontSize="12"
+                                   TextColor="#FFEEDD" />
+                            <Border StrokeShape="RoundRectangle 8"
+                                    Stroke="Transparent"
+                                    BackgroundColor="White"
+                                    Padding="12,8"
+                                    HorizontalOptions="Start"
+                                    Margin="0,4,0,0">
+                                <Label Text="Explore"
+                                       TextColor="#C75B39"
+                                       FontSize="12"
+                                       FontAttributes="Bold" />
+                            </Border>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- Bottom Padding for Nav -->
+                <BoxView HeightRequest="80" Color="Transparent" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <Border Grid.Row="2"
+                StrokeShape="RoundRectangle 24,24,0,0"
+                Stroke="Transparent"
+                BackgroundColor="White"
+                Padding="0">
+            <Grid ColumnDefinitions="*,*,*,*,*"
+                  Padding="16,12"
+                  ColumnSpacing="0">
+
+                <!-- Home -->
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Image Source="home_icon_filled.png"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Label Text="Home"
+                           FontSize="10"
+                           TextColor="#C75B39"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Search -->
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                    <Image Source="search_icon.png"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Label Text="Search"
+                           FontSize="10"
+                           TextColor="#8B7355"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Map -->
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                    <Image Source="map_icon.png"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Label Text="Map"
+                           FontSize="10"
+                           TextColor="#8B7355"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Saved -->
+                <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center">
+                    <Image Source="heart_icon.png"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Label Text="Saved"
+                           FontSize="10"
+                           TextColor="#8B7355"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Profile -->
+                <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center">
+                    <Image Source="profile_icon.png"
+                           HeightRequest="24"
+                           WidthRequest="24" />
+                    <Label Text="Profile"
+                           FontSize="10"
+                           TextColor="#8B7355"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</ContentPage>
