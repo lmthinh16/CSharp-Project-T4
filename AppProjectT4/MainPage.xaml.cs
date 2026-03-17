@@ -1,55 +1,125 @@
-﻿using AppProjectT4.Models;
+﻿using ProjectApp.Models;
 
-namespace AppProjectT4
+namespace ProjectApp
 {
     public partial class MainPage : ContentPage
-{
-    public MainPage()
     {
-        InitializeComponent();
-        LoadRestaurants();
-    }
-
-    private async void LoadRestaurants()
-    {
-        try
+        public MainPage()
         {
-            await Task.Delay(500);
-            var restaurants = await App.Database.GetRestaurantsAsync();
+            InitializeComponent();
+            LoadRestaurants();
+        }
 
-            if (restaurants.Count == 0)
+        private async void LoadRestaurants()
+        {
+            try
             {
-                await DisplayAlert("Thông báo", "Chưa có dữ liệu nhà hàng. Đang khởi tạo...", "OK");
+                await Task.Delay(500);
+                var restaurants = await App.Database.GetRestaurantsAsync();
+
+                if (restaurants.Count == 0)
+                {
+                    await DisplayAlert("Thông báo", "Chưa có dữ liệu nhà hàng. Đang khởi tạo...", "OK");
+                }
+                else
+                {
+                    RestaurantsCollection.ItemsSource = restaurants;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                RestaurantsCollection.ItemsSource = restaurants;
+                await DisplayAlert("Lỗi", $"Không thể tải danh sách: {ex.Message}", "OK");
             }
         }
-        catch (Exception ex)
+
+        private async void OnRestaurantSelected(object sender, SelectionChangedEventArgs e)
         {
-            await DisplayAlert("Lỗi", $"Không thể tải danh sách: {ex.Message}", "OK");
+            if (e.CurrentSelection.FirstOrDefault() is Restaurant restaurant)
+            {
+                await DisplayAlert(
+                    restaurant.Name,
+                    $"{restaurant.Description}\n\n" +
+                    $"📍 {restaurant.Address}\n" +
+                    $"⭐ Rating: {restaurant.Rating}\n" +
+                    $"🕐 {restaurant.OpenHours}\n\n" +
+                    $"📌 Tọa độ: {restaurant.Latitude}, {restaurant.Longitude}",
+                    "OK"
+                );
+
+                ((CollectionView)sender).SelectedItem = null;
+            }
+        }
+        private async void OnGpsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GpsPage());
+        }
+        private async void OnMapClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MapPage());
+        }
+
+        private void OnTour1Clicked(object sender, EventArgs e)
+        {
+            var tour = new Tour
+            {
+                Id = "1",
+                Name = "Tour Ăn Ốc",
+                Description = "3 quán ốc ngon nổi tiếng",
+                Emoji = "🦪",
+                Duration = "45 phút",
+                Rating = 4.4,
+                RestaurantIds = new List<int> { 1, 2, 3 }
+            };
+
+            Navigation.PushAsync(new TourDetailPage(tour));
+        }
+
+        private void OnTour2Clicked(object sender, EventArgs e)
+        {
+            var tour = new Tour
+            {
+                Id = "2",
+                Name = "Tour Ăn Nướng",
+                Description = "Lẩu nướng, bò lá lốt",
+                Emoji = "🔥",
+                Duration = "60 phút",
+                Rating = 4.5,
+                RestaurantIds = new List<int> { 7, 8, 10 }
+            };
+
+            Navigation.PushAsync(new TourDetailPage(tour));
+        }
+
+        private void OnTour3Clicked(object sender, EventArgs e)
+        {
+            var tour = new Tour
+            {
+                Id = "3",
+                Name = "Tour Ăn Vặt",
+                Description = "Cơm cháy, bún thịt nướng",
+                Emoji = "🍢",
+                Duration = "40 phút",
+                Rating = 4.3,
+                RestaurantIds = new List<int> { 9, 11 }
+            };
+
+            Navigation.PushAsync(new TourDetailPage(tour));
+        }
+
+        private void OnTour4Clicked(object sender, EventArgs e)
+        {
+            var tour = new Tour
+            {
+                Id = "4",
+                Name = "Tour Đặc Sản",
+                Description = "Bún cá Châu Đốc",
+                Emoji = "⭐",
+                Duration = "50 phút",
+                Rating = 4.6,
+                RestaurantIds = new List<int> { 4, 5, 6 }
+            };
+
+            Navigation.PushAsync(new TourDetailPage(tour));
         }
     }
-
-    private async void OnRestaurantSelected(object sender, SelectionChangedEventArgs e)
-    {
-        if (e.CurrentSelection.FirstOrDefault() is Restaurant restaurant)
-        {
-            await DisplayAlert(
-                restaurant.Name,
-                $"{restaurant.Description}\n\n" +
-                $"📍 {restaurant.Address}\n" +
-                $"⭐ Rating: {restaurant.Rating}\n" +
-                $"🕐 {restaurant.OpenHours}\n\n" +
-                $"📌 Tọa độ: {restaurant.Latitude}, {restaurant.Longitude}",
-                "OK"
-            );
-
-            ((CollectionView)sender).SelectedItem = null;
-        }
-    }
-
-   
-}
 }

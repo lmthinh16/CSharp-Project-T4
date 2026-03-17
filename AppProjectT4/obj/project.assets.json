@@ -30847,11 +30847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\AppProjectT4\\AppProjectT4\\AppProjectT4.csproj",
-      "projectName": "AppProjectT4",
-      "projectPath": "D:\\C#\\AppProjectT4\\AppProjectT4\\AppProjectT4.csproj",
+      "projectUniqueName": "D:\\C#\\ProjectApp\\ProjectApp\\ProjectApp.csproj",
+      "projectName": "ProjectApp",
+      "projectPath": "D:\\C#\\ProjectApp\\ProjectApp\\ProjectApp.csproj",
       "packagesPath": "C:\\Users\\lemin\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\AppProjectT4\\AppProjectT4\\obj\\",
+      "outputPath": "D:\\C#\\ProjectApp\\ProjectApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

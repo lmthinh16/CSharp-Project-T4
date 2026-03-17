@@ -1,7 +1,7 @@
 ﻿using Microsoft.Maui.Controls;
 using System.Text;
 
-namespace AppProjectT4
+namespace ProjectApp
 {
     public class MapPreviewControl : WebView
     {

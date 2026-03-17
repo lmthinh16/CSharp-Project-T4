@@ -6,7 +6,7 @@
 using System;
 using System.CodeDom.Compiler;
 
-namespace AppProjectT4 {
+namespace ProjectApp {
 	#pragma warning disable IDE0002
 	/// <summary>
 	/// Android Resource Designer class.

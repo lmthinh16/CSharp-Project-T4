@@ -1,4 +1,4 @@
-﻿namespace AppProjectT4
+﻿namespace ProjectApp
 {
     public partial class AppShell : Shell
     {

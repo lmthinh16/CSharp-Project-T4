@@ -1,6 +1,6 @@
-using SQLite;
+﻿using SQLite;
 
-namespace AppProjectT4.Models
+namespace ProjectApp.Models
 {
     [Table("restaurants")]
     public class Restaurant

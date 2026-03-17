@@ -1,19 +1,12 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using AppProjectT4.Services;
-using Microsoft.Maui.ApplicationModel;
-using Microsoft.Maui.Devices.Sensors;
-using Microsoft.Maui.Graphics;
+﻿using ProjectApp.Services;
 
-namespace AppProjectT4
+namespace ProjectApp
 {
     public partial class GpsPage : ContentPage
     {
         private bool _isTracking = false;
         private CancellationTokenSource? _cancelTokenSource;
         private GeofencingService _geofencing = new GeofencingService();
-        private string? _lastAlertedName;
         private string _logText = "";
 
         public GpsPage()
@@ -56,8 +49,7 @@ namespace AppProjectT4
                 AddLog("✅ Bắt đầu tracking...");
 
                 _cancelTokenSource = new CancellationTokenSource();
-                // Start the tracking loop in background so StartTracking returns immediately
-                _ = TrackLocationLoop(_cancelTokenSource.Token);
+                await TrackLocationLoop(_cancelTokenSource.Token);
             }
             catch (Exception ex)
             {
@@ -69,14 +61,8 @@ namespace AppProjectT4
         {
             _isTracking = false;
             _cancelTokenSource?.Cancel();
-            try
-            {
-                _cancelTokenSource?.Dispose();
-            }
-            catch { }
-            _cancelTokenSource = null;
             BtnStartStop.Text = "Bắt đầu theo dõi";
-            BtnStartStop.BackgroundColor = Colors.Green;
+            BtnStartStop.BackgroundColor = Color.FromArgb("#4CAF50");
             AddLog("⏸️ Đã dừng");
         }
 
@@ -90,59 +76,39 @@ namespace AppProjectT4
                     {
                         DesiredAccuracy = GeolocationAccuracy.Best,
                         Timeout = TimeSpan.FromSeconds(10)
-                    }, token);
+                    });
 
                     if (location != null)
                     {
-                        // Do work (including checking nearby restaurants) off the UI thread,
-                        // then update UI on the main thread.
+                        LblLatitude.Text = $"Latitude: {location.Latitude:F6}";
+                        LblLongitude.Text = $"Longitude: {location.Longitude:F6}";
+                        LblAccuracy.Text = $"Độ chính xác: {location.Accuracy:F1}m";
+
                         var nearest = await _geofencing.CheckNearbyRestaurant(
                             location.Latitude, location.Longitude);
 
-                        double? distance = null;
                         if (nearest != null)
                         {
-                            distance = _geofencing.CalculateDistance(
+                            double distance = _geofencing.CalculateDistance(
                                 location.Latitude, location.Longitude,
                                 nearest.Latitude, nearest.Longitude);
+
+                            LblNearestName.Text = nearest.Name;
+                            LblDistance.Text = $"Khoảng cách: {distance:F1}m";
+
+                            AddLog($"🎯 {nearest.Name} ({distance:F1}m)");
+
+                            await DisplayAlert("🔔 Đã đến gần!",
+                                $"{nearest.Name}\n{nearest.Description}", "OK");
                         }
-
-                        await MainThread.InvokeOnMainThreadAsync(async () =>
+                        else
                         {
-                            LblLatitude.Text = $"Latitude: {location.Latitude:F6}";
-                            LblLongitude.Text = $"Longitude: {location.Longitude:F6}";
-                            LblAccuracy.Text = $"Độ chính xác: {location.Accuracy:F1}m";
-
-                            if (nearest != null && distance.HasValue)
-                            {
-                                LblNearestName.Text = nearest.Name;
-                                LblDistance.Text = $"Khoảng cách: {distance.Value:F1}m";
-
-                                AddLog($"🎯 {nearest.Name} ({distance.Value:F1}m)");
-
-                                // Avoid repeated alerts for the same restaurant
-                                if (nearest.Name != _lastAlertedName)
-                                {
-                                    _lastAlertedName = nearest.Name;
-                                    await DisplayAlert("🔔 Đã đến gần!",
-                                        $"{nearest.Name}\n{nearest.Description}", "OK");
-                                }
-                            }
-                            else
-                            {
-                                _lastAlertedName = null;
-                                LblNearestName.Text = "Không có nhà hàng gần";
-                                LblDistance.Text = "---";
-                            }
-                        });
+                            LblNearestName.Text = "Không có nhà hàng gần";
+                            LblDistance.Text = "---";
+                        }
                     }
 
                     await Task.Delay(3000, token);
-                }
-                catch (OperationCanceledException)
-                {
-                    AddLog("🔁 Tracking canceled");
-                    break;
                 }
                 catch (Exception ex)
                 {
@@ -154,14 +120,7 @@ namespace AppProjectT4
         private void AddLog(string message)
         {
             _logText = $"[{DateTime.Now:HH:mm:ss}] {message}\n{_logText}";
-            try
-            {
-                MainThread.BeginInvokeOnMainThread(() => LblLog.Text = _logText);
-            }
-            catch
-            {
-                // Ignore UI update failures
-            }
+            LblLog.Text = _logText;
         }
     }
 }

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="AppProjectT4.AppShell"
+    x:Class="ProjectApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AppProjectT4"
-    Title="AppProjectT4"
-     Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="False"
-    Shell.TabBarIsVisible="False">
-
+    xmlns:local="clr-namespace:ProjectApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ProjectApp">
 
     <ShellContent
         Title="Home"

@@ -1,7 +1,7 @@
 ﻿using SQLite;
-using AppProjectT4.Models;
+using ProjectApp.Models;
 
-namespace AppProjectT4.Services
+namespace ProjectApp.Services
 {
     public class DatabaseService
     {

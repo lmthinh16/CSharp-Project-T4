@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQ5COPdTP3Y=",
+  "dgSpecHash": "pe6wZjADVsY=",
   "success": true,
-  "projectFilePath": "D:\\C#\\AppProjectT4\\AppProjectT4\\AppProjectT4.csproj",
+  "projectFilePath": "D:\\C#\\ProjectApp\\ProjectApp\\ProjectApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lemin\\.nuget\\packages\\googlegson\\2.13.1.1\\googlegson.2.13.1.1.nupkg.sha512",
     "C:\\Users\\lemin\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",

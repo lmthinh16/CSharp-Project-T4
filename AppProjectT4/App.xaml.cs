@@ -1,7 +1,7 @@
-﻿using AppProjectT4.Models;
-using AppProjectT4.Services;
+﻿using ProjectApp.Services;
+using ProjectApp.Models;
 
-namespace AppProjectT4
+namespace ProjectApp
 {
     public partial class App : Application
     {

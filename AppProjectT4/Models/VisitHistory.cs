@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace AppProjectT4.Models
+namespace ProjectApp.Models
 {
     [Table("visit_history")]
     public class VisitHistory

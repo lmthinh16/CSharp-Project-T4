@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppProjectT4.Models
+namespace ProjectApp.Models
 {
     public class Tour
     {
