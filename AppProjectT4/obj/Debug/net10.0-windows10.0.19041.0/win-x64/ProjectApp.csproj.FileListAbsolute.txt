@@ -527,7 +527,6 @@ D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\oc_tha
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\oc_sau_no.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ot_xiem.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\tgbo.scale-100.jpg
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\bunca.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\bun_thit_nuong.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\bo_la_lot.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\lang.scale-100.jpg
@@ -537,5 +536,8 @@ D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resize
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\oc_sau_no.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\ot_xiem.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\tgbo.scale-100.jpg
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\bunca.scale-100.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\bun_thit_nuong.scale-100.jpg
+D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\chili.scale-100.jpg
+D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\bun_ca.scale-100.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\chili.scale-100.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\bun_ca.scale-100.jpg

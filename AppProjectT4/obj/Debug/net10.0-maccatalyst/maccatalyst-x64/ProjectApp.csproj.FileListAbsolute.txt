@@ -260,10 +260,6 @@ D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxam
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
@@ -315,7 +311,6 @@ D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\refint
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.genruntimeconfig.cache
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\ProjectApp.dll
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bunca.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bo_la_lot.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_oanh.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lang.jpg
@@ -325,3 +320,5 @@ D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resize
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_thit_nuong.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tgbo.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_sau_no.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\chili.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_ca.jpg

@@ -27,7 +27,7 @@ namespace ProjectApp
             // Header
             var header = new Border
             {
-                BackgroundColor = Color.FromArgb("#FF6B6B"),
+                BackgroundColor = Color.FromArgb("#0D0907"),
                 Padding = new Thickness(20, 30, 20, 20),
                 Margin = new Thickness(0, 0, 0, 10),
                 StrokeShape = new RoundRectangle { CornerRadius = new CornerRadius(0, 0, 30, 30) },
@@ -47,14 +47,14 @@ namespace ProjectApp
             {
                 Text = _tour.Description,
                 FontSize = 13,
-                TextColor = Color.FromArgb("#FFE5E5"),
+                TextColor = Color.FromArgb("#FFDB58"),
                 HorizontalTextAlignment = TextAlignment.Center
             });
             headerContent.Add(new Label
             {
                 Text = $"⭐ {_tour.Rating} • {_tour.Duration} • {tourRestaurants.Count} địa điểm",
                 FontSize = 13,
-                TextColor = Color.FromArgb("#FFE5E5"),
+                TextColor = Color.FromArgb("#FFDB58"),
                 HorizontalTextAlignment = TextAlignment.Center,
                 Margin = new Thickness(0, 5, 0, 0)
             });
@@ -112,7 +112,7 @@ namespace ProjectApp
 
             var ratingBadge = new Border
             {
-                BackgroundColor = Color.FromArgb("#FF6B6B"),
+                BackgroundColor = Color.FromArgb("#0D0907"),
                 StrokeThickness = 0,
                 Padding = new Thickness(10, 6),
                 HorizontalOptions = LayoutOptions.End,

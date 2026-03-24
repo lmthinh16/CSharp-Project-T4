@@ -68,7 +68,7 @@ namespace ProjectApp
             var tour = new Tour
             {
                 Id = "1",
-                Name = "Tour Ăn Ốc",
+                Name = "Ốc",
                 Description = "3 quán ốc ngon nổi tiếng",
                 Emoji = "🦪",
                 Duration = "45 phút",
@@ -84,7 +84,7 @@ namespace ProjectApp
             var tour = new Tour
             {
                 Id = "2",
-                Name = "Tour Ăn Nướng",
+                Name = "ĐồNướng",
                 Description = "Lẩu nướng, bò lá lốt",
                 Emoji = "🔥",
                 Duration = "60 phút",
@@ -106,22 +106,6 @@ namespace ProjectApp
                 Duration = "40 phút",
                 Rating = 4.3,
                 RestaurantIds = new List<int> { 9, 11 }
-            };
-
-            Navigation.PushAsync(new TourDetailPage(tour));
-        }
-
-        private void OnTour4Clicked(object sender, EventArgs e)
-        {
-            var tour = new Tour
-            {
-                Id = "4",
-                Name = "Tour Đặc Sản",
-                Description = "Bún cá Châu Đốc",
-                Emoji = "⭐",
-                Duration = "50 phút",
-                Rating = 4.6,
-                RestaurantIds = new List<int> { 4, 5, 6 }
             };
 
             Navigation.PushAsync(new TourDetailPage(tour));

@@ -81,7 +81,7 @@ namespace ProjectApp
                         Category = "Quán ăn",
                         Latitude = 10.761345472033696,
                         Longitude = 106.70569016657214,
-                        ImageUrl = "ot_xiemjpg",
+                        ImageUrl = "ot_xiem.jpg",
                         Address = "Vĩnh Khánh, Phường 8, Quận 4",
                         Rating = 4.4,
                         OpenHours = "11:00 - 21:00"
@@ -94,7 +94,7 @@ namespace ProjectApp
                         Category = "Quán ăn",
                         Latitude = 10.761060311531145,
                         Longitude = 106.70668201075144,
-
+                        ImageUrl = "bun_ca.jpg",
                         Address = "Vĩnh Khánh, Phường 8, Quận 4",
                         Rating = 4.6,
                         OpenHours = "06:00 - 14:00"
@@ -107,7 +107,7 @@ namespace ProjectApp
                         Category = "Quán ăn",
                         Latitude = 10.760840551806485,
                         Longitude = 106.70405082000606,
-                        ImageUrl = "bunca.jpg",
+                        ImageUrl = "chili.jpg",
                         Address = "Vĩnh Khánh, Phường 8, Quận 4",
                         Rating = 4.3,
                         OpenHours = "10:00 - 23:00"

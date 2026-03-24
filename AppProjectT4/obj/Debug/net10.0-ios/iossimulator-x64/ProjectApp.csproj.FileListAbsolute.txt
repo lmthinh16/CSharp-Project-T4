@@ -264,10 +264,6 @@ D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-do
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\build-signature\signature
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\ProjectApp.csproj.AssemblyReference.cache
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\partialappmanifest\_PartialAppManifests.items
@@ -333,6 +329,7 @@ D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\lang.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\tgbo.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\oc_thao.jpg
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\bunca.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\oc_sau_no.jpg
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\bun_thit_nuong.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\bun_ca.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-ios\iossimulator-x64\resizetizer\r\Resources\chili.jpg

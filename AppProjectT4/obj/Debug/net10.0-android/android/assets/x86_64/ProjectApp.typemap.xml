@@ -1,10 +1,10 @@
-<api type="debug" assembly-name="ProjectApp" mvid="52a389869eca42718d254757d2427f92">
+<api type="debug" assembly-name="ProjectApp" mvid="fcbdfec81f98441a8a0481e31088a40d">
   <java-to-managed>
-    <entry java-name="crc64ffec83acaed45be2/MainActivity" managed-name="ProjectApp.MainActivity, ProjectApp" managed-type-token-id="33554446" />
-    <entry java-name="crc64ffec83acaed45be2/MainApplication" managed-name="ProjectApp.MainApplication, ProjectApp" managed-type-token-id="33554447" />
+    <entry java-name="crc64ffec83acaed45be2/MainActivity" managed-name="ProjectApp.MainActivity, ProjectApp" managed-type-token-id="33554445" />
+    <entry java-name="crc64ffec83acaed45be2/MainApplication" managed-name="ProjectApp.MainApplication, ProjectApp" managed-type-token-id="33554446" />
   </java-to-managed>
   <managed-to-java>
-    <entry java-name="crc64ffec83acaed45be2/MainActivity" managed-name="ProjectApp.MainActivity, ProjectApp" managed-type-token-id="33554446" />
-    <entry java-name="crc64ffec83acaed45be2/MainApplication" managed-name="ProjectApp.MainApplication, ProjectApp" managed-type-token-id="33554447" />
+    <entry java-name="crc64ffec83acaed45be2/MainActivity" managed-name="ProjectApp.MainActivity, ProjectApp" managed-type-token-id="33554445" />
+    <entry java-name="crc64ffec83acaed45be2/MainApplication" managed-name="ProjectApp.MainApplication, ProjectApp" managed-type-token-id="33554446" />
   </managed-to-java>
 </api>

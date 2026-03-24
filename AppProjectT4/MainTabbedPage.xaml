@@ -20,8 +20,6 @@
         </x:Arguments>
     </NavigationPage>
 
-    
-
     <NavigationPage Title="Cá nhân" IconImageSource="profile.png">
         <x:Arguments>
             <local:ProfilePage/>
