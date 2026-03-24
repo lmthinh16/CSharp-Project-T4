@@ -7,28 +7,33 @@ namespace ProjectApp
         public MainPage()
         {
             InitializeComponent();
-            LoadRestaurants();
+
         }
 
-        private async void LoadRestaurants()
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await LoadRestaurantsAsync();
+        }
+
+        private async Task LoadRestaurantsAsync()
         {
             try
             {
-                await Task.Delay(500);
                 var restaurants = await App.Database.GetRestaurantsAsync();
 
+                // If it's empty, wait 1 second and try again (in case App.xaml.cs is still saving)
                 if (restaurants.Count == 0)
                 {
-                    await DisplayAlert("Thông báo", "Chưa có dữ liệu nhà hàng. Đang khởi tạo...", "OK");
+                    await Task.Delay(1000);
+                    restaurants = await App.Database.GetRestaurantsAsync();
                 }
-                else
-                {
-                    RestaurantsCollection.ItemsSource = restaurants;
-                }
+
+                RestaurantsCollection.ItemsSource = restaurants;
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Lỗi", $"Không thể tải danh sách: {ex.Message}", "OK");
+                await DisplayAlert("Lỗi", ex.Message, "OK");
             }
         }
 
@@ -123,3 +128,4 @@ namespace ProjectApp
         }
     }
 }
+

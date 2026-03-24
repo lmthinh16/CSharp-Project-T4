@@ -5,7 +5,7 @@
             x:Class="ProjectApp.MainTabbedPage"
             BarBackgroundColor="White"
             BarTextColor="#2C3E50"
-            SelectedTabColor="#FF6B6B"
+            SelectedTabColor="#FFDB58"
             UnselectedTabColor="#95A5A6">
 
     <NavigationPage Title="Trang chủ" IconImageSource="home.png">
@@ -20,11 +20,7 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="GPS" IconImageSource="gps.png">
-        <x:Arguments>
-            <local:GpsPage/>
-        </x:Arguments>
-    </NavigationPage>
+    
 
     <NavigationPage Title="Cá nhân" IconImageSource="profile.png">
         <x:Arguments>

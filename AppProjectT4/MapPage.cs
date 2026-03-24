@@ -1,5 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-using System.Text;
+﻿using System.Text;
 
 namespace ProjectApp
 {
@@ -78,15 +77,15 @@ namespace ProjectApp
             attribution: '© OpenStreetMap contributors, © CARTO'
         }}).addTo(map);
 
-        // Red circle marker SVG
-        var redCircleSvg = 'data:image/svg+xml;base64,' + btoa(`
+        // Yellow circle marker SVG
+        var yellowCircleSvg = 'data:image/svg+xml;base64,' + btoa(`
             <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
-                <circle cx='12' cy='12' r='10' fill='#FF6B6B' stroke='white' stroke-width='2'/>
+                <circle cx='12' cy='12' r='10' fill='#FFDB58' stroke='white' stroke-width='2'/>
             </svg>
         `);
 
-        var redIcon = L.icon({{
-            iconUrl: redCircleSvg,
+        var yellowIcon = L.icon({{
+            iconUrl: yellowCircleSvg,
             iconSize: [24, 24],
             iconAnchor: [12, 12],
             popupAnchor: [0, -12]
@@ -109,7 +108,7 @@ namespace ProjectApp
         // Add restaurant markers
         var markers = {markersJson};
         markers.forEach(function(m) {{
-            L.marker([m.lat, m.lng], {{ icon: redIcon }})
+            L.marker([m.lat, m.lng], {{ icon: yellowIcon }})
                 .bindPopup('<b>' + m.name + '</b><br>' + m.description + '<br>⭐ ' + m.rating)
                 .addTo(map);
         }});
@@ -159,7 +158,7 @@ namespace ProjectApp
                     System.Diagnostics.Debug.WriteLine($"Location error: {ex.Message}");
                 }
 
-                await Task.Delay(3000); // Update every 3 seconds
+                await Task.Delay(5000); // Update Location (5s) 
             }
         }
     }

@@ -8,7 +8,10 @@ namespace ProjectApp.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
+        [Indexed]
         public int RestaurantId { get; set; }
-        public DateTime VisitedAt { get; set; }
+
+        // Use DateTimeOffset for timezone-safe storage; store UTC consistently.
+        public DateTimeOffset VisitedAt { get; set; }
     }
 }

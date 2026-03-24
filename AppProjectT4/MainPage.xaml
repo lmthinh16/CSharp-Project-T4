@@ -5,264 +5,172 @@
              x:Class="ProjectApp.MainPage"
              BackgroundColor="#F8F9FA">
 
-    <Grid RowDefinitions="Auto,*,Auto">
+    <Grid RowDefinitions="Auto,*">
 
-        <!-- Header -->
+        <!-- 1. FIXED HEADER (Always stays at the top) -->
         <Border Grid.Row="0" 
-                BackgroundColor="#FF6B6B"
+                BackgroundColor="#0D0907"
                 StrokeThickness="0"
-                Padding="20,30,20,20"
-                Margin="0,0,0,10">
+                Padding="20,30,20,20">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="0,0,30,30"/>
             </Border.StrokeShape>
-            <VerticalStackLayout Spacing="5">
-                <Label Text="PHỐ ẨM THỰC VĨNH KHÁNH" 
-                       FontSize="22" 
-                       FontAttributes="Bold"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center"/>
-                <Label Text="Khám phá 11 điểm ăn uống nổi tiếng" 
-                       FontSize="13"
-                       TextColor="#FFE5E5"
-                       HorizontalTextAlignment="Center"/>
-            </VerticalStackLayout>
+            <Label Text="PHỐ ẨM THỰC VĨNH KHÁNH" 
+                   FontSize="22" 
+                   FontAttributes="Bold"
+                   TextColor="#FFDB58"
+                   HorizontalTextAlignment="Center"/>
         </Border>
 
-        <!-- Danh sách nhà hàng và nội dung chào mừng (map preview + tours) -->
-        <ScrollView Grid.Row="1">
-            <VerticalStackLayout Spacing="12">
+        <!-- 2. MAIN CONTENT AREA (Handles all scrolling) -->
+        <CollectionView Grid.Row="1" 
+                        x:Name="RestaurantsCollection"
+                        SelectionMode="Single"
+                        SelectionChanged="OnRestaurantSelected"
+                        Margin="15,0">
 
-                <!-- MAP PREVIEW and Tours (migrated from WelcomePage) -->
-                <VerticalStackLayout Padding="15,10" Spacing="12">
-                    <Label Text="Chọn Tour" FontSize="16" FontAttributes="Bold" TextColor="#2C3E50"/>
-                    <Frame BackgroundColor="White" CornerRadius="15" Padding="0" HasShadow="True" HeightRequest="180">
-                        <Frame.GestureRecognizers>
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2" 
+                                 HorizontalItemSpacing="12" 
+                                 VerticalItemSpacing="12" />
+            </CollectionView.ItemsLayout>
+
+            <!-- EVERYTHING ABOVE THE LIST GOES IN THE HEADER -->
+            <CollectionView.Header>
+                <VerticalStackLayout Spacing="15" Padding="0,15,0,10">
+
+                    <!-- Map Preview Section -->
+                    <Label Text="Khám Phá Bản Đồ" FontSize="16" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Border BackgroundColor="White" HeightRequest="180" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15" />
+                        </Border.StrokeShape>
+                        <Border.Shadow>
+                            <Shadow Brush="Black" Opacity="0.1" Radius="10" Offset="0,5" />
+                        </Border.Shadow>
+                        <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnMapClicked"/>
-                        </Frame.GestureRecognizers>
+                        </Border.GestureRecognizers>
                         <local:MapPreviewControl/>
-                    </Frame>
-                    <Label Text="👆 Nhấn để xem bản đồ chi tiết" FontSize="12" TextColor="#7F8C8D" HorizontalTextAlignment="Center"/>
-                </VerticalStackLayout>
+                    </Border>
 
-                <Button Text="Tour Toàn Cảnh" BackgroundColor="#F39C12" TextColor="White" FontSize="18" FontAttributes="Bold" HeightRequest="56" Margin="15,0,15,0" CornerRadius="12" Clicked="OnMapClicked"/>
+                    <!-- Tours Section -->
+                    <Label Text="Lộ Trình Tham Khảo" FontSize="16" FontAttributes="Bold" TextColor="#2C3E50" Margin="0,10,0,0"/>
 
-                <VerticalStackLayout Padding="15,0,15,0" Spacing="12">
-                    <Label Text="Tour theo chủ đề" FontSize="16" FontAttributes="Bold" TextColor="#2C3E50"/>
-
-                    <Frame BackgroundColor="White" CornerRadius="12" Padding="12" HasShadow="True">
-                        <Frame.GestureRecognizers>
+                    <!-- Tour 1 -->
+                    <Border BackgroundColor="White" Padding="12" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnTour1Clicked"/>
-                        </Frame.GestureRecognizers>
-                        <Grid ColumnDefinitions="100,*" ColumnSpacing="15">
-                            <Frame Grid.Column="0" CornerRadius="10" Padding="0">
-                                <Image Source="tour_oc.jpg" Aspect="AspectFill" WidthRequest="100" HeightRequest="80"/>
-                            </Frame>
-                            <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
-                                <Label Text="Tour Ăn Ốc" FontSize="15" FontAttributes="Bold" TextColor="#2C3E50"/>
-                                <Label Text="3 quán ốc ngon" FontSize="12" TextColor="#7F8C8D"/>
-                                <HorizontalStackLayout Spacing="5">
-                                    <Label Text="⭐ 4.4" FontSize="12" TextColor="#F39C12"/>
-                                    <Label Text="•" FontSize="12" TextColor="#BDC3C7"/>
-                                    <Label Text="45 phút" FontSize="12" TextColor="#7F8C8D"/>
-                                </HorizontalStackLayout>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="80,*" ColumnSpacing="15">
+                            <Image Grid.Column="0" Source="tour_oc.jpg" Aspect="AspectFill" HeightRequest="70" WidthRequest="80">
+                                <Image.Clip>
+                                    <RoundRectangleGeometry CornerRadius="10" Rect="0,0,80,70"/>
+                                </Image.Clip>
+                            </Image>
+                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="Tour Ốc" FontAttributes="Bold" TextColor="#2C3E50"/>
+                                <Label Text="3 quán ốc ngon nổi tiếng" FontSize="12" TextColor="#7F8C8D"/>
+                                <Label Text="⭐ 4.4 • 45 phút" FontSize="11" TextColor="#F39C12"/>
                             </VerticalStackLayout>
                         </Grid>
-                    </Frame>
+                    </Border>
 
-                    <Frame BackgroundColor="White" CornerRadius="12" Padding="12" HasShadow="True">
-                        <Frame.GestureRecognizers>
+                    <!-- Tour 2 -->
+                    <Border BackgroundColor="White" Padding="12" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnTour2Clicked"/>
-                        </Frame.GestureRecognizers>
-                        <Grid ColumnDefinitions="100,*" ColumnSpacing="15">
-                            <Frame Grid.Column="0" CornerRadius="10" Padding="0">
-                                <Image Source="tour_nuong.jpg" Aspect="AspectFill" WidthRequest="100" HeightRequest="80"/>
-                            </Frame>
-                            <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
-                                <Label Text="Tour Ăn Nướng" FontSize="15" FontAttributes="Bold" TextColor="#2C3E50"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="80,*" ColumnSpacing="15">
+                            <Image Grid.Column="0" Source="tour_nuong.jpg" Aspect="AspectFill" HeightRequest="70" WidthRequest="80">
+                                <Image.Clip>
+                                    <RoundRectangleGeometry CornerRadius="10" Rect="0,0,80,70"/>
+                                </Image.Clip>
+                            </Image>
+                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="Tour Đồ Nướng" FontAttributes="Bold" TextColor="#2C3E50"/>
                                 <Label Text="Lẩu nướng, bò lá lốt" FontSize="12" TextColor="#7F8C8D"/>
-                                <HorizontalStackLayout Spacing="5">
-                                    <Label Text="⭐ 4.5" FontSize="12" TextColor="#F39C12"/>
-                                    <Label Text="•" FontSize="12" TextColor="#BDC3C7"/>
-                                    <Label Text="60 phút" FontSize="12" TextColor="#7F8C8D"/>
-                                </HorizontalStackLayout>
+                                <Label Text="⭐ 4.5 • 60 phút" FontSize="11" TextColor="#F39C12"/>
                             </VerticalStackLayout>
                         </Grid>
-                    </Frame>
+                    </Border>
 
-                    <Frame BackgroundColor="White" CornerRadius="12" Padding="12" HasShadow="True">
-                        <Frame.GestureRecognizers>
+                    <!-- Tour 3 -->
+                    <Border BackgroundColor="White" Padding="12" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnTour3Clicked"/>
-                        </Frame.GestureRecognizers>
-                        <Grid ColumnDefinitions="100,*" ColumnSpacing="15">
-                            <Frame Grid.Column="0" CornerRadius="10" Padding="0">
-                                <Image Source="tour_vat.jpg" Aspect="AspectFill" WidthRequest="100" HeightRequest="80"/>
-                            </Frame>
-                            <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
-                                <Label Text="Tour Ăn Vặt" FontSize="15" FontAttributes="Bold" TextColor="#2C3E50"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="80,*" ColumnSpacing="15">
+                            <Image Grid.Column="0" Source="tour_vat.jpg" Aspect="AspectFill" HeightRequest="70" WidthRequest="80">
+                                <Image.Clip>
+                                    <RoundRectangleGeometry CornerRadius="10" Rect="0,0,80,70"/>
+                                </Image.Clip>
+                            </Image>
+                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="Tour Ăn Vặt" FontAttributes="Bold" TextColor="#2C3E50"/>
                                 <Label Text="Cơm cháy, bún nướng" FontSize="12" TextColor="#7F8C8D"/>
-                                <HorizontalStackLayout Spacing="5">
-                                    <Label Text="⭐ 4.3" FontSize="12" TextColor="#F39C12"/>
-                                    <Label Text="•" FontSize="12" TextColor="#BDC3C7"/>
-                                    <Label Text="40 phút" FontSize="12" TextColor="#7F8C8D"/>
-                                </HorizontalStackLayout>
+                                <Label Text="⭐ 4.3 • 40 phút" FontSize="11" TextColor="#F39C12"/>
                             </VerticalStackLayout>
                         </Grid>
-                    </Frame>
+                    </Border>
 
-                    <Frame BackgroundColor="White" CornerRadius="12" Padding="12" HasShadow="True">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTour4Clicked"/>
-                        </Frame.GestureRecognizers>
-                        <Grid ColumnDefinitions="100,*" ColumnSpacing="15">
-                            <Frame Grid.Column="0" CornerRadius="10" Padding="0">
-                                <Image Source="tour_dacssan.jpg" Aspect="AspectFill" WidthRequest="100" HeightRequest="80"/>
-                            </Frame>
-                            <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
-                                <Label Text="Tour Đặc Sản" FontSize="15" FontAttributes="Bold" TextColor="#2C3E50"/>
-                                <Label Text="Bún cá Châu Đốc" FontSize="12" TextColor="#7F8C8D"/>
-                                <HorizontalStackLayout Spacing="5">
-                                    <Label Text="⭐ 4.6" FontSize="12" TextColor="#F39C12"/>
-                                    <Label Text="•" FontSize="12" TextColor="#BDC3C7"/>
-                                    <Label Text="50 phút" FontSize="12" TextColor="#7F8C8D"/>
-                                </HorizontalStackLayout>
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Frame>
+                    <!-- List Title -->
+                    <Label Text="Danh sách hàng quán" FontSize="16" FontAttributes="Bold" TextColor="#2C3E50" Margin="0,15,0,5" />
                 </VerticalStackLayout>
+            </CollectionView.Header>
 
-                <!-- Restaurant list -->
-                <CollectionView x:Name="RestaurantsCollection"
-                                SelectionMode="Single"
-                                SelectionChanged="OnRestaurantSelected"
-                                Margin="15,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Border Margin="0,8" 
-                                BackgroundColor="White"
-                                StrokeThickness="0"
-                                Padding="0">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="20"/>
-                            </Border.StrokeShape>
-                            <Border.Shadow>
-                                <Shadow Brush="Black" Opacity="0.1" Radius="10" Offset="0,5"/>
-                            </Border.Shadow>
+            <!-- RESTAURANT CARD TEMPLATE -->
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border BackgroundColor="White" StrokeThickness="0" Margin="0,5">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15"/>
+                        </Border.StrokeShape>
+                        <Border.Shadow>
+                            <Shadow Brush="Black" Opacity="0.1" Radius="5" Offset="0,2"/>
+                        </Border.Shadow>
 
-                            <Grid RowDefinitions="140,Auto">
+                        <Grid RowDefinitions="120, Auto">
+                            <!-- Image Section -->
+                            <Grid Grid.Row="0">
+                                <Image Source="{Binding ImageUrl}" 
+                                       Aspect="AspectFill" 
+                                       HeightRequest="120" 
+                                       HorizontalOptions="Fill" />
 
-                                <!-- Image area với gradient -->
-                                <Border Grid.Row="0"
-                                        BackgroundColor="#FFE5E5"
-                                        StrokeThickness="0">
+                                <!-- Rating Badge overlay -->
+                                <Border BackgroundColor="#CC000000" Padding="6,2" HorizontalOptions="End" VerticalOptions="Start" Margin="8">
                                     <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="20,20,0,0"/>
+                                        <RoundRectangle CornerRadius="10"/>
                                     </Border.StrokeShape>
-                                    <Grid>
-                                        <Label Text="🍜" 
-                                               FontSize="70"
-                                               HorizontalOptions="Center"
-                                               VerticalOptions="Center"
-                                               Opacity="0.3"/>
-
-                                        <!-- Rating badge -->
-                                        <Border BackgroundColor="#FF6B6B"
-                                                StrokeThickness="0"
-                                                Padding="10,6"
-                                                HorizontalOptions="End"
-                                                VerticalOptions="Start"
-                                                Margin="12">
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="15"/>
-                                            </Border.StrokeShape>
-                                            <HorizontalStackLayout Spacing="4">
-                                                <Label Text="⭐" FontSize="14"/>
-                                                <Label Text="{Binding Rating}" 
-                                                       FontSize="14"
-                                                       FontAttributes="Bold"
-                                                       TextColor="White"/>
-                                            </HorizontalStackLayout>
-                                        </Border>
-                                    </Grid>
+                                    <Label Text="{Binding Rating, StringFormat='⭐ {0}'}" TextColor="White" FontSize="11" FontAttributes="Bold"/>
                                 </Border>
-
-                                <!-- Info section -->
-                                <VerticalStackLayout Grid.Row="1" 
-                                                     Padding="15"
-                                                     Spacing="8">
-                                    <Label Text="{Binding Name}"
-                                           FontSize="18"
-                                           FontAttributes="Bold"
-                                           TextColor="#2C3E50"/>
-
-                                    <Label Text="{Binding Description}"
-                                           FontSize="13"
-                                           TextColor="#7F8C8D"
-                                           LineBreakMode="TailTruncation"
-                                           MaxLines="2"/>
-
-                                    <HorizontalStackLayout Spacing="5">
-                                        <Label Text="🕐" FontSize="13"/>
-                                        <Label Text="{Binding OpenHours}" 
-                                               FontSize="13"
-                                               TextColor="#27AE60"
-                                               FontAttributes="Bold"/>
-                                    </HorizontalStackLayout>
-                                </VerticalStackLayout>
-
                             </Grid>
-                        </Border>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-                </VerticalStackLayout>
-        </ScrollView>
 
-        <!-- Bottom Navigation -->
-        <Grid Grid.Row="2" 
-              BackgroundColor="White"
-              Padding="15,10"
-              ColumnDefinitions="*,*"
-              RowDefinitions="55">
+                            <!-- Text Section -->
+                            <VerticalStackLayout Grid.Row="1" Padding="10" Spacing="4">
+                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="14" MaxLines="1" LineBreakMode="TailTruncation"/>
+                                <Label Text="{Binding OpenHours, StringFormat='🕐 {0}'}" FontSize="11" TextColor="#27AE60" FontAttributes="Bold"/>
+                                <Label Text="{Binding Description}" FontSize="11" TextColor="#7F8C8D" MaxLines="2" LineBreakMode="TailTruncation"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
 
-            <Border Grid.Column="0"
-                    BackgroundColor="#4ECDC4"
-                    StrokeThickness="0"
-                    Margin="0,0,7,0">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15"/>
-                </Border.StrokeShape>
-                <Border.Shadow>
-                    <Shadow Brush="#4ECDC4" Opacity="0.3" Radius="8" Offset="0,3"/>
-                </Border.Shadow>
-                <Button Text="📍 GPS"
-                        BackgroundColor="Transparent"
-                        TextColor="White"
-                        FontSize="15"
-                        FontAttributes="Bold"
-                        Clicked="OnGpsClicked"/>
-            </Border>
+            <CollectionView.Footer>
+                <BoxView HeightRequest="20" Color="Transparent" />
+            </CollectionView.Footer>
 
-            <Border Grid.Column="1"
-                    BackgroundColor="#95E1D3"
-                    StrokeThickness="0"
-                    Margin="7,0,0,0">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15"/>
-                </Border.StrokeShape>
-                <Border.Shadow>
-                    <Shadow Brush="#95E1D3" Opacity="0.3" Radius="8" Offset="0,3"/>
-                </Border.Shadow>
-                <Button Text="🗺️ Bản Đồ"
-                        BackgroundColor="Transparent"
-                        TextColor="White"
-                        FontSize="15"
-                        FontAttributes="Bold"
-                        Clicked="OnMapClicked"/>
-            </Border>
-
-        </Grid>
-
+        </CollectionView>
     </Grid>
-
 </ContentPage>

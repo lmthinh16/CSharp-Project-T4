@@ -10,6 +10,7 @@ namespace ProjectApp.Models
 
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+        [Indexed]
         public string Category { get; set; } = string.Empty;
         public double Latitude { get; set; }
         public double Longitude { get; set; }
@@ -17,5 +18,9 @@ namespace ProjectApp.Models
         public string ImageUrl { get; set; } = string.Empty;
         public double Rating { get; set; }
         public string OpenHours { get; set; } = string.Empty;
+
+        // Audit fields
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.UtcNow;
     }
 }

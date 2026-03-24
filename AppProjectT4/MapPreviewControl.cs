@@ -1,5 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-using System.Text;
+﻿using System.Text;
 
 namespace ProjectApp
 {
@@ -77,14 +76,14 @@ namespace ProjectApp
             attribution: '© OpenStreetMap contributors, © CARTO'
         }}).addTo(map);
 
-        var redCircleSvg = 'data:image/svg+xml;base64,' + btoa(`
+        var yellowCircleSvg = 'data:image/svg+xml;base64,' + btoa(`
             <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
-                <circle cx='12' cy='12' r='10' fill='#FF6B6B' stroke='white' stroke-width='2'/>
+                <circle cx='12' cy='12' r='10' fill='#FFDB58' stroke='white' stroke-width='2'/>
             </svg>
         `);
 
-        var redIcon = L.icon({{
-            iconUrl: redCircleSvg,
+        var yellowIcon = L.icon({{
+            iconUrl: yellowCircleSvg,
             iconSize: [24, 24],
             iconAnchor: [12, 12]
         }});
@@ -104,7 +103,7 @@ namespace ProjectApp
 
         var markers = {markersJson};
         markers.forEach(function(m) {{
-            L.marker([m.lat, m.lng], {{ icon: redIcon }}).addTo(map);
+            L.marker([m.lat, m.lng], {{ icon: yellowIcon }}).addTo(map);
         }});
 
         var userMarker = null;
