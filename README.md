@@ -106,10 +106,3 @@ Hiện nay, việc khám phá ẩm thực và các địa điểm ăn uống ở
 
 **Tổng thời gian:** ~8 tuần
 
----
-
-**Chú ý khi triển khai SQL Server:**  
-- Tạo **Database**: VinhKhanhTourDB  
-- Tạo các **table** DiaDiem, AudioGuide, Review, User  
-- Mobile app đồng bộ dữ liệu thông qua Web API (RESTful) với SQL Server.  
-- Dùng **Entity Framework Core** để quản lý dữ liệu trên Web Portal.  
