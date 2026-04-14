@@ -1,3 +1,3 @@
-2026/03/18-00:00:10.633 2910 Reusing MANIFEST D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ProjectApp.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/18-00:00:10.640 2910 Recovering log #3
-2026/03/18-00:00:10.642 2910 Reusing old log D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ProjectApp.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2026/04/07-23:30:43.105 223c Reusing MANIFEST D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ProjectApp.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/07-23:30:43.111 223c Recovering log #3
+2026/04/07-23:30:43.113 223c Reusing old log D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ProjectApp.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 

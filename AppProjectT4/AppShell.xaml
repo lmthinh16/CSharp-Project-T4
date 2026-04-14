@@ -5,11 +5,41 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProjectApp"
     Shell.FlyoutBehavior="Disabled"
-    Title="ProjectApp">
+    Shell.TabBarBackgroundColor="#0D1A2D"
+    Shell.TabBarTitleColor="#E0E0F0"
+    Shell.TabBarUnselectedColor="#95A5A6"
+    Shell.TabBarForegroundColor="#4EA5D9"
+    Shell.TitleColor="#556688">
+    <!-- Bottom TabBar -->
+    <TabBar>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        <!-- Tab 1: Trang chủ -->
+        <Tab Title="Trang chủ" Icon="home.png">
+            <ShellContent 
+                ContentTemplate="{DataTemplate local:MainPage}" 
+                Title="Trang chủ" 
+                Route="Home" />
+        </Tab>
+
+        <!-- Tab 2: Bản đồ -->
+        <Tab Title="Bản đồ" Icon="map.png">
+            <ShellContent 
+                ContentTemplate="{DataTemplate local:MapPage}" 
+                Title="Bản đồ" 
+                Route="Map" />
+        </Tab>
+        
+        
+       
+        
+        <!-- Tab 3: Cá nhân -->
+        <Tab Title="Cá nhân" Icon="profile.png">
+            <ShellContent 
+                ContentTemplate="{DataTemplate local:ProfilePage}" 
+                Title="Cá nhân" 
+                Route="Profile" />
+        </Tab>
+
+    </TabBar>
 
 </Shell>

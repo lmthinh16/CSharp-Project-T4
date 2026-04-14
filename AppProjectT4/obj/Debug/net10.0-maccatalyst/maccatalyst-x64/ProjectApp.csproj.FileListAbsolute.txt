@@ -1,47 +1,3 @@
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.inputs
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.stamp
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfoInputs.cache
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfo.cs
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.CoreCompileInputs.cache
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_oc.jpg
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_vat.jpg
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_dacssan.jpg
-D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_nuong.jpg
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.runtimeconfig.json
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
@@ -304,6 +260,50 @@ D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxam
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
 D:\C#\ProjectApp\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_dacssan.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_oc.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_vat.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_nuong.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfoInputs.cache
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfo.cs
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.CoreCompileInputs.cache
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.Up2Date
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
@@ -311,3 +311,968 @@ D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\refint
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.genruntimeconfig.cache
 D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\ProjectApp.dll
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bo_la_lot.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_oanh.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lang.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\com_chay_kho_quet.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\ot_xiem.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_thao.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_thit_nuong.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tgbo.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_sau_no.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\chili.jpg
+D:\C#\ProjectApp\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_ca.jpg
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.runtimeconfig.json
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\da\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\de\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\el\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\es\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fi\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fr\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\he\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hi\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hr\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hu\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\id\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\it\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ja\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ko\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ms\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nb\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nl\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pl\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ro\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ru\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sk\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sv\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\th\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\tr\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\uk\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\vi\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.AsyncEnumerable.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServerSentEvents.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.AccessControl.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlicommon.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlidec.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlienc.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-stub-static.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot-debug.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+D:\C#\file project cũ\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfoInputs.cache
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfo.cs
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.CoreCompileInputs.cache
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.Up2Date
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\refint\ProjectApp.dll
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.genruntimeconfig.cache
+D:\C#\file project cũ\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\ProjectApp.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.runtimeconfig.json
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\da\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\de\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\el\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\es\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fi\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fr\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\he\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hi\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hr\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hu\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\id\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\it\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ja\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ko\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ms\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nb\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nl\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pl\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ro\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ru\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sk\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sv\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\th\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\tr\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\uk\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\vi\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.AsyncEnumerable.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServerSentEvents.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.AccessControl.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlicommon.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlidec.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlienc.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-stub-static.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot-debug.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+D:\C#\old project\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\Roboto-Regular.ttf
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\Roboto-SemiBold.ttf
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfoInputs.cache
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfo.cs
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.CoreCompileInputs.cache
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.Up2Date
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\refint\ProjectApp.dll
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.genruntimeconfig.cache
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\ProjectApp.dll
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bo_la_lot.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_nuong.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_vat.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_oc.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_dacssan.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lang.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\com_chay_kho_quet.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_sau_no.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\chili.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_oanh.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_thao.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_ca.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tgbo.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\ot_xiem.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_thit_nuong.jpg
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+D:\C#\old project\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.AssemblyReference.cache
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\partialappmanifest\_PartialAppManifests.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\unpack\Microsoft.Maui.Essentials\BundleResource\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ibtool\_ProcessedInterfaceDefinitionsPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\copySceneKitAssets\_ProcessedSceneKitAssetsPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\collada\_ProcessedColladaAssetsPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\atlas\_ProcessedTextureAtlasesPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfoInputs.cache
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.AssemblyInfo.cs
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.CoreCompileInputs.cache
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.runtimeconfig.json
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\da\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\de\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\el\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\es\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fi\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\fr\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\he\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hi\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hr\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\hu\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\id\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\it\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ja\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ko\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ms\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nb\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\nl\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pl\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\pt\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ro\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ru\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sk\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\sv\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\th\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\tr\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\uk\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\vi\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipelines.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.AsyncEnumerable.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServerSentEvents.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.AccessControl.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Globalization.Native.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlicommon.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlidec.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libbrotlienc.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmono-component-marshal-ilgen-stub-static.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot-debug.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\C#\v2\ProjectApp\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bo_la_lot.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_dacssan.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_nuong.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_oc.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tour_vat.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\chili.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_ca.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\com_chay_kho_quet.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_thao.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lang.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_oanh.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\ot_xiem.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\tgbo.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bun_thit_nuong.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\oc_sau_no.jpg
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\Roboto-Regular.ttf
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\resizetizer\f\Roboto-SemiBold.ttf
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.csproj.Up2Date
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.dll
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\refint\ProjectApp.dll
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.pdb
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ProjectApp.genruntimeconfig.cache
+D:\C#\v2\ProjectApp\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\ref\ProjectApp.dll

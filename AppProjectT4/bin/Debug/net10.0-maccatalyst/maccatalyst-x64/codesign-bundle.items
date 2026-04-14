@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>D:\C#\ProjectApp\ProjectApp</SourceProjectPath>
+      <SourceProjectPath>D:\C#\v2\ProjectApp</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

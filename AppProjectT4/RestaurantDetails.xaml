@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApp.RestaurantDetails"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Top nav -->
+        <Grid Grid.Row="0"
+              BackgroundColor="#16213E"
+              Padding="8,8"
+              ColumnDefinitions="40,*,40">
+            <ImageButton Grid.Column="0"
+                         Source="icon_back.png"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" 
+                         Clicked="OnBackClicked"/>
+            <Label Grid.Column="1"
+                   Text="{Binding Name}"
+                   FontSize="13"
+                   FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   LineBreakMode="TailTruncation" />
+            <ImageButton Grid.Column="2"
+                         Source="icon_map_pin.png"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" />
+        </Grid>
+
+        <!-- Scrollable content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="0">
+
+                <!-- Hero image -->
+                <Grid HeightRequest="200">
+                    <Image Source="{Binding ImagePath}"
+                           Aspect="AspectFill"
+                           BackgroundColor="#0F2744" />
+                    <!-- Gradient overlay -->
+                    <BoxView BackgroundColor="#1A1A2E"
+                             Opacity="0.5"
+                             VerticalOptions="End"
+                             HeightRequest="50" />
+                </Grid>
+
+                <VerticalStackLayout Padding="15,20" Spacing="16">
+
+                    <!-- POI title block -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="{Binding Name}"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="#E0E8FF" />
+                               
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="⭐" TextColor="#FFDB58" />
+                            <Label Text="{Binding Rating}" TextColor="#FFDB58" FontAttributes="Bold" />
+                            
+                            <Label Text="🕐" TextColor="#4EC88A" Margin="10,0,0,0"/>
+                            <Label Text="{Binding OpenHours}" TextColor="#4EC88A" />
+                        </HorizontalStackLayout>
+                        
+                        <HorizontalStackLayout Spacing="6" Margin="0,5,0,0">
+                            <Label Text="📍"
+                                   FontSize="12"
+                                   TextColor="#8899AA" />
+                            <Label Text="{Binding Address}"
+                                   FontSize="12"
+                                   TextColor="#8899AA" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <!-- Audio guides Actions -->
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="🎵 Nghe Thuyết Minh"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               TextColor="#4EA5D9" />
+
+                        <Grid ColumnDefinitions="*,*,*,2*" ColumnSpacing="10">
+                            <Button Grid.Column="0" Text="Việt" BackgroundColor="#E74C3C" TextColor="White" Clicked="OnPlayVI_Clicked"/>
+                            <Button Grid.Column="1" Text="English" BackgroundColor="#3498DB" TextColor="White" Clicked="OnPlayEN_Clicked"/>
+                            <Button Grid.Column="2" Text="中文" BackgroundColor="#F1C40F" TextColor="Black" Clicked="OnPlayZH_Clicked"/>
+                            <Button Grid.Column="3" Text="⏹ Dừng" BackgroundColor="#95A5A6" TextColor="White" Clicked="OnStopAudio_Clicked"/>
+                        </Grid>
+                    </VerticalStackLayout>
+
+                    <!-- Text description VI -->
+                    <Border BackgroundColor="#0D1B2A"
+                            Stroke="#1A2A4A"
+                            StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 6"
+                            Padding="15">
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="📄 Kịch Bản (VI)"
+                                   FontSize="12"
+                                   FontAttributes="Bold"
+                                   TextColor="#E74C3C" />
+                            <Label x:Name="LabelTextVI"
+                                   FontSize="13"
+                                   TextColor="#C0D0E8"
+                                   LineHeight="1.5" />
+                        </VerticalStackLayout>
+                    </Border>
+                    
+                    <!-- Text description EN -->
+                    <Border BackgroundColor="#0D1B2A"
+                            Stroke="#1A2A4A"
+                            StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 6"
+                            Padding="15">
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="📄 Script (EN)"
+                                   FontSize="12"
+                                   FontAttributes="Bold"
+                                   TextColor="#3498DB" />
+                            <Label x:Name="LabelTextEN"
+                                   FontSize="13"
+                                   TextColor="#C0D0E8"
+                                   LineHeight="1.5" />
+                        </VerticalStackLayout>
+                    </Border>
+                    
+                     <!-- Text description ZH -->
+                    <Border BackgroundColor="#0D1B2A"
+                            Stroke="#1A2A4A"
+                            StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 6"
+                            Padding="15">
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="📄 剧本 (ZH)"
+                                   FontSize="12"
+                                   FontAttributes="Bold"
+                                   TextColor="#F1C40F" />
+                            <Label x:Name="LabelTextZH"
+                                   FontSize="13"
+                                   TextColor="#C0D0E8"
+                                   LineHeight="1.5" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

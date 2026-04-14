@@ -1,4 +1,4 @@
-﻿using ProjectApp.Models;
+using ProjectApp.Models;
 
 namespace ProjectApp.Services
 {
@@ -32,33 +32,37 @@ namespace ProjectApp.Services
         public async Task<Restaurant?> CheckNearbyRestaurant(double userLat, double userLon)
         {
             var restaurants = await App.Database.GetRestaurantsAsync();
-            Restaurant? nearest = null;
-            double minDistance = double.MaxValue;
+            Restaurant? topPriorityNearest = null;
 
             foreach (var restaurant in restaurants)
             {
                 double distance = CalculateDistance(userLat, userLon,
-                    restaurant.Latitude, restaurant.Longitude);
+                    restaurant.Lat, restaurant.Lng);
 
-                if (distance <= DEFAULT_RADIUS_METERS)
+                // Use the restaurant's specific radius or default
+                double triggerRadius = restaurant.Radius > 0 ? restaurant.Radius : DEFAULT_RADIUS_METERS;
+
+                if (distance <= triggerRadius)
                 {
                     if (CanTrigger(restaurant.Id))
                     {
-                        if (distance < minDistance)
+                        if (topPriorityNearest == null || restaurant.Priority > topPriorityNearest.Priority)
                         {
-                            minDistance = distance;
-                            nearest = restaurant;
+                            topPriorityNearest = restaurant;
                         }
                     }
                 }
             }
 
-            if (nearest != null)
+            if (topPriorityNearest != null)
             {
-                _lastTriggered[nearest.Id] = DateTime.Now;
+                _lastTriggered[topPriorityNearest.Id] = DateTime.Now;
+                
+                // Fire and forget
+                _ = App.Audio.PlayPoiAudioAsync(topPriorityNearest);
             }
 
-            return nearest;
+            return topPriorityNearest;
         }
 
         private bool CanTrigger(int restaurantId)

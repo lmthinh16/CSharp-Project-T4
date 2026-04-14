@@ -2,8 +2,8 @@ namespace ProjectApp;
 
 public partial class ProfilePage : ContentPage
 {
-	public ProfilePage()
-	{
-		InitializeComponent();
-	}
+    public ProfilePage()
+    {
+        InitializeComponent();
+    }
 }

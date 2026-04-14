@@ -15,19 +15,21 @@
                    HorizontalOptions="Center"/>
 
             <!-- Avatar -->
-            <Border StrokeShape="RoundRectangle 60"
-                    BackgroundColor="#E8F5E9"
+            <Border BackgroundColor="#E8F5E9"
                     WidthRequest="120"
                     HeightRequest="120"
                     HorizontalOptions="Center">
-                <Label Text="😊" 
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="60" />
+                </Border.StrokeShape>
+                <Label Text="👤" 
                        FontSize="60"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"/>
             </Border>
 
             <!-- User Name -->
-            <Label Text="Du khách Vĩnh Khánh" 
+            <Label Text="Người dùng" 
                    FontSize="20" 
                    FontAttributes="Bold"
                    TextColor="#2C3E50"
@@ -39,16 +41,18 @@
                   Margin="0,20,0,0">
 
                 <Border Grid.Column="0" 
-                        StrokeShape="RoundRectangle 10"
                         BackgroundColor="#FFF3E0"
                         Padding="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
                     <VerticalStackLayout Spacing="5">
                         <Label Text="0" 
                                FontSize="24" 
                                FontAttributes="Bold"
                                TextColor="#FF6B6B"
                                HorizontalOptions="Center"/>
-                        <Label Text="Quán đã ghé" 
+                        <Label Text="Quán đã đến" 
                                FontSize="12"
                                TextColor="#666"
                                HorizontalOptions="Center"/>
@@ -56,9 +60,11 @@
                 </Border>
 
                 <Border Grid.Column="1" 
-                        StrokeShape="RoundRectangle 10"
                         BackgroundColor="#E3F2FD"
                         Padding="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
                     <VerticalStackLayout Spacing="5">
                         <Label Text="0" 
                                FontSize="24" 
@@ -73,9 +79,11 @@
                 </Border>
 
                 <Border Grid.Column="2" 
-                        StrokeShape="RoundRectangle 10"
                         BackgroundColor="#F3E5F5"
                         Padding="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
                     <VerticalStackLayout Spacing="5">
                         <Label Text="0" 
                                FontSize="24" 
@@ -91,10 +99,12 @@
             </Grid>
 
             <!-- Menu Items -->
-            <Border StrokeShape="RoundRectangle 10"
-                    BackgroundColor="#F5F5F5"
+            <Border BackgroundColor="#F5F5F5"
                     Padding="15"
                     Margin="0,20,0,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
                 <VerticalStackLayout Spacing="15">
                     <Label Text="📜 Lịch sử ghé thăm" FontSize="16" TextColor="#2C3E50"/>
                     <BoxView HeightRequest="1" Color="#E0E0E0"/>
