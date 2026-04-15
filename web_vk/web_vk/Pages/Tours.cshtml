@@ -1,0 +1,262 @@
+﻿@page
+@model web_vk.Pages.ToursModel
+@{
+    Layout = null;
+    var username = HttpContext.Session.GetString("user") ?? "Admin";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Tour – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tận dụng lại CSS từ Dashboard của bạn */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --sidebar-bg: #13151f;
+            --sidebar-w: 260px;
+            --accent: #c9a84c;
+            --text-muted: #8a8a9a;
+            --header-h: 64px;
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0f1117;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Sidebar & Main (Giữ nguyên như Dashboard) */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--sidebar-bg);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(201,168,76,.12);
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            height: var(--header-h);
+            background: #13151f;
+            border-bottom: 1px solid rgba(201,168,76,.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px;
+        }
+
+        /* Table Style */
+        .card {
+            background: #13151f;
+            border: 1px solid rgba(201,168,76,.1);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px;
+            color: var(--accent);
+            border-bottom: 2px solid rgba(201,168,76,.2);
+            font-size: 14px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255,255,255,.05);
+            font-size: 14px;
+            color: #e8e6df;
+        }
+
+        /* Form Style */
+        .btn-add {
+            background: var(--accent);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+            .btn-add:hover {
+                background: #b8923e;
+            }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255,255,255,.05);
+            border: 1px solid rgba(201,168,76,.2);
+            border-radius: 8px;
+            color: #fff;
+            margin-top: 5px;
+            outline: none;
+        }
+
+        .restaurant-selector {
+            max-height: 200px;
+            overflow-y: auto;
+            background: rgba(0,0,0,.2);
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .res-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 0;
+        }
+
+            .res-item input {
+                width: auto;
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">✈</div>
+            <div class="brand-text">
+                <div class="name">Vĩnh Khánh</div>
+                <div class="role">Admin Dashboard</div>
+            </div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Tổng quan</div>
+            <a href="/Dashboard" class="nav-link"><span class="nav-icon">⊞</span> Tổng quan</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Quản lý nội dung</div>
+            <a href="/Restaurants" class="nav-link"><span class="nav-icon">📍</span> Quản lý địa điểm</a>
+            <a href="/Tours" class="nav-link"><span class="nav-icon">🔀</span> Quản lý Tour</a>
+            <a href="/Audio" class="nav-link active"><span class="nav-icon">🎧</span> Quản lý Audio</a>
+            <a href="/Translations" class="nav-link">
+                <span class="nav-icon">🌐</span> Bản dịch đa ngữ
+            </a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Phân tích</div>
+            <a href="#" class="nav-link"><span class="nav-icon">🕐</span> Lịch sử sử dụng</a>
+        </div>
+        <div class="sidebar-footer">
+            <div class="user-row">
+                <div class="avatar">@username[0].ToString().ToUpper()</div>
+                <div class="user-info">
+                    <div class="uname">@username</div>
+                    <div class="urole">Super Admin</div>
+                </div>
+            </div>
+            <a href="/Login" class="logout-btn">
+                <span>↪</span> Đăng xuất
+            </a>
+        </div>
+    </aside>
+
+
+    <div class="main">
+        <header class="topbar">
+            <h1 style="font-size: 18px;">Quản lý Tour Du Lịch</h1>
+            <button class="btn-add" onclick="toggleModal()">+ Tạo Tour mới</button>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên Tour</th>
+                            <th>Mô tả</th>
+                            <th>Thời gian dự kiến</th>
+                            <th>Ngày tạo</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var tour in Model.Tours)
+                        {
+                            <tr>
+                                <td><strong>@tour.Title</strong></td>
+                                <td style="color: var(--text-muted)">@tour.Description</td>
+                                <td>@tour.TotalEstimatedTime</td>
+                                <td>@tour.CreatedAt.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <a href="#" style="color: var(--accent); text-decoration:none;">Sửa</a> |
+                                    <a href="#" style="color: #ff4d4d; text-decoration:none;">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card" id="tourForm">
+                <h3 style="color: var(--accent); margin-bottom: 15px;">Thông tin Tour</h3>
+                <form method="post">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label>Tiêu đề Tour</label>
+                            <input type="text" name="TourTitle" required placeholder="Ví dụ: Food Tour Đêm Vĩnh Khánh">
+
+                            <label style="display:block; margin-top:15px;">Mô tả ngắn</label>
+                            <textarea name="Description" rows="4"></textarea>
+                        </div>
+                        <div>
+                            <label>Chọn các địa điểm vào Tour (Theo thứ tự)</label>
+                            <div class="restaurant-selector">
+                                @foreach (var res in Model.AllRestaurants)
+                                {
+                                    <div class="res-item">
+                                        <input type="checkbox" name="SelectedRestaurantIds" value="@res.Id">
+                                        <span>@res.Name</span>
+                                    </div>
+                                }
+                            </div>
+                            <button type="submit" class="btn-add" style="margin-top: 20px; width: 100%;">Lưu Tour</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
