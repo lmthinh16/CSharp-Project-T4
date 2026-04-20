@@ -18,6 +18,8 @@
 
         public string? AudioPath { get; set; }
         public double? Radius { get; set; } = 50; // Mặc định 50 mét
+        public int Priority { get; set; } = 0;
+        public bool IsActive { get; set; } = true;
         public virtual ICollection<Audio> Audios { get; set; } = new List<Audio>();
     }
 }

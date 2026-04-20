@@ -13,11 +13,19 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+builder.Services.AddMemoryCache();
 // Services
 builder.Services.AddRazorPages();
 // Đã dọn dẹp ElevenLabsService và TextToSpeechService cũ tại đây
 builder.Services.AddHttpClient();
+builder.Services.AddControllers();          // ← thêm
+builder.Services.AddEndpointsApiExplorer(); // ← thêm (optional, cho Swagger)
+
 
 var app = builder.Build();
 
@@ -35,6 +43,8 @@ app.UseSession();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.UseCors("AllowAll");
+app.MapControllers();
 
 // --- API ĐỒNG BỘ DỮ LIỆU ĐA NGÔN NGỮ ---
 // Endpoint này sẽ được App .NET MAUI gọi để tải dữ liệu về chạy Offline

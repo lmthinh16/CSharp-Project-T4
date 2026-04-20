@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\github\\csharp-project-t4\\appprojectt4\\projectapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:projectapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\github\\csharp-project-t4\\appprojectt4\\restaurantdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:restaurantdetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\github\\csharp-project-t4\\appprojectt4\\mappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\github\\csharp-project-t4\\appprojectt4\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectApp",
+              "DocumentMoniker": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\ProjectApp.csproj",
+              "RelativeDocumentMoniker": "ProjectApp.csproj",
+              "ToolTip": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\ProjectApp.csproj",
+              "RelativeToolTip": "ProjectApp.csproj",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAUAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-15T02:18:51.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestaurantDetails.xaml",
+              "DocumentMoniker": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\RestaurantDetails.xaml",
+              "RelativeDocumentMoniker": "RestaurantDetails.xaml",
+              "ToolTip": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\RestaurantDetails.xaml",
+              "RelativeToolTip": "RestaurantDetails.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T02:18:11.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapPage.xaml",
+              "DocumentMoniker": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\MapPage.xaml",
+              "RelativeDocumentMoniker": "MapPage.xaml",
+              "ToolTip": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\MapPage.xaml",
+              "RelativeToolTip": "MapPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T01:37:04.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\github\\CSharp-Project-T4\\AppProjectT4\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T01:35:35.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

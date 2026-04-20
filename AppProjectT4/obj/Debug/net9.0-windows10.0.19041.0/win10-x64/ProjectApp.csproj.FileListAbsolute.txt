@@ -1,0 +1,12 @@
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ProjectApp.csproj.AssemblyReference.cache
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+D:\github\CSharp-Project-T4\AppProjectT4\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ProjectApp.GeneratedMSBuildEditorConfig.editorconfig

@@ -1,0 +1,17 @@
+images\bo_la_lot;images\bo_la_lot
+images\bun_ca;images\bun_ca
+images\bun_thit_nuong;images\bun_thit_nuong
+images\com_chay_kho_quet;images\com_chay_kho_quet
+images\chili;images\chili
+images\dotnet_bot;images\dotnet_bot
+images\lang;images\lang
+images\oc_oanh;images\oc_oanh
+images\oc_sau_no;images\oc_sau_no
+images\oc_thao;images\oc_thao
+images\ot_xiem;images\ot_xiem
+images\tgbo;images\tgbo
+images\tour_dacssan;images\tour_dacssan
+images\tour_nuong;images\tour_nuong
+images\tour_oc;images\tour_oc
+images\tour_vat;images\tour_vat
+raw\aboutassets;raw\AboutAssets

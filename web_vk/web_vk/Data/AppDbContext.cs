@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
     public DbSet<Audio> Audios { get; set; }
     public DbSet<Tour> Tours { get; set; }
     public DbSet<TourDetail> TourDetails { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Khai báo khóa chính kép cho TourDetails dựa trên file SQL của bạn

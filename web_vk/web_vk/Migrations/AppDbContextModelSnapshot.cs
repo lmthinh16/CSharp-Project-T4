@@ -29,6 +29,18 @@ namespace web_vk.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastActiveAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -60,6 +72,10 @@ namespace web_vk.Migrations
 
                     b.Property<bool>("IsGeneratedByTTS")
                         .HasColumnType("bit");
+
+                    b.Property<string>("LanguageCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("RestaurantId")
                         .HasColumnType("int");
@@ -120,6 +136,9 @@ namespace web_vk.Migrations
                     b.Property<string>("OpenHours")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double?>("Radius")
+                        .HasColumnType("float");
+
                     b.Property<double?>("Rating")
                         .HasColumnType("float");
 
@@ -128,13 +147,86 @@ namespace web_vk.Migrations
                     b.ToTable("Restaurants");
                 });
 
+            modelBuilder.Entity("web_vk.Models.Tour", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TotalEstimatedTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tours");
+                });
+
+            modelBuilder.Entity("web_vk.Models.TourDetail", b =>
+                {
+                    b.Property<int>("TourId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderIndex")
+                        .HasColumnType("int");
+
+                    b.HasKey("TourId", "RestaurantId");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.ToTable("TourDetails");
+                });
+
             modelBuilder.Entity("web_vk.Models.Audio", b =>
                 {
                     b.HasOne("web_vk.Models.Restaurant", "Restaurant")
-                        .WithMany()
+                        .WithMany("Audios")
                         .HasForeignKey("RestaurantId");
 
                     b.Navigation("Restaurant");
+                });
+
+            modelBuilder.Entity("web_vk.Models.TourDetail", b =>
+                {
+                    b.HasOne("web_vk.Models.Restaurant", "Restaurant")
+                        .WithMany()
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("web_vk.Models.Tour", "Tour")
+                        .WithMany("TourDetails")
+                        .HasForeignKey("TourId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Restaurant");
+
+                    b.Navigation("Tour");
+                });
+
+            modelBuilder.Entity("web_vk.Models.Restaurant", b =>
+                {
+                    b.Navigation("Audios");
+                });
+
+            modelBuilder.Entity("web_vk.Models.Tour", b =>
+                {
+                    b.Navigation("TourDetails");
                 });
 #pragma warning restore 612, 618
         }
