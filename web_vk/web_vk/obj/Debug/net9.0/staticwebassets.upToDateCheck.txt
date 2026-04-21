@@ -101,7 +101,6 @@ wwwroot\uploads\images\c9898e45-080e-414b-a745-be2b39ad1e72.jpg
 wwwroot\uploads\images\ee5cf5c3-2231-48a3-9c77-454d4d7dce54.jpg
 D:\web_vk\web_vk\wwwroot\css\site.css
 D:\web_vk\web_vk\wwwroot\favicon.ico
-D:\web_vk\web_vk\wwwroot\js\map.js
 D:\web_vk\web_vk\wwwroot\js\site.js
 D:\web_vk\web_vk\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 D:\web_vk\web_vk\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -162,3 +161,4 @@ D:\web_vk\web_vk\wwwroot\lib\jquery\dist\jquery.slim.js
 D:\web_vk\web_vk\wwwroot\lib\jquery\dist\jquery.slim.min.js
 D:\web_vk\web_vk\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\web_vk\web_vk\wwwroot\lib\jquery\LICENSE.txt
+D:\web_vk\web_vk\wwwroot\js\map.js

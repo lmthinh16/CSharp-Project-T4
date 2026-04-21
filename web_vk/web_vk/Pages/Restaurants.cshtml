@@ -7,16 +7,16 @@
  Model.list.Select(r => new
  {
      id = r.Id,
-     name = r.Name,
-     address = r.Address,
-     description = r.Description,
-     lat = r.Lat,
-     lng = r.Lng,
-     radius = r.Radius,
-     openHours = r.OpenHours,
-     rating = r.Rating,
-     imagePath = r.ImagePath,
-     audioPath = r.AudioPath
+     name = r.Name ?? "",
+     address = r.Address ?? "",
+     description = r.Description ?? "",
+     lat = r.Lat ?? 0,
+     lng = r.Lng ?? 0,
+     radius = r.Radius ?? 50,
+     openHours = r.OpenHours ?? "",
+     rating = r.Rating ?? 0,
+     imagePath = r.ImagePath ?? "",
+     audioPath = r.AudioPath ?? ""   // ← thêm ?? ""
  })
 );
 }
@@ -738,12 +738,7 @@
                 <span class="nav-icon">👥</span> Quản lý User
             </a>
         </div>
-        <div class="nav-section">
-            <div class="nav-label">Phân tích</div>
-            <a href="#" class="nav-link">
-                <span class="nav-icon">🕐</span> Lịch sử sử dụng
-            </a>
-        </div>
+       
 
         <div class="sidebar-footer">
             <div class="user-row">

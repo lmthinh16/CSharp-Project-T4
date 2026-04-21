@@ -23,13 +23,14 @@ namespace web_vk.Pages
 
         public async Task OnGetAsync()
         {
-            // Lấy dữ liệu và nắn dòng tọa độ hiển thị để bản đồ không bị lỗi khi thấy số E+16
             var rawData = await _context.Restaurants.AsNoTracking().ToListAsync();
-            list = rawData.Select(r => {
-                r.Lat = FixDisplayCoord(r.Lat, "lat");
-                r.Lng = FixDisplayCoord(r.Lng, "lng");
-                return r;
-            }).ToList();
+            list = rawData
+                .Where(r => r.Name != null && r.Address != null)
+                .Select(r => {
+                    r.Lat = FixDisplayCoord(r.Lat, "lat");
+                    r.Lng = FixDisplayCoord(r.Lng, "lng");
+                    return r;
+                }).ToList();
         }
 
         public async Task<IActionResult> OnPostCreateAsync(
@@ -37,10 +38,10 @@ namespace web_vk.Pages
             string name,
             string address,
             string description,
-            string lat, // Chuyển sang string để xử lý dấu phẩy/chấm thủ công
-            string lng, // Chuyển sang string để xử lý dấu phẩy/chấm thủ công
+            string? lat, // Chuyển sang string để xử lý dấu phẩy/chấm thủ công
+            string? lng, // Chuyển sang string để xử lý dấu phẩy/chấm thủ công
             double? radius,
-            string openHours,
+            string? openHours,
             double? rating,
             IFormFile image)
         {

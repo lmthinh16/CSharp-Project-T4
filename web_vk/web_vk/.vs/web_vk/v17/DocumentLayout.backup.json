@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "D:\\web_vk\\web_vk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\translations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\translations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\restaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -75,6 +43,10 @@
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -83,24 +55,56 @@
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\web_vk\\web_vk\\models\\tourdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,63 +186,257 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Controllers\\Class.cs",
-              "RelativeDocumentMoniker": "Controllers\\Class.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Controllers\\Class.cs*",
-              "RelativeToolTip": "Controllers\\Class.cs*",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAgwKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T23:56:17.496Z",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml*",
+              "RelativeToolTip": "Pages\\Index.cshtml*",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAAAMUBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T02:34:16.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RestaurantsController.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RestaurantsController.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs*",
-              "RelativeToolTip": "Controllers\\RestaurantsController.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwGkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T23:55:04.552Z",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAiwDMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T02:38:04.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T17:16:33.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Restaurants.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml*",
+              "RelativeToolTip": "Pages\\Restaurants.cshtml*",
+              "ViewState": "AgIAANwCAAAAAAAAAIAwwOQCAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T03:07:15.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tours.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Tours.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml*",
+              "RelativeToolTip": "Pages\\Tours.cshtml*",
+              "ViewState": "AgIAAC0DAAAAAAAAAAAIwDkDAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T22:18:23.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Translations.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Translations.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Translations.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Translations.cshtml*",
+              "RelativeToolTip": "Pages\\Translations.cshtml*",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAIwIwBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T15:21:53.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserManager.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\UserManager.cshtml",
+              "RelativeDocumentMoniker": "Pages\\UserManager.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\UserManager.cshtml*",
+              "RelativeToolTip": "Pages\\UserManager.cshtml*",
+              "ViewState": "AgIAAAwDAAAAAAAAAIAwwBcDAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-19T17:13:39.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tours.cshtml.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Tours.cshtml.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
+              "RelativeToolTip": "Pages\\Tours.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T22:18:43.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T15:34:37.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Dashboard.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Dashboard.cshtml*",
+              "RelativeToolTip": "Pages\\Dashboard.cshtml*",
+              "ViewState": "AgIAAJsBAAAAAAAAAAAiwKoBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T03:02:34.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Audio.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Audio.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Audio.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Audio.cshtml*",
+              "RelativeToolTip": "Pages\\Audio.cshtml*",
+              "ViewState": "AgIAAEcCAAAAAAAAAAAYwFICAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-07T17:50:45.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T03:04:48.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T03:04:45.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T04:40:05.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "DTOs.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\DTOs\\DTOs.cs",
               "RelativeDocumentMoniker": "DTOs\\DTOs.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\DTOs\\DTOs.cs*",
-              "RelativeToolTip": "DTOs\\DTOs.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\web_vk\\web_vk\\DTOs\\DTOs.cs",
+              "RelativeToolTip": "DTOs\\DTOs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-19T23:52:11.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "Pages\\Login.cshtml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwBcAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RestaurantsController.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T02:38:40.064Z",
+              "WhenOpened": "2026-04-19T23:55:04.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T00:34:50.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Models\\Restaurant.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Models\\Restaurant.cs",
+              "RelativeToolTip": "Models\\Restaurant.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:32:00.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Restaurants.cshtml.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
+              "RelativeToolTip": "Pages\\Restaurants.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T03:24:32.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "UserManager.cshtml.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\UserManager.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\UserManager.cshtml.cs",
@@ -250,82 +448,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Restaurants.cshtml.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
-              "RelativeToolTip": "Pages\\Restaurants.cshtml.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAQwKoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T03:24:32.448Z",
+              "WhenOpened": "2026-04-12T02:38:40.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Restaurant.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\Restaurant.cs",
-              "RelativeDocumentMoniker": "Models\\Restaurant.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Models\\Restaurant.cs*",
-              "RelativeToolTip": "Models\\Restaurant.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBUAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T04:32:00.062Z",
+              "WhenOpened": "2026-04-20T17:32:39.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "Class.cs",
+              "DocumentMoniker": "D:\\web_vk\\web_vk\\Controllers\\Class.cs",
+              "RelativeDocumentMoniker": "Controllers\\Class.cs",
+              "ToolTip": "D:\\web_vk\\web_vk\\Controllers\\Class.cs",
+              "RelativeToolTip": "Controllers\\Class.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwKkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T00:34:50.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T23:56:17.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserManager.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\UserManager.cshtml",
-              "RelativeDocumentMoniker": "Pages\\UserManager.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\UserManager.cshtml",
-              "RelativeToolTip": "Pages\\UserManager.cshtml",
-              "ViewState": "AgIAAKIDAAAAAAAAAAAnwK8DAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T17:13:39.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Translations.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Translations.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Translations.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Translations.cshtml",
-              "RelativeToolTip": "Pages\\Translations.cshtml",
-              "ViewState": "AgIAAIIBAAAAAAAAAAAIwIkBAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T15:21:53.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Tours.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Tours.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml",
-              "RelativeToolTip": "Pages\\Tours.cshtml",
-              "ViewState": "AgIAACoDAAAAAAAAAAAIwDgDAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T22:18:23.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -337,103 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Restaurants.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Restaurants.cshtml",
-              "RelativeToolTip": "Pages\\Restaurants.cshtml",
-              "ViewState": "AgIAANACAAAAAAAAAAAIwOMCAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T03:07:15.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
-              "RelativeToolTip": "Pages\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-19T17:16:33.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAYCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T02:34:16.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Error.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Error.cshtml",
-              "RelativeToolTip": "Pages\\Error.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T15:34:37.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Dashboard.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Dashboard.cshtml",
-              "RelativeToolTip": "Pages\\Dashboard.cshtml",
-              "ViewState": "AgIAALABAAAAAAAAAAAiwKkBAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T03:02:34.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T03:04:48.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T03:04:45.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Login.cshtml",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAiwDMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T02:38:04.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "OnlineTrackerMiddleware.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Middleware\\OnlineTrackerMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\OnlineTrackerMiddleware.cs",
@@ -445,43 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Tours.cshtml.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Tours.cshtml.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
-              "RelativeToolTip": "Pages\\Tours.cshtml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T22:18:43.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Audio.cshtml",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Audio.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Audio.cshtml",
-              "ToolTip": "D:\\web_vk\\web_vk\\Pages\\Audio.cshtml",
-              "RelativeToolTip": "Pages\\Audio.cshtml",
-              "ViewState": "AgIAAFMCAAAAAAAAAAAYwGMCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-07T17:50:45.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\web_vk\\web_vk\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "D:\\web_vk\\web_vk\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T04:40:05.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Tour.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\Tour.cs",
               "RelativeDocumentMoniker": "Models\\Tour.cs",
@@ -493,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "TourDetail.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\TourDetail.cs",
               "RelativeDocumentMoniker": "Models\\TourDetail.cs",
@@ -505,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Dashboard.cshtml.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Dashboard.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Dashboard.cshtml.cs",
@@ -517,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Addrestaurantlatlng migration.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Services\\Addrestaurantlatlng migration.cs",
               "RelativeDocumentMoniker": "Services\\Addrestaurantlatlng migration.cs",
@@ -529,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Audio.cshtml.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Audio.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Audio.cshtml.cs",
@@ -541,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Translations.cshtml.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Pages\\Translations.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Translations.cshtml.cs",
@@ -553,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Audio.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Models\\Audio.cs",
               "RelativeDocumentMoniker": "Models\\Audio.cs",
@@ -565,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "map.js",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\wwwroot\\js\\map.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\map.js",
@@ -577,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "site.js",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -589,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "20260414094858_AddRestaurantFields.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Migrations\\20260414094858_AddRestaurantFields.cs",
               "RelativeDocumentMoniker": "Migrations\\20260414094858_AddRestaurantFields.cs",
@@ -601,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "20260408043419_UpdateAudioRelationship.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Migrations\\20260408043419_UpdateAudioRelationship.cs",
               "RelativeDocumentMoniker": "Migrations\\20260408043419_UpdateAudioRelationship.cs",
@@ -613,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "20260412044419_InitDB.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Migrations\\20260412044419_InitDB.cs",
               "RelativeDocumentMoniker": "Migrations\\20260412044419_InitDB.cs",
@@ -625,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "20260414100007_FixModelSync.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Migrations\\20260414100007_FixModelSync.cs",
               "RelativeDocumentMoniker": "Migrations\\20260414100007_FixModelSync.cs",
@@ -637,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -649,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "EdgeTextToSpeechService.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Services\\EdgeTextToSpeechService.cs",
               "RelativeDocumentMoniker": "Services\\EdgeTextToSpeechService.cs",
@@ -661,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ElevenLabsService.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Services\\ElevenLabsService.cs",
               "RelativeDocumentMoniker": "Services\\ElevenLabsService.cs",
@@ -673,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "TtsController.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Services\\TtsController.cs",
               "RelativeDocumentMoniker": "Services\\TtsController.cs",
@@ -685,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "TextToSpeechService.cs",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\Services\\TextToSpeechService.cs",
               "RelativeDocumentMoniker": "Services\\TextToSpeechService.cs",
@@ -697,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "xin ch\u00E0o b\u1EA1n",
               "DocumentMoniker": "D:\\web_vk\\web_vk\\xin ch\u00E0o b\u1EA1n",
               "RelativeDocumentMoniker": "xin ch\u00E0o b\u1EA1n",

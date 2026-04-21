@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using web_vk.DTOs;
+using web_vk.Models;
 
 namespace web_vk.Controllers
 {
@@ -16,20 +17,24 @@ namespace web_vk.Controllers
         public async Task<IActionResult> GetAll()
         {
             var list = await _context.Restaurants
-                .Where(r => r.IsActive)
-                .OrderBy(r => r.Priority)
+                // Sửa lỗi logic: dùng == true cho kiểu bool?
+                .Where(r => r.IsActive == true)
+                // Sửa lỗi logic: xử lý nếu Priority bị NULL
+                .OrderBy(r => r.Priority ?? 0)
                 .Select(r => new RestaurantDto
                 {
                     Id = r.Id,
-                    Name = r.Name,
-                    Address = r.Address,
+                    Name = r.Name ?? "N/A",
+                    Address = r.Address ?? "N/A",
                     Description = r.Description,
                     Lat = r.Lat,
                     Lng = r.Lng,
                     OpenHours = r.OpenHours,
                     Rating = r.Rating,
                     ImagePath = r.ImagePath,
-                    Radius = r.Radius
+                    Radius = r.Radius ?? 50,
+                    // Ép kiểu tường minh bool? sang bool cho DTO nếu cần
+                    IsActive = r.IsActive ?? false
                 })
                 .ToListAsync();
 
@@ -49,19 +54,20 @@ namespace web_vk.Controllers
             var dto = new RestaurantDto
             {
                 Id = r.Id,
-                Name = r.Name,
-                Address = r.Address,
+                Name = r.Name ?? "N/A",
+                Address = r.Address ?? "N/A",
                 Description = r.Description,
                 Lat = r.Lat,
                 Lng = r.Lng,
                 OpenHours = r.OpenHours,
                 Rating = r.Rating,
                 ImagePath = r.ImagePath,
-                Radius = r.Radius,
+                Radius = r.Radius ?? 50,
+                IsActive = r.IsActive ?? false,
                 Audios = r.Audios.Select(a => new AudioDto
                 {
                     Id = a.Id,
-                    Title = a.Title,
+                    Title = a.Title ?? "No Title",
                     TextContent = a.TextContent,
                     LanguageCode = a.LanguageCode
                 }).ToList()
@@ -74,26 +80,27 @@ namespace web_vk.Controllers
         [HttpGet("nearby")]
         public async Task<IActionResult> GetNearby(double lat, double lng)
         {
-            // Trả về tất cả địa điểm có tọa độ, app tự tính khoảng cách
             var list = await _context.Restaurants
-                .Where(r => r.IsActive && r.Lat != null && r.Lng != null)
+                // Sửa lỗi logic && giữa bool? và bool
+                .Where(r => r.IsActive == true && r.Lat != null && r.Lng != null)
                 .Include(r => r.Audios)
                 .Select(r => new RestaurantDto
                 {
                     Id = r.Id,
-                    Name = r.Name,
-                    Address = r.Address,
+                    Name = r.Name ?? "N/A",
+                    Address = r.Address ?? "N/A",
                     Description = r.Description,
                     Lat = r.Lat,
                     Lng = r.Lng,
                     OpenHours = r.OpenHours,
                     Rating = r.Rating,
                     ImagePath = r.ImagePath,
-                    Radius = r.Radius,
+                    Radius = r.Radius ?? 50,
+                    IsActive = r.IsActive ?? false,
                     Audios = r.Audios.Select(a => new AudioDto
                     {
                         Id = a.Id,
-                        Title = a.Title,
+                        Title = a.Title ?? "No Title",
                         TextContent = a.TextContent,
                         LanguageCode = a.LanguageCode
                     }).ToList()
