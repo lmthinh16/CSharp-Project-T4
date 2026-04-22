@@ -1,0 +1,744 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\restaurants.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\translations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\translations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\tours.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\restaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\restaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\audio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:dtos\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:controllers\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\usermanager.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:middleware\\onlinetrackermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\models\\tourdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\tourdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\translations.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\translations.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\pages\\audio.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:pages\\audio.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\models\\audio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:models\\audio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\services\\addrestaurantlatlng migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:services\\addrestaurantlatlng migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\migrations\\20260414094858_addrestaurantfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:migrations\\20260414094858_addrestaurantfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\migrations\\20260408043419_updateaudiorelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:migrations\\20260408043419_updateaudiorelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\migrations\\20260414100007_fixmodelsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:migrations\\20260414100007_fixmodelsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\migrations\\20260412044419_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:migrations\\20260412044419_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\services\\edgetexttospeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:services\\edgetexttospeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\services\\texttospeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:services\\texttospeechservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\services\\ttscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:services\\ttscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\services\\elevenlabsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:services\\elevenlabsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|d:\\c#\\v2\\projectappv2\\web_vk\\web_vk\\xin ch\u00E0o b\u1EA1n||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8429131C-E042-E89E-C01A-A25CC75EBBC1}|web_vk.csproj|solutionrelative:xin ch\u00E0o b\u1EA1n||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T23:12:14.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tours.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Tours.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Tours.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Tours.cshtml",
+              "RelativeToolTip": "Pages\\Tours.cshtml",
+              "ViewState": "AgIAAC0DAAAAAAAAAAAIwDkDAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Restaurants.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Restaurants.cshtml.cs",
+              "RelativeToolTip": "Pages\\Restaurants.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Restaurants.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Restaurants.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Restaurants.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Restaurants.cshtml",
+              "RelativeToolTip": "Pages\\Restaurants.cshtml",
+              "ViewState": "AgIAANwCAAAAAAAAAIAwwOQCAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Translations.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Translations.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Translations.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Translations.cshtml",
+              "RelativeToolTip": "Pages\\Translations.cshtml",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAIwIwBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserManager.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\UserManager.cshtml",
+              "RelativeDocumentMoniker": "Pages\\UserManager.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\UserManager.cshtml",
+              "RelativeToolTip": "Pages\\UserManager.cshtml",
+              "ViewState": "AgIAAAwDAAAAAAAAAIAwwBcDAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tours.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Tours.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Tours.cshtml.cs",
+              "RelativeToolTip": "Pages\\Tours.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAWwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-21T18:17:48.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Login.cshtml",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAiwDMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAAAMUBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Dashboard.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Dashboard.cshtml",
+              "RelativeToolTip": "Pages\\Dashboard.cshtml",
+              "ViewState": "AgIAAJsBAAAAAAAAAAAiwKoBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Audio.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Audio.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Audio.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Audio.cshtml",
+              "RelativeToolTip": "Pages\\Audio.cshtml",
+              "ViewState": "AgIAAEcCAAAAAAAAAAAYwFICAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T18:17:40.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DTOs.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\DTOs\\DTOs.cs",
+              "RelativeDocumentMoniker": "DTOs\\DTOs.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\DTOs\\DTOs.cs",
+              "RelativeToolTip": "DTOs\\DTOs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RestaurantsController.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Models\\Restaurant.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Restaurant.cs",
+              "RelativeToolTip": "Models\\Restaurant.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserManager.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\UserManager.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\UserManager.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\UserManager.cshtml.cs",
+              "RelativeToolTip": "Pages\\UserManager.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Class.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Controllers\\Class.cs",
+              "RelativeDocumentMoniker": "Controllers\\Class.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Controllers\\Class.cs",
+              "RelativeToolTip": "Controllers\\Class.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OnlineTrackerMiddleware.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Middleware\\OnlineTrackerMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\OnlineTrackerMiddleware.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Middleware\\OnlineTrackerMiddleware.cs",
+              "RelativeToolTip": "Middleware\\OnlineTrackerMiddleware.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Tour.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Tour.cs",
+              "RelativeDocumentMoniker": "Models\\Tour.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Tour.cs",
+              "RelativeToolTip": "Models\\Tour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TourDetail.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\TourDetail.cs",
+              "RelativeDocumentMoniker": "Models\\TourDetail.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\TourDetail.cs",
+              "RelativeToolTip": "Models\\TourDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Dashboard.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Dashboard.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboard.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Dashboard.cshtml.cs",
+              "RelativeToolTip": "Pages\\Dashboard.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Addrestaurantlatlng migration.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\Addrestaurantlatlng migration.cs",
+              "RelativeDocumentMoniker": "Services\\Addrestaurantlatlng migration.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\Addrestaurantlatlng migration.cs",
+              "RelativeToolTip": "Services\\Addrestaurantlatlng migration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Audio.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Audio.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Audio.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Audio.cshtml.cs",
+              "RelativeToolTip": "Pages\\Audio.cshtml.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAQwIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Translations.cshtml.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Translations.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Translations.cshtml.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Pages\\Translations.cshtml.cs",
+              "RelativeToolTip": "Pages\\Translations.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Audio.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Audio.cs",
+              "RelativeDocumentMoniker": "Models\\Audio.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Models\\Audio.cs",
+              "RelativeToolTip": "Models\\Audio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA8wBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "map.js",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\wwwroot\\js\\map.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\map.js",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\wwwroot\\js\\map.js",
+              "RelativeToolTip": "wwwroot\\js\\map.js",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwG8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-21T18:17:40.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-21T18:17:40.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20260414094858_AddRestaurantFields.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260414094858_AddRestaurantFields.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260414094858_AddRestaurantFields.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260414094858_AddRestaurantFields.cs",
+              "RelativeToolTip": "Migrations\\20260414094858_AddRestaurantFields.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20260408043419_UpdateAudioRelationship.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260408043419_UpdateAudioRelationship.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408043419_UpdateAudioRelationship.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260408043419_UpdateAudioRelationship.cs",
+              "RelativeToolTip": "Migrations\\20260408043419_UpdateAudioRelationship.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20260412044419_InitDB.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260412044419_InitDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260412044419_InitDB.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260412044419_InitDB.cs",
+              "RelativeToolTip": "Migrations\\20260412044419_InitDB.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20260414100007_FixModelSync.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260414100007_FixModelSync.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260414100007_FixModelSync.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Migrations\\20260414100007_FixModelSync.cs",
+              "RelativeToolTip": "Migrations\\20260414100007_FixModelSync.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EdgeTextToSpeechService.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\EdgeTextToSpeechService.cs",
+              "RelativeDocumentMoniker": "Services\\EdgeTextToSpeechService.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\EdgeTextToSpeechService.cs",
+              "RelativeToolTip": "Services\\EdgeTextToSpeechService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ElevenLabsService.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\ElevenLabsService.cs",
+              "RelativeDocumentMoniker": "Services\\ElevenLabsService.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\ElevenLabsService.cs",
+              "RelativeToolTip": "Services\\ElevenLabsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TtsController.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\TtsController.cs",
+              "RelativeDocumentMoniker": "Services\\TtsController.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\TtsController.cs",
+              "RelativeToolTip": "Services\\TtsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "TextToSpeechService.cs",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\TextToSpeechService.cs",
+              "RelativeDocumentMoniker": "Services\\TextToSpeechService.cs",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\Services\\TextToSpeechService.cs",
+              "RelativeToolTip": "Services\\TextToSpeechService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T18:17:40.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "xin ch\u00E0o b\u1EA1n",
+              "DocumentMoniker": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\xin ch\u00E0o b\u1EA1n",
+              "RelativeDocumentMoniker": "xin ch\u00E0o b\u1EA1n",
+              "ToolTip": "D:\\C#\\v2\\ProjectAppv2\\web_vk\\web_vk\\xin ch\u00E0o b\u1EA1n",
+              "RelativeToolTip": "xin ch\u00E0o b\u1EA1n",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-21T18:17:40.478Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

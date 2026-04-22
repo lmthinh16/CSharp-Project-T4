@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+       <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApp.MapPage"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- Top nav -->
+        <Grid Grid.Row="0"
+              BackgroundColor="#16213E"
+              Padding="12,8"
+              ColumnDefinitions="*,44">
+
+            <Label Grid.Column="0"
+                   Text="🗺️ Bản đồ Vĩnh Khánh"
+                   FontSize="16" FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   VerticalOptions="Center"/>
+
+            <!-- Nút căn giữa về vị trí user -->
+            <Button Grid.Column="1"
+                    x:Name="BtnMyLocation"
+                    Text="📍"
+                    FontSize="18"
+                    BackgroundColor="#0F3460"
+                    TextColor="#4EA5D9"
+                    CornerRadius="8"
+                    Padding="0"/>
+        </Grid>
+
+        <!-- Bottom info bar: hiển thị tên nhà hàng gần nhất -->
+        <Border Grid.Row="2"
+                x:Name="NearestBar"
+                BackgroundColor="#0D1B2A"
+                Stroke="#1E6FA8"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 0"
+                Padding="14,10"
+                IsVisible="False">
+            <Grid ColumnDefinitions="*,Auto">
+                <VerticalStackLayout Grid.Column="0" Spacing="2">
+                    <Label Text="🎯 Gần nhất"
+                           FontSize="10" TextColor="#4EA5D9" FontAttributes="Bold"/>
+                    <Label x:Name="LblNearestName"
+                           FontSize="14" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                    <Label x:Name="LblNearestInfo"
+                           FontSize="11" TextColor="#6A7A9A"/>
+                </VerticalStackLayout>
+                <Button Grid.Column="1"
+                        x:Name="BtnViewDetail"
+                        Text="Chi tiết ›"
+                        FontSize="12"
+                        BackgroundColor="#1E6FA8"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Padding="12,6"
+                      />
+            </Grid>
+        </Border>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,522 @@
+﻿@page
+@model web_vk.Pages.TranslationsModel
+@{
+    Layout = null;
+    var username = HttpContext.Session.GetString("user") ?? "Admin";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiến độ đa ngữ – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        /* ═══ CSS GỐC CỦA DASHBOARD ═══ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --sidebar-bg: #13151f;
+            --sidebar-w: 260px;
+            --accent: #c9a84c;
+            --accent-hover: #b8923e;
+            --text-muted: #8a8a9a;
+            --header-h: 64px;
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0f1117;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            color: #e8e6df;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--sidebar-bg);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(201,168,76,.12);
+        }
+
+        .sidebar-brand {
+            padding: 22px 20px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(201,168,76,.12);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .brand-text .name {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .brand-text .role {
+            font-size: 10px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .nav-section {
+            padding: 20px 12px 6px;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0 10px 8px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: #a89878;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.15s;
+        }
+
+            .nav-link:hover {
+                background: rgba(255,255,255,.07);
+                color: #fff;
+            }
+
+            .nav-link.active {
+                background: var(--accent);
+                color: #fff;
+            }
+
+        .nav-icon {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding: 12px;
+            border-top: 1px solid rgba(201,168,76,.12);
+        }
+
+        .user-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.05);
+            margin-bottom: 8px;
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .uname {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .logout-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.05);
+            border: none;
+            cursor: pointer;
+            color: #c3cde6;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            height: var(--header-h);
+            background: #13151f;
+            border-bottom: 1px solid rgba(201,168,76,.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            flex-shrink: 0;
+        }
+
+            .topbar h1 {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px;
+        }
+
+        /* ═══ TRANSLATION CUSTOM CSS ═══ */
+        .res-card {
+            background: #13151f;
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(201,168,76,.1);
+            box-shadow: 0 1px 4px rgba(0,0,0,.3);
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .res-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .res-addr {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .progress-bg {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            transition: width 0.8s ease;
+        }
+
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-item {
+            padding: 15px 10px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1.5px solid rgba(255,255,255,0.03);
+            background: rgba(255,255,255,0.02);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+            .lang-item:hover {
+                transform: translateY(-3px);
+                border-color: var(--accent);
+                background: rgba(201,168,76,0.05);
+            }
+
+            .lang-item.active {
+                background: rgba(34,197,94,0.08);
+                border-color: rgba(34,197,94,0.2);
+            }
+
+            .lang-item.empty {
+                opacity: 0.5;
+                border-style: dashed;
+            }
+
+        .flag {
+            font-size: 22px;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .lang-name {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .status-icon {
+            font-size: 12px;
+            margin-top: 6px;
+            display: block;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #13151f;
+            padding: 30px;
+            border-radius: 16px;
+            width: 450px;
+            border: 1px solid var(--accent);
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--accent);
+            text-align: center;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn-modal {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 13px;
+        }
+
+        .btn-edit {
+            background: var(--accent);
+            color: #000;
+        }
+
+        .btn-del {
+            background: rgba(239,68,68,0.1);
+            color: #ef4444;
+            border: 1px solid #ef4444;
+        }
+
+        .btn-cancel {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid #333;
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">✈</div>
+            <div class="brand-text">
+                <div class="name">Vĩnh Khánh</div>
+                <div class="role">Admin Dashboard</div>
+            </div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Tổng quan</div>
+            <a href="/Dashboard" class="nav-link"><span class="nav-icon">⊞</span> Tổng quan</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Quản lý nội dung</div>
+            <a href="/Restaurants" class="nav-link"><span class="nav-icon">📍</span> Quản lý địa điểm</a>
+            <a href="/Tours" class="nav-link"><span class="nav-icon">🔀</span> Quản lý Tour</a>
+            <a href="/Audio" class="nav-link"><span class="nav-icon">🎧</span> Quản lý Audio</a>
+            <a href="/Translations" class="nav-link active"><span class="nav-icon">🌐</span> Bản dịch đa ngữ</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Người dùng</div>
+            <a href="/UserManager" class="nav-link">
+                <span class="nav-icon">👥</span> Quản lý User
+            </a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Phân tích</div>
+           
+        </div>
+        <div class="sidebar-footer">
+            <div class="user-row">
+                <div class="avatar">@username[0].ToString().ToUpper()</div>
+                <div class="user-info">
+                    <div class="uname">@username</div>
+                    <div class="urole">Super Admin</div>
+                </div>
+            </div>
+            <a href="/Login" class="logout-btn">
+                <span>↪</span> Đăng xuất
+            </a>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <h1>🌐 Tiến độ phủ sóng đa ngữ</h1>
+            <a href="/Audio" style="background: var(--accent); color: #000; text-decoration: none; padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 700;">+ Thêm mới</a>
+        </header>
+
+        <div class="content">
+            @if (TempData["Success"] != null)
+            {
+                <div style="background:rgba(34,197,94,0.1); border:1px solid #16a34a; color:#16a34a; padding:12px; border-radius:8px; margin-bottom:20px;">✅ @TempData["Success"]</div>
+            }
+
+            <div class="list">
+                @foreach (var res in Model.RestaurantGroups)
+                {
+                    <div class="res-card">
+                        <div class="res-header">
+                            <div>
+                                <div class="res-name">📍 @res.Name</div>
+                                <div class="res-addr">@res.Address</div>
+                            </div>
+                            <div style="text-align: right">
+                                <span style="font-size: 20px; font-weight: 800; color: @res.StatusColor">@res.Progress%</span>
+                            </div>
+                        </div>
+
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: @res.Progress%; background: @res.StatusColor"></div>
+                        </div>
+
+                        <div class="lang-grid">
+                            @foreach (var lang in Model.AvailableLanguages)
+                            {
+                                var script = Model.FullScripts.FirstOrDefault(s => s.RestaurantId == res.Id && s.LanguageCode == lang.Code);
+                                <div class="lang-item @(script != null ? "active" : "empty")"
+                                     onclick="handleAction('@lang.Code', '@lang.Name', '@res.Id', '@res.Name', '@(script?.Id ?? 0)')">
+                                    <span class="flag">@lang.Flag</span>
+                                    <span class="lang-name">@lang.Name.Split(' ')[1]</span>
+                                    <span class="status-icon">@(script != null ? "✅" : "❌")</span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="actionModal">
+        <div class="modal-content">
+            <div class="modal-title" id="mTitle">Ngôn ngữ</div>
+            <p id="mInfo" style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 20px;"></p>
+
+            <div class="btn-group" id="btnGroupExist" style="display:none;">
+                <button class="btn-modal btn-edit" onclick="goToEdit()">✏️ Sửa kịch bản</button>
+                <form method="post" asp-page-handler="Delete" id="delForm" style="flex:1">
+                    <input type="hidden" name="id" id="delId" />
+                    <button type="submit" class="btn-modal btn-del" onclick="return confirm('Xóa kịch bản này?')">🗑 Xóa</button>
+                </form>
+            </div>
+
+            <div class="btn-group" id="btnGroupEmpty" style="display:none;">
+                <button class="btn-modal btn-edit" style="width:100%" onclick="goToAdd()">➕ Thêm kịch bản mới</button>
+            </div>
+
+            <button class="btn-modal btn-cancel" onclick="closeModal()">Hủy bỏ</button>
+        </div>
+    </div>
+
+    <script>
+        let currentData = {};
+
+        function handleAction(lCode, lName, rId, rName, sId) {
+            currentData = { lCode, lName, rId, rName, sId };
+            const modal = document.getElementById('actionModal');
+            const btnExist = document.getElementById('btnGroupExist');
+            const btnEmpty = document.getElementById('btnGroupEmpty');
+
+            document.getElementById('mTitle').innerText = lName;
+            document.getElementById('mInfo').innerText = rName;
+
+            if (sId > 0) {
+                document.getElementById('delId').value = sId;
+                btnExist.style.display = 'flex';
+                btnEmpty.style.display = 'none';
+            } else {
+                btnExist.style.display = 'none';
+                btnEmpty.style.display = 'flex';
+            }
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() { document.getElementById('actionModal').style.display = 'none'; }
+
+        function goToEdit() {
+            window.location.href = `/Audio?id=${currentData.sId}&mode=edit`;
+        }
+
+        function goToAdd() {
+            // Logic thêm mới có thể truyền tham số để trang Audio tự chọn nhà hàng/ngôn ngữ
+            window.location.href = `/Audio?resId=${currentData.rId}&lang=${currentData.lCode}`;
+        }
+
+        // Đóng modal khi nhấn ra ngoài
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('actionModal')) closeModal();
+        }
+    </script>
+</body>
+</html>
