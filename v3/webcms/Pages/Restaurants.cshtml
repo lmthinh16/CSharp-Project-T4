@@ -1,0 +1,1140 @@
+﻿@page
+@model RestaurantsModel
+@{
+    Layout = null;
+    var username = HttpContext.Session.GetString("user") ?? "Admin";
+    var restaurantsJson = System.Text.Json.JsonSerializer.Serialize(
+ Model.list.Select(r => new
+ {
+     id = r.Id,
+     name = r.Name ?? "",
+     address = r.Address ?? "",
+     description = r.Description ?? "",
+     lat = r.Lat ?? 0,
+     lng = r.Lng ?? 0,
+     radius = r.Radius ?? 50,
+     openHours = r.OpenHours ?? "",
+     rating = r.Rating ?? 0,
+     imagePath = r.ImagePath ?? "",
+     audioPath = r.AudioPath ?? ""   // ← thêm ?? ""
+ })
+);
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bản đồ & Quản lý địa điểm – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --sidebar-bg: #13151f;
+            --sidebar-w: 260px;
+            --accent: #c9a84c;
+            --accent-hover: #b8923e;
+            --text-muted: #8a8a9a;
+            --header-h: 64px;
+            --radius: 10px;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0f1117;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* ─── SIDEBAR ─────────────────────────────────────── */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--sidebar-bg);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand {
+            padding: 22px 20px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(201,168,76,.12);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .brand-text {
+            line-height: 1.2;
+        }
+
+            .brand-text .name {
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            .brand-text .role {
+                font-size: 10px;
+                letter-spacing: .12em;
+                text-transform: uppercase;
+                color: var(--text-muted);
+            }
+
+        .nav-section {
+            padding: 20px 12px 6px;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0 10px 8px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: #c3cde6;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background .15s, color .15s;
+            position: relative;
+        }
+
+            .nav-link:hover {
+                background: rgba(255,255,255,.07);
+                color: #fff;
+            }
+
+            .nav-link.active {
+                background: var(--accent);
+                color: #fff;
+            }
+
+            .nav-link .badge {
+                margin-left: auto;
+                background: var(--accent);
+                color: #fff;
+                font-size: 11px;
+                font-weight: 700;
+                padding: 1px 7px;
+                border-radius: 99px;
+            }
+
+            .nav-link.active .badge {
+                background: rgba(255,255,255,.25);
+            }
+
+        .nav-icon {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding: 12px;
+            border-top: 1px solid rgba(201,168,76,.12);
+        }
+
+        .user-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 10px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.05);
+            margin-bottom: 8px;
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .user-info .uname {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .user-info .urole {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .logout-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.05);
+            border: none;
+            cursor: pointer;
+            color: #c3cde6;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background .15s;
+        }
+
+            .logout-btn:hover {
+                background: rgba(255,255,255,.1);
+                color: #fff;
+            }
+
+        /* ─── MAIN ────────────────────────────────────────── */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ─── HEADER ─────────────────────────────────────── */
+        .topbar {
+            height: var(--header-h);
+            background: #13151f;
+            border-bottom: 1px solid rgba(201,168,76,.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            flex-shrink: 0;
+        }
+
+            .topbar h1 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #e8e6df;
+            }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .status-pill {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #16a34a;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+        }
+
+        .search-wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+            .search-wrap input {
+                padding: 9px 14px 9px 36px;
+                border-radius: 8px;
+                width: 260px;
+                border: 1.5px solid rgba(201,168,76,.2);
+                background: rgba(255,255,255,.05);
+                color: #e8e6df;
+                font-size: 13px;
+                font-family: inherit;
+                outline: none;
+                transition: border-color .15s;
+            }
+
+                .search-wrap input:focus {
+                    border-color: var(--accent);
+                }
+
+                .search-wrap input::placeholder {
+                    color: #555;
+                }
+
+        .search-ico {
+            position: absolute;
+            left: 11px;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        .topbar-add-btn {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 18px;
+            border-radius: 8px;
+            background: var(--accent);
+            border: none;
+            cursor: pointer;
+            color: #0f1117;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: inherit;
+            box-shadow: 0 4px 14px rgba(201,168,76,.3);
+            transition: background .15s, transform .1s;
+        }
+
+            .topbar-add-btn:hover {
+                background: var(--accent-hover);
+                transform: translateY(-1px);
+            }
+
+        /* ─── MAP AREA ─────────────────────────────────── */
+        .map-wrapper {
+            display: flex;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #map {
+            flex: 3;
+            height: 100%;
+        }
+
+
+
+        /* ─── MAP CONTROLS ─────────────────────────────── */
+        .map-controls {
+            position: absolute;
+            bottom: 24px;
+            right: 16px;
+            z-index: 400;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .map-ctrl-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: #13151f;
+            border: 1px solid rgba(201,168,76,.25);
+            color: #e8e6df;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,.4);
+            transition: background .15s, border-color .15s, transform .1s;
+            font-family: inherit;
+        }
+
+            .map-ctrl-btn:hover {
+                background: rgba(201,168,76,.12);
+                border-color: var(--accent);
+                transform: scale(1.08);
+            }
+
+            .map-ctrl-btn.active {
+                background: var(--accent);
+                color: #0f1117;
+                border-color: var(--accent);
+            }
+
+        /* Popup nhập tọa độ */
+        .coord-popup {
+            position: absolute;
+            bottom: 24px;
+            right: 66px;
+            z-index: 400;
+            background: #13151f;
+            border: 1px solid rgba(201,168,76,.25);
+            border-radius: 12px;
+            padding: 16px;
+            width: 280px;
+            box-shadow: 0 8px 32px rgba(0,0,0,.5);
+            display: none;
+        }
+
+            .coord-popup.open {
+                display: block;
+            }
+
+        .coord-popup-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #e8e6df;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .coord-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+            .coord-row input {
+                flex: 1;
+                padding: 9px 10px;
+                border-radius: 7px;
+                border: 1.5px solid rgba(201,168,76,.2);
+                background: rgba(255,255,255,.05);
+                color: #e8e6df;
+                font-size: 12px;
+                font-family: inherit;
+                outline: none;
+                transition: border-color .15s;
+            }
+
+                .coord-row input:focus {
+                    border-color: var(--accent);
+                }
+
+                .coord-row input::placeholder {
+                    color: #444;
+                    font-size: 11px;
+                }
+
+        .coord-go-btn {
+            width: 100%;
+            padding: 9px;
+            border-radius: 7px;
+            border: none;
+            background: var(--accent);
+            color: #0f1117;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background .15s;
+        }
+
+            .coord-go-btn:hover {
+                background: var(--accent-hover);
+            }
+
+        /* ─── SIDE PANEL ────────────────────────────────── */
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 400px;
+            background: #13151f;
+            border-left: 1px solid rgba(201,168,76,.2);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform .3s cubic-bezier(.4,0,.2,1);
+            box-shadow: -8px 0 40px rgba(0,0,0,.5);
+            overflow: hidden;
+        }
+
+            .side-panel.open {
+                transform: translateX(0);
+            }
+
+        .panel-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(201,168,76,.15);
+            flex-shrink: 0;
+        }
+
+        .panel-head-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .panel-head-ico {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(201,168,76,.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .panel-head-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #e8e6df;
+        }
+
+        .panel-close {
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            border: 1px solid rgba(201,168,76,.2);
+            background: transparent;
+            color: #8a8a9a;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .15s, color .15s;
+        }
+
+            .panel-close:hover {
+                background: rgba(255,255,255,.07);
+                color: #fff;
+            }
+
+        .sec-hdr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(201,168,76,.1);
+            background: rgba(255,255,255,.02);
+            flex-shrink: 0;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e8e6df;
+        }
+
+        .panel-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+            max-height: calc(100vh - 140px);
+        }
+
+            .panel-body::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            .panel-body::-webkit-scrollbar-thumb {
+                background: rgba(201,168,76,.2);
+                border-radius: 2px;
+            }
+
+        .fg {
+            margin-bottom: 14px;
+        }
+
+            .fg label {
+                display: block;
+                font-size: 11px;
+                font-weight: 600;
+                color: #8a8a9a;
+                margin-bottom: 6px;
+                text-transform: uppercase;
+                letter-spacing: .07em;
+            }
+
+            .fg input, .fg textarea, .fg select {
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 8px;
+                border: 1.5px solid rgba(201,168,76,.2);
+                background: rgba(255,255,255,.05);
+                color: #e8e6df;
+                font-size: 13px;
+                font-family: inherit;
+                outline: none;
+                transition: border-color .15s;
+                resize: none;
+            }
+
+                .fg input:focus, .fg textarea:focus, .fg select:focus {
+                    border-color: var(--accent);
+                }
+
+                .fg input::placeholder, .fg textarea::placeholder {
+                    color: #444;
+                }
+
+                .fg input[readonly] {
+                    opacity: .65;
+                }
+
+                .fg select option {
+                    background: #1a1e2e;
+                    color: #e8e6df;
+                }
+
+        .row2 {
+            display: flex;
+            gap: 10px;
+        }
+
+            .row2 .fg {
+                flex: 1;
+            }
+
+        .img-upload {
+            border: 1.5px dashed rgba(201,168,76,.3);
+            border-radius: 10px;
+            padding: 22px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color .15s, background .15s;
+        }
+
+            .img-upload:hover {
+                border-color: var(--accent);
+                background: rgba(201,168,76,.04);
+            }
+
+        .img-upload-ico {
+            font-size: 26px;
+            margin-bottom: 6px;
+            opacity: .5;
+        }
+
+        .img-upload-txt {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e8e6df;
+            margin-bottom: 3px;
+        }
+
+        .img-upload-sub {
+            font-size: 11px;
+            color: #8a8a9a;
+        }
+
+        .panel-foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            border-top: 1px solid rgba(201,168,76,.15);
+            flex-shrink: 0;
+            position: sticky;
+            bottom: 0;
+            background: #13151f;
+            z-index: 10;
+        }
+
+        .btn-reset {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 9px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(201,168,76,.2);
+            background: transparent;
+            font-size: 13px;
+            font-weight: 600;
+            color: #8a8a9a;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background .15s;
+        }
+
+            .btn-reset:hover {
+                background: rgba(255,255,255,.05);
+                color: #e8e6df;
+            }
+
+        .btn-submit {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 22px;
+            border-radius: 8px;
+            border: none;
+            background: var(--accent);
+            color: #0f1117;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: inherit;
+            box-shadow: 0 4px 14px rgba(201,168,76,.3);
+            transition: background .15s;
+        }
+
+            .btn-submit:hover {
+                background: var(--accent-hover);
+            }
+    </style>
+</head>
+<body>
+
+    <!-- ═══ SIDEBAR ═══════════════════════════════════════════ -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">✈</div>
+            <div class="brand-text">
+                <div class="name">Vĩnh Khánh</div>
+                <div class="role">Admin Dashboard</div>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Tổng quan</div>
+            <a href="/Dashboard" class="nav-link">
+                <span class="nav-icon">⊞</span> Tổng quan
+            </a>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Quản lý nội dung</div>
+            <a href="/Restaurant" class="nav-link active">
+                <span class="nav-icon">📍</span> Quản lý địa điểm
+                <span class="badge">0</span>
+            </a>
+            <a href="/Tours" class="nav-link">
+                <span class="nav-icon">🔀</span> Quản lý Tour
+            </a>
+            <a href="/Audio" class="nav-link">
+                <span class="nav-icon">🎧</span> Quản lý Audio
+            </a>
+            <a href="/Translations" class="nav-link">
+                <span class="nav-icon">🌐</span> Bản dịch đa ngữ
+            </a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Người dùng</div>
+            <a href="/UserManager" class="nav-link">
+                <span class="nav-icon">👥</span> Quản lý User
+            </a>
+        </div>
+       
+
+        <div class="sidebar-footer">
+            <div class="user-row">
+                <div class="avatar">@username[0].ToString().ToUpper()</div>
+                <div class="user-info">
+                    <div class="uname">@username</div>
+                    <div class="urole">Super Admin</div>
+                </div>
+            </div>
+            <a href="/Login" class="logout-btn">
+                <span>↪</span> Đăng xuất
+            </a>
+        </div>
+    </aside>
+
+    <!-- ═══ MAIN ═══════════════════════════════════════════════ -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <h1>Bản đồ &amp; Quản lý địa điểm</h1>
+            <div class="topbar-right">
+                <div class="status-pill">
+                    <div class="status-dot"></div>
+                    Hệ thống đang hoạt động
+                </div>
+                <div class="search-wrap">
+                    <span class="search-ico">🔍</span>
+                    <input id="searchInput" placeholder="Tìm kiếm địa điểm..." />
+                </div>
+                <button class="topbar-add-btn" onclick="openPanel()">＋ Thêm điểm mới</button>
+            </div>
+        </header>
+
+        <!-- MAP -->
+        <div class="map-wrapper">
+            <div id="map"></div>
+
+            <!-- Controls góc phải bản đồ -->
+            <div class="map-controls">
+                <!-- Nút tọa độ -->
+                <button class="map-ctrl-btn" id="coordBtn" onclick="toggleCoordPopup()" title="Nhập tọa độ">
+                    ⊕
+                </button>
+                <!-- Nút vị trí hiện tại -->
+                <button class="map-ctrl-btn" id="locBtn" onclick="goToMyLocation()" title="Vị trí của tôi">
+                    ◎
+                </button>
+            </div>
+
+            <!-- Popup nhập tọa độ -->
+            <div class="coord-popup" id="coordPopup">
+                <div class="coord-popup-title">📍 Nhảy đến tọa độ</div>
+                <div class="coord-row">
+                    <input id="jumpLat" placeholder="Latitude (VD: 10.7615)" type="number" step="any" />
+                    <input id="jumpLng" placeholder="Longitude (VD: 106.703)" type="number" step="any" />
+                </div>
+                <button class="coord-go-btn" onclick="jumpToCoord()">→ Đến vị trí này</button>
+            </div>
+        </div>
+
+    </div><!-- end .main -->
+    <!-- Form xóa riêng (tránh form lồng nhau) -->
+    <form method="post" asp-page-handler="Delete" id="deleteForm" style="display:none">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" id="deleteId" />
+    </form>
+
+    <!-- ═══ SIDE PANEL ══════════════════════════════════════════ -->
+    <div class="side-panel" id="addPanel">
+        <div class="panel-head">
+            <div class="panel-head-left">
+                <div class="panel-head-ico">&#128205;</div>
+                <div class="panel-head-title">Tạo điểm mới</div>
+            </div>
+            <button type="button" class="panel-close" onclick="closePanel()">&#10005;</button>
+        </div>
+
+        <form method="post" asp-page-handler="Create" id="addForm" enctype="multipart/form-data">
+            <input type="hidden" name="id" id="inp-id" value="0" />
+            <div class="sec-hdr">
+                <span>&#9992; Vị trí &amp; Thông tin cơ bản</span>
+                <span style="font-size:11px;color:#8a8a9a">&#9650;</span>
+            </div>
+            <div class="panel-body">
+                <div class="row2">
+                    <div class="fg">
+                        <label>Latitude</label>
+                        <input name="lat" id="inp-lat" placeholder="10.7615000" type="number" step="any" />
+                    </div>
+                    <div class="fg">
+                        <label>Longitude</label>
+                        <input name="lng" id="inp-lng" placeholder="106.7033000" type="number" step="any" />
+                    </div>
+                </div>
+                <div style="margin-bottom:14px">
+                    <button type="button" onclick="rePin()"
+                            style="background:none;border:none;color:var(--accent);font-size:11px;font-family:inherit;cursor:pointer;padding:0">
+                        &#128205; Chọn lại vị trí trên bản đồ
+                    </button>
+                </div>
+                <div class="fg">
+                    <label>Địa chỉ chi tiết *</label>
+                    <input name="address" id="inp-addr" placeholder="Vĩnh Khánh, Phường 8, Quận 4" required />
+                </div>
+                <div class="row2">
+                    <div class="fg">
+                        <label>Bán kính geofence (m)</label>
+                        <input name="radius" placeholder="50" type="number" min="10" max="500" />
+                    </div>
+                    <div class="fg">
+                        <label>Rating &#11088;</label>
+                        <input name="rating" placeholder="4" type="number" min="1" max="5" step="0.1" />
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="fg">
+                        <label>Giờ mở cửa</label>
+                        <input name="openHours" placeholder="16:00 - 23:00" />
+                    </div>
+                    <div class="fg">
+                        <label>Danh mục</label>
+                        <select name="category">
+                            <option value="Quán ăn">Quán ăn</option>
+                            <option value="Cà phê">Cà phê</option>
+                            <option value="WC">WC</option>
+                            <option value="Bãi xe">Bãi xe</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fg">
+                    <label>Tên địa điểm *</label>
+                    <input name="name" id="inp-name" placeholder="VD: Quán Bún Bò 68..." required />
+                </div>
+                <div class="fg">
+                    <label>Mô tả / Giới thiệu</label>
+                    <textarea name="description" rows="3" placeholder="Ngắn gọn vài câu giới thiệu về quán..."></textarea>
+                </div>
+                <div class="fg">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+                        <label style="margin:0">Ảnh đại diện</label>
+                        <button type="button" onclick="clearImg()"
+                                style="background:none;border:1px solid rgba(201,168,76,.2);border-radius:6px;color:#8a8a9a;font-size:11px;cursor:pointer;padding:4px 10px;font-family:inherit">
+                            &#10005; Xóa ảnh
+                        </button>
+                    </div>
+                    <label for="imgFile" style="display:block;cursor:pointer">
+                        <div class="img-upload" id="imgBox">
+                            <div class="img-upload-ico">&#128444;</div>
+                            <div class="img-upload-txt">Nhấn hoặc kéo thả ảnh vào đây</div>
+                            <div class="img-upload-sub">JPG, PNG, WebP · Tối đa 3MB</div>
+                        </div>
+                    </label>
+                    <input type="file" id="imgFile" name="image" accept="image/*" style="display:none" onchange="previewImg(this)" />
+                </div>
+            </div>
+            <div class="panel-foot">
+                <button type="button" class="btn-reset" onclick="resetForm()">&#8635; Đặt lại</button>
+                <button type="submit" class="btn-submit">&#xff0b; Tạo điểm mới</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const restaurants = @Html.Raw(restaurantsJson);
+        console.log("DATA:", restaurants);
+        const map = L.map("map", { center: [10.762622, 106.660172], zoom: 14 });
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "&#169; OpenStreetMap", maxZoom: 19
+        }).addTo(map);
+
+        L.marker([10.762622, 106.660172]).addTo(map);
+
+        const mkIcon = c => L.divIcon({
+            className: "",
+            html: `<div style="width:16px;height:16px;background:${c};border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.5)"></div>`,
+            iconSize:[16,16], iconAnchor:[8,8], popupAnchor:[0,-12]
+        });
+        const goldIcon = mkIcon("#c9a84c");
+        const redIcon  = mkIcon("#ef4444");
+        let tempMarker = null, pinMode = false;
+
+            const markers = {};
+        const circles = {};
+
+        // Hàm vẽ lại toàn bộ điểm
+        function renderAllMarkers() {
+            restaurants.forEach(r => {
+
+
+                let lat = parseFloat(r.lat);
+                let lng = parseFloat(r.lng);
+
+                if (isNaN(lat) || isNaN(lng) || lat === 0) return;
+
+                // 👉 FIX lỗi tọa độ bị nhân lên 10^7 (nếu có)
+                if (Math.abs(lat) > 1000) lat /= 10000000;
+                if (Math.abs(lng) > 1000) lng /= 10000000;
+
+                // 1. Tạo Marker với màu vàng chuẩn của bạn
+                const m = L.marker([lat, lng], { icon: goldIcon }).addTo(map);
+
+                // 2. Tạo vòng tròn Geofence (Bán kính đỏ nhạt quanh quán)
+                const c = L.circle([lat, lng], {
+                    radius: parseFloat(r.radius) || 50, // Lấy radius từ DB, mặc định 50m
+                    color: '#c9a84c',
+                    fillColor: '#c9a84c',
+                    fillOpacity: 0.1,
+                    weight: 1
+                }).addTo(map);
+
+                // 3. Nội dung Popup có nút Sửa/Xóa
+                m.bindPopup(`
+                    <div style="font-family:'Be Vietnam Pro', sans-serif; min-width:200px; color:#fff; background:#13151f; padding:5px">
+                        <b style="font-size:14px; color:var(--accent)">${r.name}</b><br>
+                        <span style="font-size:12px; color:#8a8a9a">📍 ${r.address}</span><br>
+                        <div style="margin-top:12px; display:flex; gap:8px">
+                            <button onclick="editRes(${r.id})" style="flex:1; background:var(--accent); border:none; padding:6px; border-radius:6px; cursor:pointer; font-weight:700; font-family:inherit">✏️ Sửa</button>
+                            <button onclick="submitDelete(${r.id})" style="background:rgba(239,68,68,0.2); color:#ef4444; border:1px solid #ef4444; padding:6px 10px; border-radius:6px; cursor:pointer; font-family:inherit">🗑</button>
+                        </div>
+                    </div>
+                `, { className: 'custom-popup' });
+
+                markers[r.id] = m;
+                circles[r.id] = c;
+            });
+        }
+
+        // Thực thi vẽ
+        renderAllMarkers();
+
+        // Thêm CSS cho Popup để đẹp hơn (tùy chọn)
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #13151f !important; color: #fff !important; border: 1px solid rgba(201,168,76,0.3); }
+            .leaflet-popup-close-button { color: #fff !important; }
+        `;
+        document.head.appendChild(style);
+
+        map.on("click", function(e) {
+            const { lat, lng } = e.latlng;
+            document.getElementById("inp-lat").value = lat.toFixed(7);
+            document.getElementById("inp-lng").value = lng.toFixed(7);
+            if (tempMarker) map.removeLayer(tempMarker);
+            tempMarker = L.marker([lat, lng], { icon: redIcon }).addTo(map)
+                .bindPopup("<b>📍 Vị trí mới</b>").openPopup();
+            if (pinMode) { pinMode = false; map.getContainer().style.cursor = ""; openPanel(); }
+        });
+
+        function openPanel()  { document.getElementById("addPanel").classList.add("open"); }
+        function closePanel() { document.getElementById("addPanel").classList.remove("open"); }
+        function rePin()      { closePanel(); pinMode = true; map.getContainer().style.cursor = "crosshair"; }
+        function resetForm() {
+            document.getElementById("addForm").reset();
+            document.getElementById("inp-lat").value = "";
+            document.getElementById("inp-lng").value = "";
+            clearImg();
+            if (tempMarker) { map.removeLayer(tempMarker); tempMarker = null; }
+        }
+        function submitDelete(id) {
+            if (!confirm("Xóa địa điểm này?")) return;
+            document.getElementById("deleteId").value = id;
+            document.getElementById("deleteForm").submit();
+        }
+        function previewImg(input) {
+            if (!input.files[0]) return;
+            const r = new FileReader();
+            r.onload = e => {
+                document.getElementById("imgBox").innerHTML =
+                    `<img src="${e.target.result}" style="max-height:110px;border-radius:8px;object-fit:cover">`;
+            };
+            r.readAsDataURL(input.files[0]);
+        }
+        // ── Vị trí hiện tại ──
+        let myMarker = null;
+        function goToMyLocation() {
+            const btn = document.getElementById("locBtn");
+            if (!navigator.geolocation) { alert("Trình duyệt không hỗ trợ định vị."); return; }
+            btn.classList.add("active");
+            btn.textContent = "…";
+            navigator.geolocation.getCurrentPosition(
+                pos => {
+                    const { latitude: lat, longitude: lng } = pos.coords;
+                    map.setView([lat, lng], 17, { animate: true });
+                    if (myMarker) map.removeLayer(myMarker);
+                    myMarker = L.marker([lat, lng], {
+                        icon: L.divIcon({
+                            className: "",
+                            html: `<div style="width:14px;height:14px;background:#22c55e;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 4px rgba(34,197,94,.3)"></div>`,
+                            iconSize:[14,14], iconAnchor:[7,7]
+                        })
+                    }).addTo(map).bindPopup("<b style='font-size:13px'>📍 Vị trí của bạn</b>").openPopup();
+                    btn.classList.remove("active");
+                    btn.textContent = "◎";
+                },
+                err => {
+                    btn.classList.remove("active");
+                    btn.textContent = "◎";
+                    alert("Không lấy được vị trí. Vui lòng cho phép truy cập vị trí.");
+                },
+                { enableHighAccuracy: true, timeout: 8000 }
+            );
+        }
+
+        // ── Nhập tọa độ ──
+        function toggleCoordPopup() {
+            const popup = document.getElementById("coordPopup");
+            const btn = document.getElementById("coordBtn");
+            const isOpen = popup.classList.toggle("open");
+            btn.classList.toggle("active", isOpen);
+            if (isOpen) document.getElementById("jumpLat").focus();
+        }
+        function jumpToCoord() {
+            const lat = parseFloat(document.getElementById("jumpLat").value);
+            const lng = parseFloat(document.getElementById("jumpLng").value);
+            if (isNaN(lat) || isNaN(lng) || lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+                alert("Tọa độ không hợp lệ. Latitude: -90~90, Longitude: -180~180");
+                return;
+            }
+            map.setView([lat, lng], 17, { animate: true });
+            document.getElementById("coordPopup").classList.remove("open");
+            document.getElementById("coordBtn").classList.remove("active");
+            // Điền vào form nếu đang mở panel
+            document.getElementById("inp-lat").value = lat.toFixed(7);
+            document.getElementById("inp-lng").value = lng.toFixed(7);
+            if (tempMarker) map.removeLayer(tempMarker);
+            tempMarker = L.marker([lat, lng], { icon: redIcon }).addTo(map)
+                .bindPopup("<b>📍 Vị trí đã chọn</b>").openPopup();
+        }
+        // Enter trong popup tọa độ
+        document.getElementById("jumpLng").addEventListener("keydown", e => {
+            if (e.key === "Enter") jumpToCoord();
+        });
+        document.getElementById("jumpLat").addEventListener("keydown", e => {
+            if (e.key === "Enter") document.getElementById("jumpLng").focus();
+        });
+
+        document.getElementById("searchInput").addEventListener("keydown", e => {
+            if (e.key !== "Enter") return;
+            const q = e.target.value.trim();
+            if (!q) return;
+            fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q + " Vietnam")}&format=json&limit=1`)
+                .then(r => r.json())
+                .then(d => { if (d[0]) map.setView([+d[0].lat, +d[0].lon], 16, { animate: true }); });
+        });
+
+        function clearImg() {
+            document.getElementById("imgFile").value = "";
+            document.getElementById("imgBox").innerHTML =
+                '<div class="img-upload-ico">&#128444;</div><div class="img-upload-txt">Nhấn hoặc kéo thả ảnh vào đây</div><div class="img-upload-sub">JPG, PNG, WebP · Tối đa 3MB</div>';
+        }
+        function editRes(id) {
+            // 1. Tìm dữ liệu quán trong danh sách restaurants đã nạp từ server
+            const res = restaurants.find(x => x.id == id);
+            if (!res) return;
+
+            // 2. Điền dữ liệu vào các ô input trong Side Panel
+            document.getElementById("inp-id").value = res.id;
+            document.getElementById("inp-name").value = res.name;
+            document.getElementById("inp-addr").value = res.address;
+            document.getElementById("inp-lat").value = res.lat;
+            document.getElementById("inp-lng").value = res.lng;
+
+            // Đối với các ô dùng 'name' (do bạn không đặt ID cho geofence, rating...)
+            document.querySelector('input[name="radius"]').value = res.radius || 50;
+            document.querySelector('input[name="rating"]').value = res.rating || 0;
+            document.querySelector('input[name="openHours"]').value = res.openHours || "";
+            document.querySelector('textarea[name="description"]').value = res.description || "";
+
+            // 3. Hiển thị ảnh cũ nếu có
+            if (res.imagePath) {
+                document.getElementById("imgBox").innerHTML =
+                    `<img src="${res.imagePath}" style="max-height:110px; border-radius:8px; object-fit:cover">`;
+            } else {
+                clearImg();
+            }
+
+            // 4. Đổi tiêu đề Panel và nút bấm để người dùng biết là đang "Sửa"
+            document.querySelector(".panel-head-title").innerText = "Chỉnh sửa địa điểm";
+            document.querySelector(".btn-submit").innerHTML = "💾 Lưu thay đổi";
+
+            // 5. Mở cái bảng bên phải ra
+            openPanel();
+        }
+
+        // ── SỬA LẠI HÀM RESET ──
+        function resetForm() {
+            document.getElementById("addForm").reset();
+            document.getElementById("inp-id").value = "0"; // Quan trọng: Đưa ID về 0 để hiểu là thêm mới
+            document.querySelector(".panel-head-title").innerText = "Tạo điểm mới";
+            document.querySelector(".btn-submit").innerHTML = "＋ Tạo điểm mới";
+            clearImg();
+            if (tempMarker) { map.removeLayer(tempMarker); tempMarker = null; }
+        }
+    </script>
+</body>
+</html>

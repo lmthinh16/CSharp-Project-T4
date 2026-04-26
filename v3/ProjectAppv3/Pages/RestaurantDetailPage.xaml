@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ProjectApp.ViewModels"
+             xmlns:model="clr-namespace:ProjectApp.Models"
+             x:Class="ProjectApp.Pages.RestaurantDetailPage"
+             x:DataType="vm:RestaurantDetailViewModel"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Top nav -->
+        <Grid Grid.Row="0"
+              BackgroundColor="#16213E"
+              Padding="8,8"
+              ColumnDefinitions="40,*,40">
+            <ImageButton Grid.Column="0"
+                         Source="icon_back.png"
+                         Command="{Binding GoBackCommand}"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" />
+            <Label Grid.Column="1"
+                   Text="{Binding Restaurant.Name}"
+                   FontSize="13"
+                   FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   LineBreakMode="TailTruncation" />
+            <ImageButton Grid.Column="2"
+                         Source="icon_map_pin.png"
+                         Command="{Binding OpenMapCommand}"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" />
+        </Grid>
+
+        <!-- Scrollable content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="0">
+
+                <!-- Hero image -->
+                <Grid HeightRequest="160">
+                    <Image Source="{Binding Restaurant.ImageUrl}"
+                           Aspect="AspectFill"
+                           BackgroundColor="#0F2744" />
+                    <BoxView BackgroundColor="#1A1A2E"
+                             Opacity="0.45"
+                             VerticalOptions="End"
+                             HeightRequest="60" />
+                    <!-- Favorite button -->
+                    <ImageButton Source="{Binding FavoriteIcon}"
+                                 Command="{Binding ToggleFavoriteCommand}"
+                                 HorizontalOptions="End"
+                                 VerticalOptions="Start"
+                                 Margin="0,10,12,0"
+                                 BackgroundColor="#80000000"
+                                 CornerRadius="18"
+                                 WidthRequest="36"
+                                 HeightRequest="36"
+                                 Padding="6"/>
+                </Grid>
+
+                <VerticalStackLayout Padding="14,12" Spacing="12">
+
+                    <!-- Title + info -->
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="{Binding Restaurant.Name}"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#E0E8FF" />
+                        <Label Text="{Binding Restaurant.Address}"
+                               FontSize="11"
+                               TextColor="#8899AA" />
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="{Binding Restaurant.Rating, StringFormat='⭐ {0}'}"
+                                   FontSize="13"
+                                   TextColor="#FFDB58"
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Restaurant.OpenHours, StringFormat='🕐 {0}'}"
+                                   FontSize="13"
+                                   TextColor="#4EC88A"
+                                   FontAttributes="Bold" />
+                        </HorizontalStackLayout>
+                        <!-- Distance (visible khi IsNearest) -->
+                        <Label Text="{Binding DistanceText}"
+                               FontSize="11"
+                               TextColor="#4EC88A"
+                               IsVisible="{Binding Restaurant.IsNearest}" />
+                    </VerticalStackLayout>
+
+                    <!-- Description -->
+                    <Border BackgroundColor="#0D1B2A"
+                            Stroke="#1A2A4A"
+                            StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 8"
+                            Padding="12,10">
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="📄 Mô tả văn bản"
+                                   FontSize="11"
+                                   FontAttributes="Bold"
+                                   TextColor="#4EA5D9" />
+                            <Label Text="{Binding Restaurant.Description}"
+                                   FontSize="13"
+                                   TextColor="#8899AA"
+                                   LineHeight="1.5" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Audio guides list -->
+                    <VerticalStackLayout Spacing="6"
+                                         IsVisible="{Binding HasAudioGuides}">
+                        <Label Text="🎵 Thuyết minh"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#4EA5D9" />
+
+                        <CollectionView ItemsSource="{Binding AudioGuides}"
+                                        SelectionMode="None">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:AudioGuide">
+                                    <Border BackgroundColor="#0D1B2A"
+                                            Stroke="#1E3A5F"
+                                            StrokeThickness="0.5"
+                                            StrokeShape="RoundRectangle 6"
+                                            Padding="8,7"
+                                            Margin="0,2">
+                                        <Grid ColumnDefinitions="30,*,Auto">
+                                            <Border Grid.Column="0"
+                                                    BackgroundColor="#1E6FA8"
+                                                    StrokeShape="RoundRectangle 15"
+                                                    WidthRequest="26"
+                                                    HeightRequest="26">
+                                                <Label Text="▶"
+                                                       FontSize="10"
+                                                       TextColor="White"
+                                                       HorizontalOptions="Center"
+                                                       VerticalOptions="Center" />
+                                            </Border>
+
+                                            <VerticalStackLayout Grid.Column="1" Spacing="1" Margin="8,0">
+                                                <Label Text="{Binding Title}"
+                                                       FontSize="11"
+                                                       TextColor="#C0D0E8" />
+                                                <Label Text="{Binding DurationDisplay}"
+                                                       FontSize="9"
+                                                       TextColor="#6A7A9A" />
+                                            </VerticalStackLayout>
+
+                                            <ImageButton Grid.Column="2"
+                                                         Source="icon_play.png"
+                                                         Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RestaurantDetailViewModel}}, Path=PlayAudioCommand}"
+                                                         CommandParameter="{Binding .}"
+                                                         BackgroundColor="Transparent"
+                                                         Padding="4" />
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+
+                    <!-- Action row -->
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="6" Margin="0,4">
+                        <Button Grid.Column="0"
+                                Text="🎵 Phát audio"
+                                BackgroundColor="#1E6FA8"
+                                TextColor="#E0F0FF"
+                                FontSize="11"
+                                CornerRadius="6"
+                                Command="{Binding PlayFirstAudioCommand}" />
+                        <Button Grid.Column="1"
+                                Text="🗺️ Bản đồ"
+                                BackgroundColor="#16213E"
+                                BorderColor="#2A4A6A"
+                                BorderWidth="0.5"
+                                TextColor="#8899AA"
+                                FontSize="11"
+                                CornerRadius="6"
+                                Command="{Binding OpenMapCommand}" />
+                        <Button Grid.Column="2"
+                                Text="{Binding FavoriteLabel}"
+                                BackgroundColor="#16213E"
+                                BorderColor="#2A4A6A"
+                                BorderWidth="0.5"
+                                TextColor="#FFDB58"
+                                FontSize="11"
+                                CornerRadius="6"
+                                Command="{Binding ToggleFavoriteCommand}" />
+                    </Grid>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
