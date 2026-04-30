@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\services\\geofencingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:services\\geofencingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\mappage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mappage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\platforms\\android\\webviewhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:platforms\\android\\webviewhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\mappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:mappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|d:\\c_sharp\\v5\\projectappv3_updated (2)\\output_app\\projectappv3\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0964AF83-4CFA-ADF5-AF9E-B423D642F12E}|ProjectApp.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T01:21:43.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GeofencingService.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Services\\GeofencingService.cs",
+              "RelativeDocumentMoniker": "Services\\GeofencingService.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Services\\GeofencingService.cs",
+              "RelativeToolTip": "Services\\GeofencingService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwEAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:46:13.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:29:32.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T19:03:35.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MapPage.xaml",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MapPage.xaml",
+              "RelativeDocumentMoniker": "MapPage.xaml",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MapPage.xaml",
+              "RelativeToolTip": "MapPage.xaml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAArwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T18:48:15.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T18:29:01.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:29:10.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebViewHandler.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\WebViewHandler.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\WebViewHandler.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\WebViewHandler.cs",
+              "RelativeToolTip": "Platforms\\Android\\WebViewHandler.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:32:14.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapPage.xaml.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MapPage.xaml.cs",
+              "RelativeDocumentMoniker": "MapPage.xaml.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\MapPage.xaml.cs",
+              "RelativeToolTip": "MapPage.xaml.cs",
+              "ViewState": "AgIAAFABAAAAAAAAAAAkwHIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:50:09.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Models.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Models\\Models.cs",
+              "RelativeDocumentMoniker": "Models\\Models.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Models\\Models.cs",
+              "RelativeToolTip": "Models\\Models.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAA5wCYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T23:27:45.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-04-28T19:02:00.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ViewModels.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\ViewModels\\ViewModels.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModels.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\ViewModels\\ViewModels.cs",
+              "RelativeToolTip": "ViewModels\\ViewModels.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAewKQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:49:07.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T18:50:39.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "serviceDependencies.local.json",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\serviceDependencies.local.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.local.json",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\serviceDependencies.local.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T18:50:47.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.json",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T18:50:45.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "D:\\C_Sharp\\v5\\ProjectAppv3_updated (2)\\output_app\\ProjectAppv3\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T18:27:22.117Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

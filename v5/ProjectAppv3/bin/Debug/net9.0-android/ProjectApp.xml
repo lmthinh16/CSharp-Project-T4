@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectApp</name>
+    </assembly>
+    <members>
+        <member name="M:ProjectApp.App.StartHeartbeatTimer">
+            <summary>
+            Khởi động timer ping heartbeat mỗi 2 phút.
+            Cập nhật LastActiveAt trên server → web biết user đang online.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Models.Booking">
+            <summary>
+            Lưu trữ đặt chỗ local trên thiết bị (SQLite).
+            Đồng bộ lên server khi có mạng.
+            </summary>
+        </member>
+        <member name="P:ProjectApp.Models.PoiStats.AvgSeconds">
+            <summary>Thời gian nghe trung bình mỗi lần (giây)</summary>
+        </member>
+        <member name="T:ProjectApp.Pages.BookingConfirmationPage">
+            <summary>
+            Trang xác nhận đặt chỗ thành công — hiển thị mã booking, thông tin chi tiết.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Pages.BookingHistoryPage">
+            <summary>
+            Lịch sử đặt chỗ — hiển thị tất cả booking, cho phép hủy.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Pages.BookingPage">
+             <summary>
+             Trang đặt chỗ + chọn phương thức thanh toán.
+            
+             LUỒNG:
+               - Cash       : Xác nhận ngay → BookingConfirmationPage
+               - Ví điện tử : Xác nhận → EWalletPaymentPage (QR + đếm ngược 15 phút)
+               - Offline    : Khoá ví điện tử, chỉ cho phép Cash
+             </summary>
+        </member>
+        <member name="T:ProjectApp.Pages.EWalletPaymentPage">
+            <summary>
+            Trang thanh toán ví điện tử — hiển thị QR code và đếm ngược 15 phút.
+            Có 3 nút demo mô phỏng kết quả: Thành công / Không đủ số dư / Huỷ.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Pages.RestaurantDetailPage.#ctor(ProjectApp.Models.Restaurant)">
+            <summary>Constructor trực tiếp nhận Restaurant — dùng khi push từ MapPage.</summary>
+        </member>
+        <member name="T:ProjectApp.Pages.WelcomePage">
+            <summary>
+            WelcomePage — màn hình onboarding, hiện ra 1 lần sau lần đăng nhập đầu tiên.
+            3 slide giới thiệu tính năng chính, có thể swipe hoặc nhấn nút.
+            Sau khi xong → navigate vào AppShell.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Platforms.Android.CustomWebViewHandler">
+            <summary>
+            Custom WebView handler để bật JavaScript và cho phép load
+            tài nguyên ngoài (Leaflet CDN) trên thiết bị thật Android.
+            Không cần trên emulator vì emulator ít bị chặn hơn.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Platforms.Android.CustomWebViewClient">
+            <summary>
+            WebViewClient tùy chỉnh: bỏ qua lỗi SSL không quan trọng
+            và log lỗi để dễ debug trên thiết bị thật.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.AnalyticsService.GetTopPoisAsync(System.Int32)">
+            <summary>
+            Trả về top N POI dưới dạng List PoiStats — dùng cho AnalyticsPage.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.AnalyticsService.GetSummaryAsync">
+            <summary>
+            Tổng hợp thống kê — trả về object với đúng tên property mà AnalyticsPage dùng
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Services.AnalyticsSummary">
+            <summary>
+            Model tổng hợp thống kê
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Services.ApiService">
+            <summary>
+            Gọi ASP.NET Core backend API.
+            Singleton — dùng ApiService.Instance hoặc inject qua DI.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.ApiService.GetNearbyAsync(System.Double,System.Double,System.Int32)">
+            <summary>Lấy danh sách POI gần vị trí user trong bán kính radius (mét).</summary>
+        </member>
+        <member name="M:ProjectApp.Services.ApiService.PostAnalyticAsync(System.Int32,System.String,System.Double,System.Double,System.Double)">
+            <summary>Ghi sự kiện analytics lên server (overload đầy đủ tham số).</summary>
+        </member>
+        <member name="M:ProjectApp.Services.ApiService.PostGpsPointAsync(System.Double,System.Double)">
+            <summary>Ghi GPS point ẩn danh lên server để vẽ heatmap.</summary>
+        </member>
+        <member name="M:ProjectApp.Services.ApiService.ClearAnalyticsOnServerAsync">
+            <summary>Xóa toàn bộ analytics của user trên server.</summary>
+        </member>
+        <member name="M:ProjectApp.Services.ApiService.SendHeartbeatAsync(System.Int32)">
+            <summary>Ping server để duy trì trạng thái online. Gọi mỗi 2 phút.</summary>
+        </member>
+        <member name="M:ProjectApp.Services.AudioPlayerService.PlayAudioAsync(ProjectApp.Models.Restaurant,System.String)">
+            <summary>
+            Phát audio cho POI theo ngôn ngữ.
+            Tự tìm AudioGuide phù hợp trong DB (theo LanguageCode), fallback về vi-VN.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Services.DatabaseService">
+            <summary>
+            SQLite local cache.
+            Dữ liệu gốc từ API → ghi vào đây để offline vẫn dùng được.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.DatabaseService.SyncRestaurantsAsync(System.Collections.Generic.List{ProjectApp.Models.Restaurant})">
+            Ghi đè toàn bộ restaurants từ API (sync)
+        </member>
+        <member name="T:ProjectApp.Services.GeofencingService">
+            <summary>
+            Geofencing service — phát hiện khi user vào/ra khỏi vùng POI.
+            Gọi UpdateDistances() mỗi khi location thay đổi.
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.GeofencingService.UpdateDistances(System.Double,System.Double,System.Collections.Generic.List{ProjectApp.Models.Restaurant})">
+            <summary>
+            Gọi mỗi khi location thay đổi để kiểm tra enter/exit geofence.
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Services.IAudioService">
+            <summary>
+            Interface cho Audio Service 2-Tier.
+            Tier 1: Stream MP3 qua Plugin.Maui.Audio (khi FilePath hợp lệ).
+            Tier 2: Text-To-Speech qua MAUI TextToSpeech.Default (khi FilePath rỗng + có TextContent).
+            </summary>
+        </member>
+        <member name="M:ProjectApp.Services.IAudioService.PlayAudioAsync(ProjectApp.Models.Restaurant,System.String)">
+            <summary>Phát audio cho POI theo ngôn ngữ — tự chọn AudioGuide phù hợp.</summary>
+        </member>
+        <member name="T:ProjectApp.Services.OfflineService">
+            <summary>
+            Quản lý trạng thái mạng và đồng bộ dữ liệu offline → online.
+            Khi online trở lại: tự sync bookings + làm mới danh sách nhà hàng.
+            </summary>
+        </member>
+        <member name="P:ProjectApp.Services.OfflineService.IsOnline">
+            <summary>Có kết nối internet (theo hệ thống)</summary>
+        </member>
+        <member name="E:ProjectApp.Services.OfflineService.StatusChanged">
+            <summary>Phát ra khi trạng thái kết nối thay đổi</summary>
+        </member>
+        <member name="T:ProjectApp.Services.PaymentService">
+             <summary>
+             Xử lý tạo booking và luồng thanh toán.
+            
+             LUỒNG:
+               - Cash       : Đặt chỗ ngay, thanh toán tại quán, không cần cọc.
+               - Ví điện tử : Tạo booking → mở trang QR → xác nhận "Đã thanh toán" → confirmed.
+               - Offline    : Chỉ cho phép Cash. Booking lưu local, sync khi có mạng.
+             </summary>
+        </member>
+        <member name="T:ProjectApp.Services.SyncService">
+            <summary>
+            Điều phối sync giữa API và SQLite local.
+            Online  → lấy từ API → ghi vào SQLite.
+            Offline → đọc SQLite cache; nếu cache rỗng → chạy EnsureLocalSeedAsync().
+            </summary>
+        </member>
+        <member name="T:ProjectApp.Services.UserSession">
+            <summary>
+            Singleton quản lý phiên đăng nhập.
+            Persist qua Preferences — không mất khi tắt app.
+            Hỗ trợ 3 chế độ: Guest, User, Owner/Admin.
+            </summary>
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.Instance">
+            <summary>Alias của Current — để tương thích với code dùng UserSession.Instance.</summary>
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.Language">
+            <summary>Ngôn ngữ hiện tại dạng static (đọc nhanh không cần instance).</summary>
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.LanguagePref">
+            Ngôn ngữ hiện tại (instance property — dùng UserSession.Language static thay vì này)
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.IsAuthenticatedUser">
+            User thực sự (không phải guest)
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.DisplayName">
+            Tên hiển thị: FullName nếu đăng nhập, "Du khách" nếu guest
+        </member>
+        <member name="P:ProjectApp.Services.UserSession.AvatarInitial">
+            Avatar chữ cái đầu
+        </member>
+        <member name="M:ProjectApp.Services.UserSession.LoginAsUser(System.Int32,System.String,System.String,System.String)">
+            Gọi sau khi API trả về login thành công
+        </member>
+        <member name="M:ProjectApp.Services.UserSession.LoginAsGuest">
+            Guest mode — không cần tài khoản
+        </member>
+        <member name="M:ProjectApp.Services.UserSession.Logout">
+            Đăng xuất — xóa toàn bộ session
+        </member>
+        <member name="T:ProjectApp.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.Restaurants">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._restaurants"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.SelectedRestaurant">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._selectedRestaurant"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.SearchText">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._searchText"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.HasCurrentTrack">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._hasCurrentTrack"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.CurrentTrackTitle">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._currentTrackTitle"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.CurrentTrackDuration">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._currentTrackDuration"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.PlayPauseIcon">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._playPauseIcon"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.IsRefreshing">
+            <inheritdoc cref="F:ProjectApp.ViewModels.MainViewModel._isRefreshing"/>
+        </member>
+        <member name="M:ProjectApp.ViewModels.MainViewModel.OnSearchTextChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:ProjectApp.ViewModels.MainViewModel.SearchText"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:ProjectApp.ViewModels.MainViewModel.SearchText"/> is changed.</remarks>
+        </member>
+        <member name="F:ProjectApp.ViewModels.MainViewModel.openDetailCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.MainViewModel.OpenDetailCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.OpenDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.MainViewModel.OpenDetail"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.MainViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.MainViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.MainViewModel.Refresh"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.MainViewModel.togglePlayPauseCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.MainViewModel.TogglePlayPauseCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.TogglePlayPauseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.MainViewModel.TogglePlayPause"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.MainViewModel.clearSearchCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.MainViewModel.ClearSearchCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.ClearSearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.MainViewModel.ClearSearch"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.MainViewModel.openFilterCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.MainViewModel.OpenFilterCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.MainViewModel.OpenFilterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.MainViewModel.OpenFilter"/>.</summary>
+        </member>
+        <member name="T:ProjectApp.ViewModels.RestaurantDetailViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.Restaurant">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._restaurant"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.AudioGuides">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._audioGuides"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.HasAudioGuides">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._hasAudioGuides"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.FavoriteIcon">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._favoriteIcon"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.FavoriteLabel">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._favoriteLabel"/>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.DistanceText">
+            <inheritdoc cref="F:ProjectApp.ViewModels.RestaurantDetailViewModel._distanceText"/>
+        </member>
+        <member name="F:ProjectApp.ViewModels.RestaurantDetailViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.RestaurantDetailViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.RestaurantDetailViewModel.GoBack"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.RestaurantDetailViewModel.openMapCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.RestaurantDetailViewModel.OpenMapCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.OpenMapCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.RestaurantDetailViewModel.OpenMap"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.RestaurantDetailViewModel.playAudioCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayAudioCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayAudioCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayAudio(ProjectApp.Models.AudioGuide)"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.RestaurantDetailViewModel.playFirstAudioCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayFirstAudioCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayFirstAudioCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.RestaurantDetailViewModel.PlayFirstAudio"/>.</summary>
+        </member>
+        <member name="F:ProjectApp.ViewModels.RestaurantDetailViewModel.toggleFavoriteCommand">
+            <summary>The backing field for <see cref="P:ProjectApp.ViewModels.RestaurantDetailViewModel.ToggleFavoriteCommand"/>.</summary>
+        </member>
+        <member name="P:ProjectApp.ViewModels.RestaurantDetailViewModel.ToggleFavoriteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProjectApp.ViewModels.RestaurantDetailViewModel.ToggleFavorite"/>.</summary>
+        </member>
+        <member name="T:ProjectApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Restaurants">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Restaurants" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRestaurant">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRestaurant" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HasCurrentTrack">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HasCurrentTrack" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentTrackTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentTrackTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentTrackDuration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentTrackDuration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PlayPauseIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PlayPauseIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Restaurant">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Restaurant" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AudioGuides">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AudioGuides" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HasAudioGuides">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HasAudioGuides" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FavoriteIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FavoriteIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FavoriteLabel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FavoriteLabel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DistanceText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DistanceText" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Restaurants">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Restaurants" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRestaurant">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRestaurant" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HasCurrentTrack">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HasCurrentTrack" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentTrackTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentTrackTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentTrackDuration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentTrackDuration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PlayPauseIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PlayPauseIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Restaurant">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Restaurant" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AudioGuides">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AudioGuides" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HasAudioGuides">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HasAudioGuides" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FavoriteIcon">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FavoriteIcon" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FavoriteLabel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FavoriteLabel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DistanceText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DistanceText" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  WelcomePage.xaml — ProjectAppv3
+  File MỚI, thêm vào thư mục Pages/
+  Code-behind: Pages/WelcomePage.xaml.cs
+-->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApp.Pages.WelcomePage"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <!-- Nền gradient tối — giống màu splash của app -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#0A1628" Offset="0.0"/>
+            <GradientStop Color="#112240" Offset="0.5"/>
+            <GradientStop Color="#0A1628" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Swipe để chuyển slide — đặt trên Grid để SourceGen nhận đúng -->
+    <Grid RowDefinitions="Auto,*,Auto,Auto"
+          Padding="0,56,0,44">
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left"  Swiped="OnSwipeLeft"/>
+            <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipeRight"/>
+        </Grid.GestureRecognizers>
+
+        <!-- ─── Logo + App name ──────────────────────────────────── -->
+        <VerticalStackLayout x:Name="logoArea"
+                             Grid.Row="0"
+                             HorizontalOptions="Center"
+                             Spacing="10"
+                             Margin="0,0,0,4">
+
+            <!-- App icon box -->
+            <Border WidthRequest="76"
+                    HeightRequest="76"
+                    StrokeThickness="0"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#2563EB" Offset="0"/>
+                        <GradientStop Color="#1D4ED8" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Text="🦐"
+                       FontSize="40"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Border>
+
+            <Label Text="Vĩnh Khánh Tour"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   CharacterSpacing="0.3"/>
+
+            <Label Text="Ăn ngon · Nghe hay · Đi đúng chỗ"
+                   FontSize="13"
+                   TextColor="#64748B"
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+        <!-- ─── Slide content ────────────────────────────────────── -->
+        <VerticalStackLayout x:Name="slideArea"
+                             Grid.Row="1"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Padding="36,0"
+                             Spacing="22">
+
+            <Label x:Name="emojiLabel"
+                   FontSize="88"
+                   HorizontalOptions="Center"/>
+
+            <Label x:Name="titleLabel"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   LineBreakMode="WordWrap"/>
+
+            <Label x:Name="bodyLabel"
+                   FontSize="15"
+                   TextColor="#94A3B8"
+                   HorizontalTextAlignment="Center"
+                   LineBreakMode="WordWrap"
+                   LineHeight="1.55"/>
+        </VerticalStackLayout>
+
+        <!-- ─── Pagination dots ──────────────────────────────────── -->
+        <HorizontalStackLayout x:Name="dotsRow"
+                               Grid.Row="2"
+                               HorizontalOptions="Center"
+                               Spacing="7"
+                               Margin="0,0,0,28">
+            <BoxView x:Name="dot0"
+                     WidthRequest="24" HeightRequest="8"
+                     CornerRadius="4"
+                     Color="#2563EB"/>
+            <BoxView x:Name="dot1"
+                     WidthRequest="8"  HeightRequest="8"
+                     CornerRadius="4"
+                     Color="#CBD5E1"/>
+            <BoxView x:Name="dot2"
+                     WidthRequest="8"  HeightRequest="8"
+                     CornerRadius="4"
+                     Color="#CBD5E1"/>
+        </HorizontalStackLayout>
+
+        <!-- ─── Bottom buttons ───────────────────────────────────── -->
+        <VerticalStackLayout x:Name="btnArea"
+                             Grid.Row="3"
+                             Padding="28,0"
+                             Spacing="10">
+
+            <!-- Nút chính: Tiếp tục / Bắt đầu -->
+            <Button x:Name="nextBtn"
+                    Text="Tiếp tục →"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    CornerRadius="18"
+                    HeightRequest="56"
+                    Clicked="OnNextClicked">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#2563EB" Offset="0"/>
+                        <GradientStop Color="#1D4ED8" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <!-- Bỏ qua (ẩn ở slide cuối) -->
+            <Button x:Name="skipBtn"
+                    Text="Bỏ qua"
+                    FontSize="14"
+                    TextColor="#475569"
+                    BackgroundColor="Transparent"
+                    HeightRequest="40"
+                    Clicked="OnSkipClicked"/>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
