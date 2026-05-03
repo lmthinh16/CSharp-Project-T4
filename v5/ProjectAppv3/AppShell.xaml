@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProjectApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProjectApp"
+    xmlns:pages="clr-namespace:ProjectApp.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="#0D1A2D"
+    Shell.TabBarTitleColor="#E0E0F0"
+    Shell.TabBarUnselectedColor="#556688"
+    Shell.TabBarForegroundColor="#4EA5D9">
+
+    <TabBar>
+
+        <!-- Tab 1: Trang chủ -->
+        <Tab Title="Trang chủ" Icon="home.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="Home" />
+        </Tab>
+
+        <!-- Tab 2: Bản đồ -->
+        <Tab Title="Bản đồ" Icon="map.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:MapPage}"
+                Route="Map" />
+        </Tab>
+
+        <!-- Tab 3: Audio Queue -->
+        <Tab Title="Audio" Icon="audio.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate pages:AudioPage}"
+                Route="Audio" />
+        </Tab>
+
+        <!-- Tab 4: Cá nhân -->
+        <Tab Title="Cá nhân" Icon="profile.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:ProfilePage}"
+                Route="Profile" />
+        </Tab>
+
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,1099 @@
+﻿@page
+@model web_vk.Pages.ToursModel
+@{
+    Layout = null;
+    var username = HttpContext.Session.GetString("user") ?? "Admin";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Tour – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --sidebar-bg: #0d0f17;
+            --sidebar-w: 260px;
+            --accent: #c9a84c;
+            --accent-dim: rgba(201,168,76,.15);
+            --accent-glow: rgba(201,168,76,.08);
+            --text-muted: #6e6e82;
+            --text-soft: #b0aead;
+            --header-h: 64px;
+            --radius: 14px;
+            --surface: #13151f;
+            --surface2: #1a1d2e;
+            --border: rgba(201,168,76,.12);
+            --danger: #e05252;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0f1117;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* ── SCROLLBAR ── */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(201,168,76,.25);
+            border-radius: 99px;
+        }
+
+        /* ══════════════════════════════
+                   SIDEBAR
+                ══════════════════════════════ */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--sidebar-bg);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 22px 20px 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #c9a84c, #7d5f1e);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .brand-text .name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(to right, #e8c96a, #c9a84c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-text .role {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 1px;
+        }
+
+        .nav-section {
+            padding: 18px 12px 4px;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0 8px;
+            margin-bottom: 6px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            border-radius: 9px;
+            text-decoration: none;
+            color: var(--text-soft);
+            font-size: 13.5px;
+            font-weight: 400;
+            transition: background .15s, color .15s;
+            margin-bottom: 2px;
+        }
+
+            .nav-link:hover {
+                background: var(--accent-glow);
+                color: #fff;
+            }
+
+            .nav-link.active {
+                background: var(--accent-dim);
+                color: var(--accent);
+                font-weight: 600;
+            }
+
+        .nav-icon {
+            width: 18px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .user-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--accent-glow);
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background: linear-gradient(135deg,#c9a84c,#7d5f1e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .uname {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .urole {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 1px;
+        }
+
+        .logout-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            transition: background .15s, color .15s;
+        }
+
+            .logout-btn:hover {
+                background: rgba(224,82,82,.1);
+                color: var(--danger);
+            }
+
+        /* ══════════════════════════════
+                   MAIN LAYOUT
+                ══════════════════════════════ */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            height: var(--header-h);
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            flex-shrink: 0;
+        }
+
+        .topbar-left {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .topbar-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #f0eade;
+        }
+
+        .topbar-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px;
+        }
+
+        /* ══════════════════════════════
+                   STATS ROW
+                ══════════════════════════════ */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: border-color .2s;
+        }
+
+            .stat-card:hover {
+                border-color: rgba(201,168,76,.35);
+            }
+
+        .stat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: var(--accent-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        /* ══════════════════════════════
+                   SECTION HEADER
+                ══════════════════════════════ */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #f0eade;
+        }
+
+        /* ══════════════════════════════
+                   TABLE CARD
+                ══════════════════════════════ */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 0;
+            margin-bottom: 28px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-header-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 20px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            background: rgba(0,0,0,.15);
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255,255,255,.04);
+            font-size: 13.5px;
+            color: #d8d6cf;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(201,168,76,.03);
+        }
+
+        .tour-title-cell {
+            font-weight: 600;
+            color: #f0eade;
+        }
+
+        .tour-desc-cell {
+            color: var(--text-muted);
+            font-size: 13px;
+            max-width: 260px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 11.5px;
+            font-weight: 500;
+            background: var(--accent-dim);
+            color: var(--accent);
+            border: 1px solid rgba(201,168,76,.2);
+        }
+
+        .date-chip {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: rgba(255,255,255,.04);
+            padding: 3px 9px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.06);
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-sm {
+            padding: 5px 13px;
+            border-radius: 7px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            transition: all .18s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-edit {
+            background: rgba(201,168,76,.12);
+            color: var(--accent);
+            border: 1px solid rgba(201,168,76,.2);
+        }
+
+            .btn-edit:hover {
+                background: var(--accent-dim);
+            }
+
+        .btn-delete {
+            background: rgba(224,82,82,.1);
+            color: var(--danger);
+            border: 1px solid rgba(224,82,82,.2);
+        }
+
+            .btn-delete:hover {
+                background: rgba(224,82,82,.2);
+            }
+
+        .empty-state {
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+            .empty-state .empty-icon {
+                font-size: 32px;
+                margin-bottom: 10px;
+                opacity: .4;
+            }
+
+        /* ══════════════════════════════
+                   CREATE FORM CARD
+                ══════════════════════════════ */
+        .form-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .form-card-header {
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(201,168,76,.04);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .form-card-header h3 {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 19px;
+                font-weight: 600;
+                color: var(--accent);
+            }
+
+        .form-card-body {
+            padding: 24px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 14px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(201,168,76,.18);
+            border-radius: 9px;
+            color: #fff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color .2s, background .2s;
+        }
+
+            .form-control:focus {
+                border-color: rgba(201,168,76,.55);
+                background: rgba(201,168,76,.05);
+            }
+
+            .form-control::placeholder {
+                color: rgba(255,255,255,.2);
+            }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        /* Restaurant selector */
+        .res-selector-wrap {
+            background: rgba(0,0,0,.25);
+            border: 1px solid rgba(201,168,76,.15);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .res-selector-search {
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255,255,255,.05);
+        }
+
+            .res-selector-search input {
+                width: 100%;
+                background: transparent;
+                border: none;
+                color: #fff;
+                font-size: 13px;
+                outline: none;
+                font-family: 'Be Vietnam Pro', sans-serif;
+            }
+
+                .res-selector-search input::placeholder {
+                    color: rgba(255,255,255,.25);
+                }
+
+        .res-list {
+            max-height: 220px;
+            overflow-y: auto;
+            padding: 6px;
+        }
+
+        .res-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background .15s;
+            user-select: none;
+        }
+
+            .res-item:hover {
+                background: var(--accent-glow);
+            }
+
+            .res-item.checked {
+                background: var(--accent-dim);
+            }
+
+            .res-item input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
+                accent-color: var(--accent);
+                flex-shrink: 0;
+                cursor: pointer;
+                margin: 0;
+            }
+
+        .res-item-name {
+            font-size: 13.5px;
+            color: #d8d6cf;
+            flex: 1;
+        }
+
+        .res-order-badge {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #000;
+            font-size: 11px;
+            font-weight: 700;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .res-item.checked .res-order-badge {
+            display: flex;
+        }
+
+        /* Selected preview strip */
+        .selected-preview {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            min-height: 30px;
+        }
+
+        .selected-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--accent-dim);
+            border: 1px solid rgba(201,168,76,.25);
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 12px;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+            .selected-chip .chip-order {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: var(--accent);
+                color: #000;
+                font-size: 10px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(135deg, #d4a84c, #b8853a);
+            color: #000;
+            padding: 11px 24px;
+            border-radius: 9px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all .2s;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            width: 100%;
+            justify-content: center;
+            letter-spacing: .02em;
+            box-shadow: 0 4px 16px rgba(201,168,76,.2);
+        }
+
+            .btn-primary:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 6px 24px rgba(201,168,76,.35);
+            }
+
+            .btn-primary:disabled {
+                opacity: .45;
+                cursor: not-allowed;
+                transform: none;
+                box-shadow: none;
+            }
+
+        .form-hint {
+            font-size: 11.5px;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        /* Divider label */
+        .divider-label {
+            position: relative;
+            text-align: center;
+            margin: 8px 0 16px;
+        }
+
+            .divider-label::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: var(--border);
+            }
+
+            .divider-label span {
+                position: relative;
+                background: var(--surface);
+                padding: 0 10px;
+                font-size: 11px;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: .08em;
+            }
+
+        /* Estimated time quick-select */
+        .time-options {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .time-option {
+            padding: 5px 13px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12.5px;
+            font-weight: 500;
+            border: 1px solid rgba(201,168,76,.2);
+            color: var(--text-soft);
+            background: transparent;
+            transition: all .15s;
+        }
+
+            .time-option:hover, .time-option.active {
+                background: var(--accent-dim);
+                color: var(--accent);
+                border-color: rgba(201,168,76,.4);
+            }
+
+        /* ══════════════════════════════
+                   BUTTON: New Tour (topbar)
+                ══════════════════════════════ */
+        .btn-new-tour {
+            background: linear-gradient(135deg, #d4a84c, #b8853a);
+            color: #000;
+            padding: 9px 20px;
+            border-radius: 9px;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all .2s;
+            box-shadow: 0 3px 12px rgba(201,168,76,.2);
+        }
+
+            .btn-new-tour:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 6px 20px rgba(201,168,76,.35);
+            }
+
+        /* Validation error */
+        .validation-msg {
+            display: none;
+            background: rgba(224,82,82,.1);
+            border: 1px solid rgba(224,82,82,.25);
+            color: #f07070;
+            font-size: 12.5px;
+            border-radius: 8px;
+            padding: 9px 14px;
+            margin-top: 12px;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .validation-msg.show {
+                display: flex;
+            }
+    </style>
+</head>
+<body>
+    <!-- ══════════ SIDEBAR ══════════ -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">✈</div>
+            <div class="brand-text">
+                <div class="name">Vĩnh Khánh</div>
+                <div class="role">Admin Dashboard</div>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Tổng quan</div>
+            <a href="/Dashboard" class="nav-link"><span class="nav-icon">⊞</span> Tổng quan</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Quản lý nội dung</div>
+            <a href="/Restaurants" class="nav-link"><span class="nav-icon">📍</span> Quản lý địa điểm</a>
+            <a href="/Tours" class="nav-link active"><span class="nav-icon">🔀</span> Quản lý Tour</a>
+            <a href="/Audio" class="nav-link"><span class="nav-icon">🎧</span> Quản lý Audio</a>
+            <a href="/Translations" class="nav-link"><span class="nav-icon">🌐</span> Bản dịch đa ngữ</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Người dùng</div>
+            <a href="/UserManager" class="nav-link">
+                <span class="nav-icon">👥</span> Quản lý User
+            </a>
+        </div>
+        
+
+        <div class="sidebar-footer">
+            <div class="user-row">
+                <div class="avatar">@username[0].ToString().ToUpper()</div>
+                <div class="user-info">
+                    <div class="uname">@username</div>
+                    <div class="urole">Super Admin</div>
+                </div>
+            </div>
+            <a href="/Login" class="logout-btn"><span>↪</span> Đăng xuất</a>
+        </div>
+    </aside>
+
+    <!-- ══════════ MAIN ══════════ -->
+    <div class="main">
+        <header class="topbar">
+            <div class="topbar-left">
+                <div class="topbar-title">Quản lý Tour Du Lịch</div>
+                <div class="topbar-sub">Tạo và quản lý lộ trình ẩm thực Vĩnh Khánh</div>
+            </div>
+            <button class="btn-new-tour" onclick="document.getElementById('createSection').scrollIntoView({behavior:'smooth'})">
+                <span>＋</span> Tạo Tour mới
+            </button>
+        </header>
+
+        <div class="content">
+
+            <!-- STATS -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-icon">🗺️</div>
+                    <div>
+                        <div class="stat-label">Tổng số Tour</div>
+                        <div class="stat-value">@Model.Tours.Count</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📍</div>
+                    <div>
+                        <div class="stat-label">Địa điểm khả dụng</div>
+                        <div class="stat-value">@Model.AllRestaurants.Count</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div>
+                        <div class="stat-label">Cập nhật gần nhất</div>
+                        <div class="stat-value" style="font-size:15px; padding-top:4px;">
+                            @(Model.Tours.Any() ? Model.Tours.First().CreatedAt.ToString("dd/MM/yyyy") : "—")
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOUR LIST -->
+            <div class="section-header">
+                <div class="section-title">Danh sách Tour</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-title">
+                        <span>🔀</span> Tour đã tạo
+                    </div>
+                    <div style="font-size:12px; color:var(--text-muted);">@Model.Tours.Count tour</div>
+                </div>
+
+                @if (!Model.Tours.Any())
+                {
+                    <div class="empty-state">
+                        <div class="empty-icon">🗺️</div>
+                        <div>Chưa có tour nào. Hãy tạo tour đầu tiên bên dưới!</div>
+                    </div>
+                }
+                else
+                {
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tên Tour</th>
+                                <th>Mô tả</th>
+                                <th>Thời gian</th>
+                                <th>Ngày tạo</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int idx = 1;
+                            }
+                            @foreach (var tour in Model.Tours)
+                            {
+                                <tr>
+                                    <td style="color:var(--text-muted); font-size:12px;">@idx</td>
+                                    <td class="tour-title-cell">@tour.Title</td>
+                                    <td class="tour-desc-cell">@(tour.Description ?? "—")</td>
+                                    <td><span class="badge">⏱ @(tour.TotalEstimatedTime ?? "—")</span></td>
+                                    <td><span class="date-chip">@tour.CreatedAt.ToString("dd/MM/yyyy")</span></td>
+                                    <td>
+                                        <div class="action-btns">
+                                            <a href="#" class="btn-sm btn-edit">✏ Sửa</a>
+                                            <a href="#" class="btn-sm btn-delete">🗑 Xóa</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                idx++;
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+
+            <!-- CREATE FORM -->
+            <div id="createSection">
+                <div class="section-header">
+                    <div class="section-title">Tạo Tour mới</div>
+                </div>
+
+                <div class="form-card">
+                    <div class="form-card-header">
+                        <span>✨</span>
+                        <h3>Thông tin Tour</h3>
+                    </div>
+                    <div class="form-card-body">
+                        <form method="post" id="tourForm" onsubmit="return validateForm()">
+                            <div class="form-grid">
+                                <!-- LEFT COLUMN -->
+                                <div>
+                                    <div class="form-group">
+                                        <label class="form-label">Tiêu đề Tour *</label>
+                                        <input class="form-control" type="text" name="TourTitle" required
+                                               placeholder="VD: Food Tour Đêm Vĩnh Khánh">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Mô tả ngắn</label>
+                                        <textarea class="form-control" name="Description"
+                                                  placeholder="Mô tả trải nghiệm của tour này..."></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Thời gian dự kiến</label>
+                                        <input class="form-control" type="text" id="estimatedTimeInput"
+                                               name="TotalEstimatedTime" placeholder="VD: 60–90 phút">
+                                        <div class="time-options">
+                                            <button type="button" class="time-option" onclick="setTime(this,'30–45 phút')">30–45 phút</button>
+                                            <button type="button" class="time-option" onclick="setTime(this,'60–90 phút')">60–90 phút</button>
+                                            <button type="button" class="time-option" onclick="setTime(this,'2–3 giờ')">2–3 giờ</button>
+                                            <button type="button" class="time-option" onclick="setTime(this,'Cả ngày')">Cả ngày</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- RIGHT COLUMN -->
+                                <div>
+                                    <div class="form-group">
+                                        <label class="form-label">Chọn địa điểm vào Tour *</label>
+                                        <p class="form-hint" style="margin-bottom:10px;">Tích chọn theo thứ tự muốn đi — số thứ tự sẽ được lưu tự động.</p>
+
+                                        <div class="res-selector-wrap">
+                                            <div class="res-selector-search">
+                                                <input type="text" id="resSearch" placeholder="🔍  Tìm kiếm địa điểm..." oninput="filterRestaurants()">
+                                            </div>
+                                            <div class="res-list" id="resList">
+                                                @foreach (var res in Model.AllRestaurants)
+                                                {
+                                                    <label class="res-item" id="res-item-@res.Id">
+                                                        <input type="checkbox" name="SelectedRestaurantIds"
+                                                               value="@res.Id"
+                                                               onchange="updateSelection(this, @res.Id, '@res.Name.Replace("'", "\\'")')">
+                                                        <span class="res-item-name">@res.Name</span>
+                                                        <span class="res-order-badge" id="badge-@res.Id"></span>
+                                                    </label>
+                                                }
+                                            </div>
+                                        </div>
+
+                                        <!-- Selection chips -->
+                                        <div class="selected-preview" id="selectedPreview"></div>
+                                        <div class="form-hint" id="selectionCount" style="margin-top:6px;">Chưa chọn địa điểm nào</div>
+                                    </div>
+
+                                    <div id="validationMsg" class="validation-msg">
+                                        ⚠ Vui lòng chọn ít nhất một địa điểm cho tour.
+                                    </div>
+
+                                    <button type="submit" class="btn-primary" id="submitBtn">
+                                        💾 Lưu Tour
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /content -->
+    </div><!-- /main -->
+
+    <script>
+        // ── Selection state ──
+        const selected = []; // [{id, name}]
+
+        function updateSelection(checkbox, id, name) {
+            const item = document.getElementById('res-item-' + id);
+            const badge = document.getElementById('badge-' + id);
+
+            if (checkbox.checked) {
+                selected.push({ id, name });
+                item.classList.add('checked');
+            } else {
+                const idx = selected.findIndex(s => s.id === id);
+                if (idx > -1) selected.splice(idx, 1);
+                item.classList.remove('checked');
+                badge.textContent = '';
+            }
+
+            // Rebuild order badges & chips
+            rebuildOrder();
+        }
+
+        function rebuildOrder() {
+            const preview = document.getElementById('selectedPreview');
+            const countEl = document.getElementById('selectionCount');
+            preview.innerHTML = '';
+
+            selected.forEach((s, i) => {
+                // badge in list
+                const badge = document.getElementById('badge-' + s.id);
+                if (badge) badge.textContent = i + 1;
+
+                // chip in preview
+                const chip = document.createElement('span');
+                chip.className = 'selected-chip';
+                chip.innerHTML = `<span class="chip-order">${i + 1}</span>${s.name}`;
+                preview.appendChild(chip);
+            });
+
+            countEl.textContent = selected.length
+                ? `Đã chọn ${selected.length} địa điểm`
+                : 'Chưa chọn địa điểm nào';
+        }
+
+        // ── Search filter ──
+        function filterRestaurants() {
+            const q = document.getElementById('resSearch').value.toLowerCase();
+            document.querySelectorAll('.res-item').forEach(item => {
+                const name = item.querySelector('.res-item-name').textContent.toLowerCase();
+                item.style.display = name.includes(q) ? '' : 'none';
+            });
+        }
+
+        // ── Time quick-select ──
+        function setTime(btn, val) {
+            document.getElementById('estimatedTimeInput').value = val;
+            document.querySelectorAll('.time-option').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        // ── Validate ──
+        function validateForm() {
+            const msg = document.getElementById('validationMsg');
+            if (selected.length === 0) {
+                msg.classList.add('show');
+                return false;
+            }
+            msg.classList.remove('show');
+            return true;
+        }
+    </script>
+</body>
+</html>

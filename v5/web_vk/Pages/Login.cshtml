@@ -1,0 +1,307 @@
+﻿@page
+@model LoginModel
+@{
+    Layout = null;
+    var role = Request.Query["role"].ToString();
+    var isAdmin = role != "owner";
+    var roleLabel = isAdmin ? "Admin" : "Chủ nhà hàng";
+    var roleIcon = isAdmin ? "🛡️" : "🍽️";
+    var roleDesc = isAdmin ? "Quản trị hệ thống toàn quyền" : "Quản lý địa điểm của bạn";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập – @roleLabel – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0f1117;
+            --card-bg: #181c27;
+            --accent: #c9a84c;
+            --accent-hover: #b8923e;
+            --accent-glow: rgba(201,168,76,.3);
+            --accent-glow2: rgba(201,168,76,.45);
+            --blob1: rgba(201,168,76,.5);
+            --blob2: rgba(201,168,76,.15);
+            --muted: #8a8a9a;
+            --border: rgba(201,168,76,.15);
+            --radius: 14px;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+            body::before, body::after {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(80px);
+                opacity: .25;
+                pointer-events: none;
+            }
+
+            body::before {
+                width: 500px;
+                height: 500px;
+                background: var(--blob1);
+                top: -120px;
+                left: -120px;
+            }
+
+            body::after {
+                width: 400px;
+                height: 400px;
+                background: var(--blob2);
+                bottom: -100px;
+                right: -100px;
+            }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 44px 40px 36px;
+            width: 420px;
+            max-width: 95vw;
+            box-shadow: 0 30px 80px rgba(0,0,0,.4);
+            position: relative;
+            z-index: 1;
+            animation: slideUp .45s cubic-bezier(.34,1.56,.64,1) both;
+        }
+
+        @@keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--muted);
+            text-decoration: none;
+            margin-bottom: 28px;
+            transition: color .15s;
+        }
+
+            .back-link:hover {
+                color: #fff;
+            }
+
+        .role-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 28px;
+        }
+
+        .role-icon-wrap {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            box-shadow: 0 4px 14px var(--accent-glow);
+        }
+
+        .role-badge-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .role-badge-sub {
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--muted);
+                text-transform: uppercase;
+                letter-spacing: .07em;
+                margin-bottom: 7px;
+            }
+
+        .input-wrap {
+            position: relative;
+        }
+
+            .input-wrap .icon {
+                position: absolute;
+                left: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 15px;
+                opacity: .5;
+                pointer-events: none;
+            }
+
+            .input-wrap input {
+                width: 100%;
+                padding: 11px 14px 11px 40px;
+                background: rgba(255,255,255,.06);
+                border: 1.5px solid var(--border);
+                border-radius: 9px;
+                color: #fff;
+                font-size: 14px;
+                font-family: inherit;
+                outline: none;
+                transition: border-color .2s, background .2s;
+            }
+
+                .input-wrap input::placeholder {
+                    color: rgba(255,255,255,.25);
+                }
+
+                .input-wrap input:focus {
+                    border-color: var(--accent);
+                    background: rgba(255,255,255,.04);
+                }
+
+        .btn-login {
+            width: 100%;
+            margin-top: 8px;
+            padding: 12px;
+            border-radius: 9px;
+            border: none;
+            background: var(--accent);
+            color: #0f1117;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            box-shadow: 0 6px 20px var(--accent-glow);
+            transition: background .15s, transform .1s, box-shadow .15s;
+        }
+
+            .btn-login:hover {
+                background: var(--accent-hover);
+                transform: translateY(-1px);
+                box-shadow: 0 10px 28px var(--accent-glow2);
+            }
+
+            .btn-login:active {
+                transform: translateY(0);
+            }
+
+        .error-msg {
+            margin-top: 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: rgba(239,68,68,.12);
+            border: 1px solid rgba(239,68,68,.3);
+            color: #f87171;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-footer {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <a href="/" class="back-link">← Quay lại trang chủ</a>
+
+        <div class="role-badge">
+            <div class="role-icon-wrap">@roleIcon</div>
+            <div>
+                <div class="role-badge-text">@roleLabel</div>
+                <div class="role-badge-sub">@roleDesc</div>
+            </div>
+        </div>
+
+        <h2>Đăng nhập</h2>
+        <p class="subtitle">Chào mừng trở lại! Vui lòng đăng nhập để tiếp tục.</p>
+
+        <form method="post">
+            <div class="form-group">
+                <label>Tên đăng nhập</label>
+                <div class="input-wrap">
+                    <span class="icon">👤</span>
+                    <input asp-for="Username" placeholder="Nhập tên đăng nhập..." autocomplete="username" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <div class="input-wrap">
+                    <span class="icon">🔒</span>
+                    <input asp-for="Password" type="password" placeholder="Nhập mật khẩu..." autocomplete="current-password" />
+                </div>
+            </div>
+
+            <button type="submit" class="btn-login">Đăng nhập →</button>
+        </form>
+
+        @if (ViewData["Error"] != null)
+        {
+            <div class="error-msg">⚠ @ViewData["Error"]</div>
+        }
+
+        <div class="card-footer">© 2026 Vĩnh Khánh – All rights reserved</div>
+    </div>
+</body>
+</html>

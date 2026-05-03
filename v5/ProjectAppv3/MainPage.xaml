@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjectApp"
+             xmlns:vm="clr-namespace:ProjectApp.ViewModels"
+             xmlns:models="clr-namespace:ProjectApp.Models"
+             x:Class="ProjectApp.MainPage"
+             x:DataType="vm:MainViewModel"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,Auto,*">
+
+        <!-- 1. HEADER -->
+        <Grid Grid.Row="0"
+              BackgroundColor="#16213E"
+              Padding="12,10"
+              ColumnDefinitions="*,40,40">
+            <Label Grid.Column="0"
+                   Text="Ẩm Thực Vĩnh Khánh"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   VerticalOptions="Center" />
+            <ImageButton Grid.Column="1"
+                         Source="isearch.png"
+                         Command="{Binding OpenSearchCommand}"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" />
+            <ImageButton Grid.Column="2"
+                         Source="icon_filter.png"
+                         Command="{Binding OpenFilterCommand}"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         Padding="6" />
+        </Grid>
+
+        <!-- 2. AUDIO BAR (sticky, global) -->
+        <Border Grid.Row="1"
+                BackgroundColor="#0D1B2A"
+                Stroke="#1E3A5F"
+                StrokeThickness="0.5"
+                StrokeShape="RoundRectangle 8"
+                Margin="8,6"
+                Padding="10,7"
+                IsVisible="{Binding HasCurrentTrack}">
+            <Grid ColumnDefinitions="Auto,*,Auto,36">
+                <!-- Waveform -->
+                <HorizontalStackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                    <BoxView Color="#4EA5D9" WidthRequest="3" HeightRequest="6"  />
+                    <BoxView Color="#4EA5D9" WidthRequest="3" HeightRequest="10" />
+                    <BoxView Color="#4EA5D9" WidthRequest="3" HeightRequest="14" />
+                    <BoxView Color="#4EA5D9" WidthRequest="3" HeightRequest="8"  />
+                    <BoxView Color="#4EA5D9" WidthRequest="3" HeightRequest="12" />
+                </HorizontalStackLayout>
+
+                <Label Grid.Column="1"
+                       Text="{Binding CurrentTrackTitle}"
+                       FontSize="10"
+                       TextColor="#4EA5D9"
+                       LineBreakMode="TailTruncation"
+                       VerticalOptions="Center"
+                       Margin="8,0" />
+
+                <Label Grid.Column="2"
+                       Text="{Binding CurrentTrackDuration}"
+                       FontSize="10"
+                       TextColor="#8899AA"
+                       VerticalOptions="Center" />
+
+                <ImageButton Grid.Column="3"
+                             Source="{Binding PlayPauseIcon}"
+                             Command="{Binding TogglePlayPauseCommand}"
+                             BackgroundColor="#1E6FA8"
+                             CornerRadius="13"
+                             Padding="6" />
+            </Grid>
+        </Border>
+
+        <!-- 3. MAIN CONTENT -->
+        <CollectionView Grid.Row="2"
+                        ItemsSource="{Binding Restaurants}"
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedRestaurant}"
+                        SelectionChangedCommand="{Binding OpenDetailCommand}"
+                        Margin="8,0">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="12" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.Header>
+                <VerticalStackLayout Padding="8,12,8,8">
+                    <Label Text="Danh sách hàng quán"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#E0E0F0"
+                           Margin="4,0,0,8"/>
+                </VerticalStackLayout>
+            </CollectionView.Header>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Restaurant">
+                    <Border BackgroundColor="#16213E"
+                            StrokeThickness="0.5"
+                            Stroke="#1E3A5F"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="10"
+                            Margin="0,2">
+                        <Grid ColumnDefinitions="80,*" ColumnSpacing="12">
+                            <!-- Image -->
+                            <Border Grid.Column="0"
+                                    BackgroundColor="#0F3460"
+                                    StrokeShape="RoundRectangle 8"
+                                    HeightRequest="80"
+                                    WidthRequest="80">
+                                <Image Source="{Binding ImageUrl}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="80"
+                                       WidthRequest="80"
+                                       Margin="-1"/>
+                            </Border>
+
+                            <!-- Info -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="4" VerticalOptions="Center">
+                                <Label Text="{Binding DisplayName}"
+                                       FontSize="15"
+                                       FontAttributes="Bold"
+                                       TextColor="#FFFFFF"
+                                       MaxLines="1"
+                                       LineBreakMode="TailTruncation"/>
+                                <Label Text="{Binding OpenHours, StringFormat='🕐 {0}'}"
+                                       FontSize="12"
+                                       TextColor="#4EC88A"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding DisplayDescription}"
+                                       FontSize="12"
+                                       TextColor="#A0A8C0"
+                                       MaxLines="2"
+                                       LineBreakMode="TailTruncation"/>
+                                <Label Text="{Binding Rating, StringFormat='⭐ {0}'}"
+                                       FontSize="13"
+                                       TextColor="#FFDB58"
+                                       FontAttributes="Bold"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+</ContentPage>
