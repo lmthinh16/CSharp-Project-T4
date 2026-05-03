@@ -1,0 +1,1015 @@
+﻿@page
+@model web_vk.Pages.UserManagerModel
+@{
+    Layout = null;
+    var username = HttpContext.Session.GetString("user") ?? "Admin";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60"> <!-- Tự reload mỗi 60 giây -->
+    <title>Quản lý Người dùng – Vĩnh Khánh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --sidebar-bg: #0d0f17;
+            --sidebar-w: 260px;
+            --accent: #c9a84c;
+            --accent-dim: rgba(201,168,76,.15);
+            --accent-glow: rgba(201,168,76,.08);
+            --text-muted: #6e6e82;
+            --text-soft: #b0aead;
+            --header-h: 64px;
+            --radius: 14px;
+            --surface: #13151f;
+            --border: rgba(201,168,76,.12);
+            --danger: #e05252;
+            --success: #4caf82;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #0f1117;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(201,168,76,.25);
+            border-radius: 99px;
+        }
+
+        /* ══ SIDEBAR ══ */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--sidebar-bg);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 22px 20px 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #c9a84c, #7d5f1e);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .brand-text .name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(to right, #e8c96a, #c9a84c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-text .role {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 1px;
+        }
+
+        .nav-section {
+            padding: 18px 12px 4px;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0 8px;
+            margin-bottom: 6px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            border-radius: 9px;
+            text-decoration: none;
+            color: var(--text-soft);
+            font-size: 13.5px;
+            font-weight: 400;
+            transition: background .15s, color .15s;
+            margin-bottom: 2px;
+        }
+
+            .nav-link:hover {
+                background: var(--accent-glow);
+                color: #fff;
+            }
+
+            .nav-link.active {
+                background: var(--accent-dim);
+                color: var(--accent);
+                font-weight: 600;
+            }
+
+        .nav-icon {
+            width: 18px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .user-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--accent-glow);
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background: linear-gradient(135deg,#c9a84c,#7d5f1e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .uname {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .urole {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 1px;
+        }
+
+        .logout-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            transition: background .15s, color .15s;
+        }
+
+            .logout-btn:hover {
+                background: rgba(224,82,82,.1);
+                color: var(--danger);
+            }
+
+        /* ══ MAIN ══ */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            height: var(--header-h);
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            flex-shrink: 0;
+        }
+
+        .topbar-left {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .topbar-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #f0eade;
+        }
+
+        .topbar-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .refresh-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--text-muted);
+            background: var(--accent-glow);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        .dot-live {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--success);
+            animation: pulse 2s infinite;
+        }
+
+        @@keyframes pulse {
+            0%, 100%
+
+        {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: .5;
+            transform: scale(.8);
+        }
+
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px;
+        }
+
+        /* ══ ONLINE STATS (BIG CARDS) ══ */
+        .online-banner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .online-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 24px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color .2s;
+        }
+
+            .online-card:hover {
+                border-color: rgba(201,168,76,.35);
+            }
+
+            .online-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+            }
+
+            .online-card.total::before {
+                background: linear-gradient(to right, #c9a84c, #e8c96a);
+            }
+
+            .online-card.members::before {
+                background: linear-gradient(to right, #4caf82, #6dd9a3);
+            }
+
+            .online-card.anon::before {
+                background: linear-gradient(to right, #6b8cff, #99b3ff);
+            }
+
+        .online-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .online-card.total .online-icon {
+            background: var(--accent-dim);
+        }
+
+        .online-card.members .online-icon {
+            background: rgba(76,175,130,.15);
+        }
+
+        .online-card.anon .online-icon {
+            background: rgba(107,140,255,.15);
+        }
+
+        .online-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .online-value {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .online-card.total .online-value {
+            color: var(--accent);
+        }
+
+        .online-card.members .online-value {
+            color: #4caf82;
+        }
+
+        .online-card.anon .online-value {
+            color: #6b8cff;
+        }
+
+        .online-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        /* ══ FILTER BAR ══ */
+        .filter-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .search-wrap {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+
+            .search-wrap .search-icon {
+                position: absolute;
+                left: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 14px;
+                color: var(--text-muted);
+            }
+
+        .search-input {
+            width: 100%;
+            padding: 9px 14px 9px 36px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            color: #fff;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 13.5px;
+            outline: none;
+            transition: border-color .2s;
+        }
+
+            .search-input:focus {
+                border-color: rgba(201,168,76,.45);
+            }
+
+            .search-input::placeholder {
+                color: var(--text-muted);
+            }
+
+        .filter-tabs {
+            display: flex;
+            gap: 6px;
+        }
+
+        .filter-tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            color: var(--text-soft);
+            background: var(--surface);
+            transition: all .15s;
+        }
+
+            .filter-tab:hover {
+                border-color: rgba(201,168,76,.35);
+                color: #fff;
+            }
+
+            .filter-tab.active {
+                background: var(--accent-dim);
+                color: var(--accent);
+                border-color: rgba(201,168,76,.35);
+            }
+
+        /* ══ TABLE ══ */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            padding: 15px 22px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-header-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 11px 18px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            background: rgba(0,0,0,.15);
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 13px 18px;
+            border-bottom: 1px solid rgba(255,255,255,.04);
+            font-size: 13.5px;
+            color: #d8d6cf;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(201,168,76,.03);
+        }
+
+        /* Avatar cell */
+        .user-cell {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        .user-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background: linear-gradient(135deg, #c9a84c88, #7d5f1e88);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            flex-shrink: 0;
+            border: 1px solid rgba(201,168,76,.2);
+        }
+
+        .user-name {
+            font-weight: 600;
+            color: #f0eade;
+            font-size: 14px;
+        }
+
+        .user-email {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 1px;
+        }
+
+        /* Status dot */
+        .status-dot {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12.5px;
+            font-weight: 500;
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+            .dot.online {
+                background: #4caf82;
+                box-shadow: 0 0 6px #4caf8288;
+            }
+
+            .dot.offline {
+                background: #444;
+            }
+
+        .status-dot.online {
+            color: #4caf82;
+        }
+
+        .status-dot.offline {
+            color: var(--text-muted);
+        }
+
+        /* Locked badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 11.5px;
+            font-weight: 500;
+        }
+
+            .badge.active {
+                background: rgba(76,175,130,.12);
+                color: #4caf82;
+                border: 1px solid rgba(76,175,130,.2);
+            }
+
+            .badge.locked {
+                background: rgba(224,82,82,.1);
+                color: var(--danger);
+                border: 1px solid rgba(224,82,82,.2);
+            }
+
+        .date-chip {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: rgba(255,255,255,.04);
+            padding: 3px 9px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.06);
+        }
+
+        /* Action buttons */
+        .action-btns {
+            display: flex;
+            gap: 7px;
+        }
+
+        .btn-sm {
+            padding: 5px 12px;
+            border-radius: 7px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all .18s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        .btn-lock {
+            background: rgba(201,168,76,.1);
+            color: var(--accent);
+            border: 1px solid rgba(201,168,76,.2);
+        }
+
+            .btn-lock:hover {
+                background: var(--accent-dim);
+            }
+
+        .btn-unlock {
+            background: rgba(76,175,130,.1);
+            color: #4caf82;
+            border: 1px solid rgba(76,175,130,.2);
+        }
+
+            .btn-unlock:hover {
+                background: rgba(76,175,130,.2);
+            }
+
+        .btn-delete {
+            background: rgba(224,82,82,.1);
+            color: var(--danger);
+            border: 1px solid rgba(224,82,82,.2);
+        }
+
+            .btn-delete:hover {
+                background: rgba(224,82,82,.2);
+            }
+
+        .empty-state {
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .empty-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+            opacity: .4;
+        }
+
+        /* Confirm dialog */
+        .overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.6);
+            backdrop-filter: blur(4px);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .overlay.show {
+                display: flex;
+            }
+
+        .dialog {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .dialog-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .dialog-title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .dialog-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 22px;
+            line-height: 1.6;
+        }
+
+        .dialog-btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-confirm {
+            flex: 1;
+            padding: 10px;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: var(--danger);
+            color: #fff;
+            transition: opacity .2s;
+        }
+
+            .btn-confirm:hover {
+                opacity: .85;
+            }
+
+        .btn-cancel {
+            flex: 1;
+            padding: 10px;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-soft);
+            font-family: 'Be Vietnam Pro', sans-serif;
+            transition: background .2s;
+        }
+
+            .btn-cancel:hover {
+                background: rgba(255,255,255,.05);
+            }
+    </style>
+</head>
+<body>
+
+    <!-- ══ SIDEBAR ══ -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">✈</div>
+            <div class="brand-text">
+                <div class="name">Vĩnh Khánh</div>
+                <div class="role">Admin Dashboard</div>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Tổng quan</div>
+            <a href="/Dashboard" class="nav-link"><span class="nav-icon">⊞</span> Tổng quan</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Quản lý nội dung</div>
+            <a href="/Restaurants" class="nav-link"><span class="nav-icon">📍</span> Quản lý địa điểm</a>
+            <a href="/Tours" class="nav-link"><span class="nav-icon">🔀</span> Quản lý Tour</a>
+            <a href="/Audio" class="nav-link"><span class="nav-icon">🎧</span> Quản lý Audio</a>
+            <a href="/Translations" class="nav-link"><span class="nav-icon">🌐</span> Bản dịch đa ngữ</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-label">Người dùng</div>
+            <a href="/UserManager" class="nav-link active"><span class="nav-icon">👥</span> Quản lý User</a>
+          
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-row">
+                <div class="avatar">@username[0].ToString().ToUpper()</div>
+                <div class="user-info">
+                    <div class="uname">@username</div>
+                    <div class="urole">Super Admin</div>
+                </div>
+            </div>
+            <a href="/Login" class="logout-btn"><span>↪</span> Đăng xuất</a>
+        </div>
+    </aside>
+
+    <!-- ══ MAIN ══ -->
+    <div class="main">
+        <header class="topbar">
+            <div class="topbar-left">
+                <div class="topbar-title">Quản lý Người dùng</div>
+                <div class="topbar-sub">Theo dõi hoạt động và tài khoản đăng ký</div>
+            </div>
+            <div class="refresh-badge">
+                <span class="dot-live"></span>
+                Tự cập nhật sau <span id="countdown">60</span>s
+            </div>
+        </header>
+
+        <div class="content">
+
+            <!-- ONLINE STATS -->
+            <div class="online-banner">
+                <div class="online-card total">
+                    <div class="online-icon">🟢</div>
+                    <div>
+                        <div class="online-label">Tổng đang online</div>
+                        <div class="online-value">@Model.TotalOnline</div>
+                        <div class="online-sub">Cập nhật trong 5 phút gần nhất</div>
+                    </div>
+                </div>
+                <div class="online-card members">
+                    <div class="online-icon">👤</div>
+                    <div>
+                        <div class="online-label">Thành viên đã đăng ký</div>
+                        <div class="online-value">@Model.OnlineMembers</div>
+                        <div class="online-sub">Có tài khoản, đang hoạt động</div>
+                    </div>
+                </div>
+                <div class="online-card anon">
+                    <div class="online-icon">👻</div>
+                    <div>
+                        <div class="online-label">Khách ẩn danh</div>
+                        <div class="online-value">@Model.OnlineAnonymous</div>
+                        <div class="online-sub">Chưa đăng ký tài khoản</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER BAR -->
+            <form method="get" class="filter-bar">
+                <div class="search-wrap">
+                    <span class="search-icon">🔍</span>
+                    <input class="search-input" type="text" name="SearchQuery"
+                           value="@Model.SearchQuery"
+                           placeholder="Tìm theo tên hoặc email...">
+                </div>
+                <div class="filter-tabs">
+                    <a href="/UserManager" class="filter-tab @(string.IsNullOrEmpty(Model.StatusFilter) || Model.StatusFilter == "all" ? "active" : "")">
+                        Tất cả (@Model.AllUsers.Count)
+                    </a>
+                    <a href="/UserManager?StatusFilter=online&SearchQuery=@Model.SearchQuery"
+                       class="filter-tab @(Model.StatusFilter == "online" ? "active" : "")">
+                        🟢 Online
+                    </a>
+                    <a href="/UserManager?StatusFilter=offline&SearchQuery=@Model.SearchQuery"
+                       class="filter-tab @(Model.StatusFilter == "offline" ? "active" : "")">
+                        ⚫ Offline
+                    </a>
+                </div>
+                <button type="submit" style="display:none"></button>
+            </form>
+
+            <!-- USER TABLE -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-title">
+                        <span>👥</span> Danh sách tài khoản đã đăng ký
+                    </div>
+                    <div style="font-size:12px; color:var(--text-muted);">@Model.AllUsers.Count tài khoản</div>
+                </div>
+
+                @if (!Model.AllUsers.Any())
+                {
+                    <div class="empty-state">
+                        <div class="empty-icon">👤</div>
+                        <div>Không tìm thấy tài khoản nào.</div>
+                    </div>
+                }
+                else
+                {
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Người dùng</th>
+                                <th>Trạng thái</th>
+                                <th>Tài khoản</th>
+                                <th>Hoạt động cuối</th>
+                                <th>Ngày đăng ký</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int idx = 1; var fiveMin = DateTime.Now.AddMinutes(-5);
+                            }
+                            @foreach (var u in Model.AllUsers)
+                            {
+                                var isOnline = u.LastActiveAt.HasValue && u.LastActiveAt >= fiveMin;
+                                <tr>
+                                    <td style="color:var(--text-muted); font-size:12px;">@idx</td>
+                                    <td>
+                                        <div class="user-cell">
+                                            <div class="user-avatar">@u.Username[0].ToString().ToUpper()</div>
+                                            <div>
+                                                <div class="user-name">@u.Username</div>
+                                                <div class="user-email">@(u.Email ?? "Chưa có email")</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="status-dot @(isOnline ? "online" : "offline")">
+                                            <span class="dot @(isOnline ? "online" : "offline")"></span>
+                                            @(isOnline ? "Online" : "Offline")
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="badge @(u.IsLocked ? "locked" : "active")">
+                                            @(u.IsLocked ? "🔒 Đã khóa" : "✅ Hoạt động")
+                                        </span>
+                                    </td>
+                                    <td>
+                                        @if (u.LastActiveAt.HasValue)
+                                        {
+                                            <span class="date-chip">@u.LastActiveAt.Value.ToString("HH:mm dd/MM/yyyy")</span>
+                                        }
+                                        else
+                                        {
+                                            <span style="color:var(--text-muted); font-size:12px;">Chưa có</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <span class="date-chip">@u.CreatedAt.ToString("dd/MM/yyyy")</span>
+                                    </td>
+                                    <td>
+                                        <div class="action-btns">
+                                            <!-- Khoá / Mở khoá -->
+                                            <form method="post" asp-page-handler="ToggleLock" style="display:inline">
+                                                <input type="hidden" name="id" value="@u.Id">
+                                                <button type="submit" class="btn-sm @(u.IsLocked ? "btn-unlock" : "btn-lock")">
+                                                    @(u.IsLocked ? "🔓 Mở" : "🔒 Khóa")
+                                                </button>
+                                            </form>
+                                            <!-- Xóa -->
+                                            <button type="button" class="btn-sm btn-delete"
+                                                    onclick="confirmDelete(@u.Id, '@u.Username')">
+                                                🗑 Xóa
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                idx++;
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+
+        </div><!-- /content -->
+    </div><!-- /main -->
+    <!-- ══ CONFIRM DELETE DIALOG ══ -->
+    <div class="overlay" id="deleteOverlay">
+        <div class="dialog">
+            <div class="dialog-icon">⚠️</div>
+            <div class="dialog-title">Xác nhận xóa tài khoản</div>
+            <div class="dialog-desc">Bạn có chắc muốn xóa tài khoản <strong id="deleteUsername"></strong>?<br>Hành động này không thể hoàn tác.</div>
+            <div class="dialog-btns">
+                <button class="btn-cancel" onclick="closeDialog()">Hủy</button>
+                <form method="post" asp-page-handler="Delete" style="flex:1">
+                    <input type="hidden" name="id" id="deleteUserId">
+                    <button type="submit" class="btn-confirm" style="width:100%">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ── Countdown refresh ──
+        let seconds = 60;
+        const el = document.getElementById('countdown');
+        setInterval(() => {
+            seconds--;
+            if (seconds <= 0) seconds = 60;
+            el.textContent = seconds;
+        }, 1000);
+
+        // ── Delete confirm dialog ──
+        function confirmDelete(id, name) {
+            document.getElementById('deleteUserId').value = id;
+            document.getElementById('deleteUsername').textContent = name;
+            document.getElementById('deleteOverlay').classList.add('show');
+        }
+
+        function closeDialog() {
+            document.getElementById('deleteOverlay').classList.remove('show');
+        }
+
+        // Click outside dialog to close
+        document.getElementById('deleteOverlay').addEventListener('click', function(e) {
+            if (e.target === this) closeDialog();
+        });
+    </script>
+</body>
+</html>

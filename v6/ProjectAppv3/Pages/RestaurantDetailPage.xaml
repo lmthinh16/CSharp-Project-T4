@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ProjectApp.ViewModels"
+             xmlns:svc="clr-namespace:ProjectApp.Services"
+             x:Class="ProjectApp.Pages.RestaurantDetailPage"
+             x:DataType="vm:RestaurantDetailViewModel"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Top nav -->
+        <Grid Grid.Row="0"
+              BackgroundColor="#16213E"
+              Padding="8,8"
+              ColumnDefinitions="40,*,40">
+            <ImageButton Grid.Column="0"
+                         Source="back.png"
+                         Command="{Binding GoBackCommand}"
+                         BackgroundColor="#0F3460"
+                         CornerRadius="6"
+                         HeightRequest="40"
+                         Padding="6" />
+            <Label Grid.Column="1"
+                   Text="{Binding Restaurant.DisplayName}"
+                   FontSize="13"
+                   FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   LineBreakMode="TailTruncation" />
+           
+        </Grid>
+
+        <!-- Scrollable content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="0">
+
+                <!-- Hero image -->
+                <Grid HeightRequest="160">
+                    <Image Source="{Binding Restaurant.ImageUrl}"
+                           Aspect="AspectFill"
+                           BackgroundColor="#0F2744" />
+                    <BoxView BackgroundColor="#1A1A2E"
+                             Opacity="0.45"
+                             VerticalOptions="End"
+                             HeightRequest="60" />
+                </Grid>
+
+                <VerticalStackLayout Padding="14,12" Spacing="12">
+
+                    <!-- Title + info -->
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="{Binding Restaurant.DisplayName}"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#E0E8FF" />
+                        <Label Text="{Binding Restaurant.Address}"
+                               FontSize="11"
+                               TextColor="#8899AA" />
+                        <HorizontalStackLayout Spacing="12">
+                            <Label Text="{Binding Restaurant.Rating, StringFormat='⭐ {0}'}"
+                                   FontSize="13"
+                                   TextColor="#FFDB58"
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Restaurant.OpenHours, StringFormat='🕐 {0}'}"
+                                   FontSize="13"
+                                   TextColor="#4EC88A"
+                                   FontAttributes="Bold" />
+                        </HorizontalStackLayout>
+                        <!-- Distance (visible khi IsNearest) -->
+                        <Label Text="{Binding DistanceText}"
+                               FontSize="11"
+                               TextColor="#4EC88A"
+                               IsVisible="{Binding Restaurant.IsNearest}" />
+                    </VerticalStackLayout>
+
+                  
+
+                    <!-- Audio guides list -->
+                    <VerticalStackLayout Spacing="6"
+                                         IsVisible="{Binding HasAudioGuides}">
+                        <Label Text="{Binding [detail_audio], Source={x:Static svc:LocalizationManager.Instance}}"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#4EA5D9" />
+
+                        <CollectionView ItemsSource="{Binding AudioItems}"
+                                        SelectionMode="None">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="vm:AudioGuideItemVm">
+                                    <Border BackgroundColor="{Binding RowBackgroundColor}"
+                                            Stroke="{Binding RowBorderColor}"
+                                            StrokeThickness="1"
+                                            StrokeShape="RoundRectangle 10"
+                                            Padding="12,10"
+                                            Margin="0,3">
+                                        <Border.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RestaurantDetailViewModel}}, Path=PlayAudioCommand}"
+                                                CommandParameter="{Binding .}" />
+                                        </Border.GestureRecognizers>
+
+                                        <Grid ColumnDefinitions="36,*,44">
+
+                                            <!-- Language flag -->
+                                            <Label Grid.Column="0"
+                                                   Text="{Binding LanguageFlag}"
+                                                   FontSize="22"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center" />
+
+                                            <!-- Title + language label -->
+                                            <VerticalStackLayout Grid.Column="1"
+                                                                  Spacing="2"
+                                                                  Margin="10,0"
+                                                                  VerticalOptions="Center">
+                                                <Label Text="{Binding Guide.Title}"
+                                                       FontSize="12"
+                                                       FontAttributes="Bold"
+                                                       TextColor="#C8DEFF"
+                                                       LineBreakMode="TailTruncation" />
+                                                <Label Text="{Binding LanguageLabel}"
+                                                       FontSize="10"
+                                                       TextColor="#5A7A9A" />
+                                            </VerticalStackLayout>
+
+                                            <!-- Play / Pause button -->
+                                            <Border Grid.Column="2"
+                                                    BackgroundColor="{Binding PlayButtonColor}"
+                                                    StrokeThickness="0"
+                                                    StrokeShape="RoundRectangle 22"
+                                                    WidthRequest="40"
+                                                    HeightRequest="40"
+                                                    HorizontalOptions="Center"
+                                                    VerticalOptions="Center">
+                                                <Border.GestureRecognizers>
+                                                    <TapGestureRecognizer
+                                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RestaurantDetailViewModel}}, Path=PlayAudioCommand}"
+                                                        CommandParameter="{Binding .}" />
+                                                </Border.GestureRecognizers>
+                                                <Label Text="{Binding PlayIcon}"
+                                                       FontSize="15"
+                                                       FontAttributes="Bold"
+                                                       TextColor="White"
+                                                       HorizontalOptions="Center"
+                                                       VerticalOptions="Center" />
+                                            </Border>
+
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+
+                    <!-- Action row -->
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="8" Margin="0,4,0,16">
+                        <Button Grid.Column="0"
+                                Text="{Binding [detail_map], Source={x:Static svc:LocalizationManager.Instance}}"
+                                BackgroundColor="#16213E"
+                                BorderColor="#2A4A6A"
+                                BorderWidth="0.5"
+                                TextColor="#8899AA"
+                                FontSize="12"
+                                HeightRequest="44"
+                                CornerRadius="8"
+                                Command="{Binding OpenMapCommand}" />
+                        <Button Grid.Column="1"
+                                Text="{Binding FavoriteLabel}"
+                                BackgroundColor="#16213E"
+                                BorderColor="#2A4A6A"
+                                BorderWidth="0.5"
+                                TextColor="#FFDB58"
+                                FontSize="12"
+                                HeightRequest="44"
+                                CornerRadius="8"
+                                Command="{Binding ToggleFavoriteCommand}" />
+                        <Button Grid.Column="2"
+                                Text="{Binding [detail_book], Source={x:Static svc:LocalizationManager.Instance}}"
+                                BackgroundColor="#1E6FA8"
+                                TextColor="#E0F0FF"
+                                FontSize="12"
+                                HeightRequest="44"
+                                CornerRadius="8"
+                                Clicked="OnBookingClicked" />
+                    </Grid>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

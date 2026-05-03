@@ -1,0 +1,4 @@
+# Local secrets file
+secrets.props
+# Auto-generated from secrets.props — chứa API keys, không commit
+AppSecrets.g.cs
