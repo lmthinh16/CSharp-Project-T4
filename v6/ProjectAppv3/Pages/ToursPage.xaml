@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:ProjectApp.Models"
+             xmlns:svc="clr-namespace:ProjectApp.Services"
+             x:Class="ProjectApp.Pages.ToursPage"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Header -->
+        <Grid Grid.Row="0" BackgroundColor="#16213E" Padding="16,12">
+            <Label Text="{Binding [tours_title], Source={x:Static svc:LocalizationManager.Instance}}"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#E0E0F0"
+                   VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Content -->
+        <Grid Grid.Row="1">
+
+            <!-- Loading indicator -->
+            <ActivityIndicator x:Name="LoadingIndicator"
+                               IsRunning="True"
+                               IsVisible="True"
+                               Color="#4EA5D9"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+
+            <!-- Empty state -->
+            <VerticalStackLayout x:Name="EmptyState"
+                                 IsVisible="False"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 Spacing="10">
+                <Label Text="🗺️" FontSize="48" HorizontalOptions="Center"/>
+                <Label Text="{Binding [tours_empty], Source={x:Static svc:LocalizationManager.Instance}}"
+                       FontSize="16" TextColor="#3A4A6A"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Tour list -->
+            <CollectionView x:Name="ToursCollection"
+                            SelectionMode="None"
+                            IsVisible="False"
+                            Margin="12,8">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="12"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Tour">
+                        <Border BackgroundColor="#16213E"
+                                Stroke="#1E3A5F"
+                                StrokeThickness="0.5"
+                                StrokeShape="RoundRectangle 12"
+                                Padding="0">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTourTapped"/>
+                            </Border.GestureRecognizers>
+                            <Grid RowDefinitions="Auto,Auto">
+
+                                <!-- Top: emoji banner -->
+                                <Border Grid.Row="0"
+                                        BackgroundColor="#0F3460"
+                                        StrokeThickness="0"
+                                        StrokeShape="RoundRectangle 12,12,0,0"
+                                        HeightRequest="80">
+                                    <Grid>
+                                        <Label Text="{Binding Emoji}"
+                                               FontSize="52"
+                                               Opacity="0.35"
+                                               HorizontalOptions="End"
+                                               VerticalOptions="Center"
+                                               Margin="0,0,16,0"/>
+                                        <VerticalStackLayout HorizontalOptions="Start"
+                                                             VerticalOptions="Center"
+                                                             Padding="16,0"
+                                                             Spacing="2">
+                                            <Label Text="{Binding DisplayName}"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   TextColor="#E0E8FF"
+                                                   MaxLines="1"
+                                                   LineBreakMode="TailTruncation"/>
+                                            <Label Text="{Binding Duration}"
+                                                   FontSize="12"
+                                                   TextColor="#4EC88A"/>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Border>
+
+                                <!-- Bottom: meta info -->
+                                <Grid Grid.Row="1"
+                                      Padding="16,10"
+                                      ColumnDefinitions="*,Auto">
+                                    <Label Grid.Column="0"
+                                           Text="{Binding DisplayDescription}"
+                                           FontSize="12"
+                                           TextColor="#8899AA"
+                                           MaxLines="2"
+                                           LineBreakMode="TailTruncation"/>
+                                    <Label Grid.Column="1"
+                                           Text="{Binding Rating, StringFormat='⭐ {0}'}"
+                                           FontSize="13"
+                                           FontAttributes="Bold"
+                                           TextColor="#FFDB58"
+                                           VerticalOptions="Center"/>
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Grid>
+    </Grid>
+</ContentPage>

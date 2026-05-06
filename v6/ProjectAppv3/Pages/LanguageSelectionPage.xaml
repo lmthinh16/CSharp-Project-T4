@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:svc="clr-namespace:ProjectApp.Services"
+             x:Class="ProjectApp.Pages.LanguageSelectionPage"
+             BackgroundColor="#1A1A2E"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,Auto" Padding="24,0">
+
+        <ScrollView Grid.Row="0" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="0" VerticalOptions="Center">
+
+                <!-- Title block -->
+                <VerticalStackLayout Spacing="6" Margin="0,48,0,32" HorizontalOptions="Center">
+                    <Label Text="🌐"
+                           FontSize="48"
+                           HorizontalOptions="Center"/>
+                    <Label Text="{Binding [lang_title], Source={x:Static svc:LocalizationManager.Instance}}"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#E0E0F0"
+                           HorizontalOptions="Center"/>
+                    <Label Text="{Binding [lang_subtitle], Source={x:Static svc:LocalizationManager.Instance}}"
+                           FontSize="13"
+                           TextColor="#5A7A9A"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <!-- Language cards -->
+                <VerticalStackLayout Spacing="10">
+
+                    <Border x:Name="CardVi"
+                            BackgroundColor="#0D1B2A"
+                            Stroke="#1E3A5F"
+                            StrokeThickness="1.5"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="18,14">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" CommandParameter="vi"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="40,*,24">
+                            <Label Grid.Column="0" Text="🇻🇳" FontSize="28" VerticalOptions="Center"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center" Margin="12,0">
+                                <Label Text="Tiếng Việt" FontSize="15" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                                <Label Text="Vietnamese" FontSize="11" TextColor="#5A7A9A"/>
+                            </VerticalStackLayout>
+                            <Label x:Name="CheckVi" Grid.Column="2" Text="✓"
+                                   FontSize="16" FontAttributes="Bold"
+                                   TextColor="#4EA5D9" VerticalOptions="Center"
+                                   IsVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="CardEn"
+                            BackgroundColor="#0D1B2A"
+                            Stroke="#1E3A5F"
+                            StrokeThickness="1.5"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="18,14">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" CommandParameter="en"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="40,*,24">
+                            <Label Grid.Column="0" Text="🇺🇸" FontSize="28" VerticalOptions="Center"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center" Margin="12,0">
+                                <Label Text="English" FontSize="15" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                                <Label Text="English" FontSize="11" TextColor="#5A7A9A"/>
+                            </VerticalStackLayout>
+                            <Label x:Name="CheckEn" Grid.Column="2" Text="✓"
+                                   FontSize="16" FontAttributes="Bold"
+                                   TextColor="#4EA5D9" VerticalOptions="Center"
+                                   IsVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="CardZh"
+                            BackgroundColor="#0D1B2A"
+                            Stroke="#1E3A5F"
+                            StrokeThickness="1.5"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="18,14">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" CommandParameter="zh"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="40,*,24">
+                            <Label Grid.Column="0" Text="🇨🇳" FontSize="28" VerticalOptions="Center"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center" Margin="12,0">
+                                <Label Text="中文" FontSize="15" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                                <Label Text="Chinese (Simplified)" FontSize="11" TextColor="#5A7A9A"/>
+                            </VerticalStackLayout>
+                            <Label x:Name="CheckZh" Grid.Column="2" Text="✓"
+                                   FontSize="16" FontAttributes="Bold"
+                                   TextColor="#4EA5D9" VerticalOptions="Center"
+                                   IsVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="CardJa"
+                            BackgroundColor="#0D1B2A"
+                            Stroke="#1E3A5F"
+                            StrokeThickness="1.5"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="18,14">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" CommandParameter="ja"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="40,*,24">
+                            <Label Grid.Column="0" Text="🇯🇵" FontSize="28" VerticalOptions="Center"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center" Margin="12,0">
+                                <Label Text="日本語" FontSize="15" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                                <Label Text="Japanese" FontSize="11" TextColor="#5A7A9A"/>
+                            </VerticalStackLayout>
+                            <Label x:Name="CheckJa" Grid.Column="2" Text="✓"
+                                   FontSize="16" FontAttributes="Bold"
+                                   TextColor="#4EA5D9" VerticalOptions="Center"
+                                   IsVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="CardKo"
+                            BackgroundColor="#0D1B2A"
+                            Stroke="#1E3A5F"
+                            StrokeThickness="1.5"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="18,14">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" CommandParameter="ko"/>
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="40,*,24">
+                            <Label Grid.Column="0" Text="🇰🇷" FontSize="28" VerticalOptions="Center"/>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center" Margin="12,0">
+                                <Label Text="한국어" FontSize="15" FontAttributes="Bold" TextColor="#E0E8FF"/>
+                                <Label Text="Korean" FontSize="11" TextColor="#5A7A9A"/>
+                            </VerticalStackLayout>
+                            <Label x:Name="CheckKo" Grid.Column="2" Text="✓"
+                                   FontSize="16" FontAttributes="Bold"
+                                   TextColor="#4EA5D9" VerticalOptions="Center"
+                                   IsVisible="False"/>
+                        </Grid>
+                    </Border>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Confirm button -->
+        <Button x:Name="BtnConfirm"
+                Grid.Row="1"
+                Text="Tiếp tục"
+                BackgroundColor="#1E6FA8"
+                TextColor="White"
+                FontSize="15"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="12"
+                Margin="0,16,0,40"
+                Clicked="OnConfirmClicked"/>
+
+        <!-- Loading overlay -->
+        <Grid x:Name="LoadingOverlay"
+              Grid.RowSpan="2"
+              IsVisible="False"
+              BackgroundColor="#CC0D1220"
+              ZIndex="99">
+            <VerticalStackLayout HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 Spacing="16">
+                <ActivityIndicator IsRunning="True"
+                                   Color="#4EA5D9"
+                                   WidthRequest="48"
+                                   HeightRequest="48"/>
+                <Label Text="..."
+                       FontSize="14"
+                       TextColor="#8899AA"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>

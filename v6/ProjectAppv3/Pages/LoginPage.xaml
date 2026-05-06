@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApp.Pages.LoginPage"
+             BackgroundColor="#0D1A2D"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <!-- Main content -->
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="28,60,28,20" Spacing="0">
+
+                <!-- Logo -->
+                <VerticalStackLayout Spacing="8" HorizontalOptions="Center" Margin="0,0,0,40">
+                    <Border BackgroundColor="#16213E"
+                            StrokeShape="RoundRectangle 24"
+                            WidthRequest="88" HeightRequest="88"
+                            HorizontalOptions="Center"
+                            StrokeThickness="0">
+                        <Label Text="🍜" FontSize="48"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                    <Label Text="VinhKhanhTour"
+                           FontSize="26" FontAttributes="Bold"
+                           TextColor="#E0E8FF" HorizontalOptions="Center"/>
+                    <Label Text="Ẩm thực đường phố Quận 4"
+                           FontSize="13" TextColor="#6A7A9A"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <!-- Form -->
+                <VerticalStackLayout Spacing="12">
+                    <Border BackgroundColor="#16213E"
+                            Stroke="#1E3A5F" StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 10">
+                        <Entry x:Name="EntryUsername"
+                               Placeholder="Tên đăng nhập"
+                               PlaceholderColor="#3A4A6A"
+                               TextColor="#E0E8FF"
+                               BackgroundColor="Transparent"
+                               Keyboard="Default"
+                               ReturnType="Next"
+                               Margin="4,0"/>
+                    </Border>
+
+                    <Border BackgroundColor="#16213E"
+                            Stroke="#1E3A5F" StrokeThickness="0.5"
+                            StrokeShape="RoundRectangle 10">
+                        <Entry x:Name="EntryPassword"
+                               Placeholder="Mật khẩu"
+                               PlaceholderColor="#3A4A6A"
+                               TextColor="#E0E8FF"
+                               BackgroundColor="Transparent"
+                               IsPassword="True"
+                               ReturnType="Done"
+                               ReturnCommand="{Binding LoginCommand}"
+                               Margin="4,0"/>
+                    </Border>
+
+                    <!-- Error message -->
+                    <Label x:Name="LblError"
+                           TextColor="#E05555" FontSize="13"
+                           HorizontalOptions="Center"
+                           IsVisible="False"/>
+
+                    <!-- Login button -->
+                    <Button x:Name="BtnLogin"
+                            Text="Đăng nhập"
+                            BackgroundColor="#1E6FA8"
+                            TextColor="White"
+                            FontSize="15" FontAttributes="Bold"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            Clicked="OnLoginClicked"/>
+
+                    <!-- Divider -->
+                    <Grid ColumnDefinitions="*,Auto,*" Margin="0,8">
+                        <BoxView Grid.Column="0" Color="#1E3A5F" HeightRequest="0.5" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="hoặc" FontSize="12"
+                               TextColor="#3A4A6A" Margin="12,0"/>
+                        <BoxView Grid.Column="2" Color="#1E3A5F" HeightRequest="0.5" VerticalOptions="Center"/>
+                    </Grid>
+
+                    <!-- Guest button -->
+                    <Button x:Name="BtnGuest"
+                            Text="🚶 Vào với tư cách khách"
+                            BackgroundColor="Transparent"
+                            BorderColor="#1E3A5F"
+                            BorderWidth="1"
+                            TextColor="#8899AA"
+                            FontSize="14"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            Clicked="OnGuestClicked"/>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Loading overlay -->
+        <Grid Grid.Row="0" x:Name="LoadingOverlay"
+              IsVisible="False"
+              BackgroundColor="#80000000">
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="12">
+                <ActivityIndicator IsRunning="True" Color="#4EA5D9"
+                                   WidthRequest="36" HeightRequest="36"/>
+                <Label x:Name="LblLoading" Text="Đang đăng nhập..."
+                       FontSize="13" TextColor="#E0E8FF"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <!-- Footer -->
+        <Label Grid.Row="1"
+               Text="Khám phá ẩm thực Vĩnh Khánh — Quận 4, TP.HCM"
+               FontSize="11" TextColor="#2A3A5A"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+    </Grid>
+</ContentPage>
