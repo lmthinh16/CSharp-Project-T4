@@ -173,20 +173,20 @@ namespace ProjectApp.Services
                 var allEvents = await App.Database.GetAllAnalyticsEventsAsync();
                 var userEvents = allEvents.Where(e => e.Username == currentUser).ToList();
 
-                int totalListens = userEvents.Count(e => e.PoiId > 0 && e.EventType.StartsWith("audio_"));
-                int uniquePois = userEvents.Where(e => e.PoiId > 0 && e.EventType.StartsWith("audio_"))
-                                            .Select(e => e.PoiId).Distinct().Count();
-                double totalSec = userEvents.Where(e => e.PoiId > 0 && e.EventType.StartsWith("audio_"))
-                                            .Sum(e => e.Value);
+                var audioEvents = userEvents.Where(e => e.PoiId > 0 && e.EventType.StartsWith("audio_")).ToList();
+                int totalListens = audioEvents.Count;
+                double totalSec = audioEvents.Sum(e => e.Value);
                 double avgSec = totalListens > 0 ? totalSec / totalListens : 0;
-                int tourCompletes = userEvents.Count(e => e.EventType == "tour_complete");
+
+                // Địa điểm ghé qua = số địa điểm khác nhau trong visit_history
+                var visitHistory = await App.Database.GetVisitHistoryAsync();
+                int uniquePois = visitHistory.Select(v => v.RestaurantId).Distinct().Count();
 
                 return new AnalyticsSummary
                 {
                     TotalListens = totalListens,
                     UniquePois = uniquePois,
-                    AvgListenSec = avgSec,
-                    TourCompletes = tourCompletes
+                    AvgListenSec = avgSec
                 };
             }
             catch
@@ -200,7 +200,8 @@ namespace ProjectApp.Services
             try
             {
                 await App.Database.ClearAnalyticsAsync();
-                await ApiService.Instance.ClearAnalyticsOnServerAsync();
+                await App.Database.ClearVisitHistoryAsync();
+                _ = ApiService.Instance.ClearAnalyticsOnServerAsync();
             }
             catch (Exception ex)
             {
@@ -217,6 +218,5 @@ namespace ProjectApp.Services
         public int TotalListens { get; set; }
         public int UniquePois { get; set; }
         public double AvgListenSec { get; set; }
-        public int TourCompletes { get; set; }
     }
 }

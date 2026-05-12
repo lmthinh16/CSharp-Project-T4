@@ -69,21 +69,6 @@ namespace ProjectApp
         private async void OnSettingsClicked(object sender, EventArgs e)
             => await Navigation.PushAsync(new Pages.LanguageSelectionPage(isOnboarding: false));
 
-        private async void OnLogoutClicked(object sender, EventArgs e)
-        {
-            var L = Services.LocalizationManager.Instance;
-            bool confirm = await DisplayAlert(
-                L["profile_logout_title"], L["profile_logout_msg"],
-                L["profile_logout_confirm"], L["profile_logout_cancel"]);
-            if (!confirm) return;
-
-            UserSession.Current.Logout();
-            Application.Current!.MainPage = new NavigationPage(new LoginPage())
-            {
-                BarBackgroundColor = Color.FromArgb("#0D1A2D"),
-                BarTextColor       = Colors.White
-            };
-        }
-
+       
     }
 }

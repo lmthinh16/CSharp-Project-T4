@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace ProjectApp.Services
 {
@@ -45,7 +45,7 @@ namespace ProjectApp.Services
                 ["profile_booking_history"] = "📜 Lịch sử đặt bàn",
                 ["profile_fav_places"]      = "⭐ Quán yêu thích",
                 ["profile_analytics"]       = "📊 Thống kê hành trình",
-                ["profile_settings"]        = "⚙️ Cài đặt",
+                ["profile_settings"]        = "🌐 Đổi ngôn ngữ",
                 ["profile_logout_title"]    = "Đăng xuất",
                 ["profile_logout_msg"]      = "Bạn có chắc muốn đăng xuất?",
                 ["profile_logout_confirm"]  = "Đăng xuất",
@@ -88,7 +88,7 @@ namespace ProjectApp.Services
                 ["profile_booking_history"] = "📜 Booking History",
                 ["profile_fav_places"]      = "⭐ Favorite Places",
                 ["profile_analytics"]       = "📊 Journey Stats",
-                ["profile_settings"]        = "⚙️ Settings",
+                ["profile_settings"]        = "🌐 Change Language",
                 ["profile_logout_title"]    = "Logout",
                 ["profile_logout_msg"]      = "Are you sure you want to logout?",
                 ["profile_logout_confirm"]  = "Logout",
@@ -129,7 +129,7 @@ namespace ProjectApp.Services
                 ["profile_booking_history"] = "📜 预订历史",
                 ["profile_fav_places"]      = "⭐ 收藏餐厅",
                 ["profile_analytics"]       = "📊 行程统计",
-                ["profile_settings"]        = "⚙️ 设置",
+                ["profile_settings"]        = "🌐 切换语言",
                 ["profile_logout_title"]    = "退出登录",
                 ["profile_logout_msg"]      = "确定要退出登录吗？",
                 ["profile_logout_confirm"]  = "退出",
@@ -170,7 +170,7 @@ namespace ProjectApp.Services
                 ["profile_booking_history"] = "📜 予約履歴",
                 ["profile_fav_places"]      = "⭐ お気に入り",
                 ["profile_analytics"]       = "📊 旅の統計",
-                ["profile_settings"]        = "⚙️ 設定",
+                ["profile_settings"]        = "🌐 言語変更",
                 ["profile_logout_title"]    = "ログアウト",
                 ["profile_logout_msg"]      = "ログアウトしますか？",
                 ["profile_logout_confirm"]  = "ログアウト",
@@ -211,7 +211,7 @@ namespace ProjectApp.Services
                 ["profile_booking_history"] = "📜 예약 기록",
                 ["profile_fav_places"]      = "⭐ 즐겨찾는 곳",
                 ["profile_analytics"]       = "📊 여행 통계",
-                ["profile_settings"]        = "⚙️ 설정",
+                ["profile_settings"]        = "🌐 언어 변경",
                 ["profile_logout_title"]    = "로그아웃",
                 ["profile_logout_msg"]      = "로그아웃 하시겠습니까?",
                 ["profile_logout_confirm"]  = "로그아웃",

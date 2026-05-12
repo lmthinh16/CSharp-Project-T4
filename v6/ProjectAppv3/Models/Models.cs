@@ -48,7 +48,7 @@ namespace ProjectApp.Models
         public string Translations { get; set; } = "{}";
 
         // ── Geofencing ────────────────────────────────────────────
-        public int Radius { get; set; } = 50; // metres, default 50m theo PRD
+        public int Radius { get; set; } = 5; // metres, default 5m
 
         // ── Quảng cáo popup ──────────────────────────────────────
         public bool IsAdsPopup { get; set; } = false;

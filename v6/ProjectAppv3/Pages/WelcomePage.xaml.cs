@@ -25,8 +25,8 @@ public partial class WelcomePage : ContentPage
          "Khi bạn bước vào vùng geofence của một điểm ăn,\nứng dụng tự kể chuyện bằng audio."),
 
         ("🌏",
-         "3 ngôn ngữ",
-         "Tiếng Việt · English · 中文\nChuyển ngôn ngữ bất kỳ lúc nào trong Cài đặt.")
+         "5 ngôn ngữ",
+         "Tiếng Việt · English · 中文 · 한국어 · 日本語\nChuyển ngôn ngữ bất kỳ lúc nào trong Cài đặt.")
     ];
 
     public WelcomePage()
@@ -119,10 +119,10 @@ public partial class WelcomePage : ContentPage
     private async Task FinishAsync()
     {
         Preferences.Set("onboarding_done", true);
+        UserSession.Current.LoginAsGuest();
 
         await this.FadeTo(0, 300, Easing.CubicIn);
 
-        // Navigate vào AppShell (shell chứa tab bar chính)
         Application.Current!.MainPage = new AppShell();
     }
 }

@@ -8,6 +8,24 @@
 
     <Grid RowDefinitions="*,Auto" Padding="24,0">
 
+        <!-- Back button (chỉ hiện khi không phải onboarding) -->
+        <Border x:Name="BtnBack"
+                Grid.Row="0"
+                IsVisible="False"
+                BackgroundColor="#0D2137"
+                StrokeShape="RoundRectangle 12"
+                StrokeThickness="0"
+                Padding="12,6"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="0,16,0,0"
+                ZIndex="10">
+            <Label Text="← Trở về" FontSize="13" FontAttributes="Bold" TextColor="#4EA5D9"/>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackClicked"/>
+            </Border.GestureRecognizers>
+        </Border>
+
         <ScrollView Grid.Row="0" VerticalOptions="Center">
             <VerticalStackLayout Spacing="0" VerticalOptions="Center">
 

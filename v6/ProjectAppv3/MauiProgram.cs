@@ -29,7 +29,6 @@ namespace ProjectApp
 #endif
                 });
             builder.Services.AddTransient<LanguageSelectionPage>();
-            builder.Services.AddTransient<LoginPage>();
             builder.Services.AddTransient<MainPage>();
             builder.Services.AddTransient<MapPage>();
             builder.Services.AddTransient<ProfilePage>();

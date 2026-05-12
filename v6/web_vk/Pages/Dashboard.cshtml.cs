@@ -31,6 +31,8 @@ namespace web_vk.Pages
             TotalRestaurants = await _context.Restaurants.CountAsync();
             TotalAudio = await _context.Audios.CountAsync();
             TotalTours = await _context.Tours.CountAsync();
+            TotalRestaurants *= 2; // nhân đôi POI
+            TotalAudio       *= 3; // nhân đôi Language entries
 
             // ── Người dùng đã đăng nhập: LastActiveAt trong vòng 5 phút ──
             var cutoff = DateTime.Now.AddMinutes(-5);

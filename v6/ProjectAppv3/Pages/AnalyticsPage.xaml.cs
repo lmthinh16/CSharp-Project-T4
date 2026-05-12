@@ -1,4 +1,4 @@
-using Microsoft.Maui.Controls.Shapes;
+﻿using Microsoft.Maui.Controls.Shapes;
 using ProjectApp.Models;
 using ProjectApp.Services;
 
@@ -18,26 +18,21 @@ namespace ProjectApp.Pages
         static readonly Color Divider = Color.FromArgb("#E2E8F0");
         static readonly Color AccentGold = Color.FromArgb("#F59E0B");
 
-        private string _currentLang = Preferences.Default.Get("app_lang", "vi");
+        private string _currentLang = UserSession.Language;
 
         public AnalyticsPage()
         {
             Title = "Thống kê";
             BackgroundColor = BgPage;
             NavigationPage.SetHasNavigationBar(this, false);
+            Shell.SetNavBarIsVisible(this, false);
             BuildUI();
-            UpdateLanguage(_currentLang);
-        }
-
-        public void UpdateLanguage(string lang)
-        {
-            _currentLang = lang;
-            Title = lang switch { "en" => "Analytics", "zh" => "统计分析", "ja" => "統計", "ko" => "통계 분석", _ => "Thống kê hành trình" };
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            _currentLang = UserSession.Language;
             await LoadAsync();
         }
 
@@ -204,13 +199,18 @@ namespace ProjectApp.Pages
 
             var lblListens = _currentLang switch { "en" => "Total Listens", "zh" => "总收听量", "ja" => "総視聴数", "ko" => "총 청취 수", _ => "Tổng lượt nghe" };
             var lblSpots = _currentLang switch { "en" => "Visited Spots", "zh" => "已游览地点", "ja" => "訪問スポット", "ko" => "방문 장소", _ => "Địa điểm ghé qua" };
-            var lblAvg = _currentLang switch { "en" => "Avg Time", "zh" => "平均时间", "ja" => "平均時間", "ko" => "평균 시간", _ => "Thời gian nghe TB" };
-            var lblTour = _currentLang switch { "en" => "Tours Done", "zh" => "已完成行程", "ja" => "完了したツアー", "ko" => "완료된 투어", _ => "Tour hoàn thành" };
+            var lblAvg = _currentLang switch { "en" => "Avg Listen Time", "zh" => "平均收听时间", "ja" => "平均視聴時間", "ko" => "평균 청취 시간", _ => "Thời gian nghe TB" };
+
+            string avgDisplay = s.AvgListenSec >= 60
+                ? $"{(int)(s.AvgListenSec / 60)}m {(int)(s.AvgListenSec % 60):D2}s"
+                : $"{s.AvgListenSec:F0}s";
 
             grid.Add(MakeStatCard("🎧", s.TotalListens.ToString(), lblListens, PrimaryBlue), 0, 0);
             grid.Add(MakeStatCard("📍", s.UniquePois.ToString(), lblSpots, AccentBlue), 1, 0);
-            grid.Add(MakeStatCard("⏱", $"{s.AvgListenSec:F0}s", lblAvg, Color.FromArgb("#2E7D32")), 0, 1);
-            grid.Add(MakeStatCard("🗺️", s.TourCompletes.ToString(), lblTour, AccentGold), 1, 1);
+
+            var avgCard = MakeStatCard("⏱", avgDisplay, lblAvg, Color.FromArgb("#2E7D32"));
+            grid.Add(avgCard, 0, 1);
+            Grid.SetColumnSpan(avgCard, 2);
 
             return grid;
         }

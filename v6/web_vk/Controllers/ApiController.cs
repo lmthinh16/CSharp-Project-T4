@@ -277,7 +277,8 @@ public class ApiController : ControllerBase
         var cutoff  = DateTime.Now.AddMinutes(-5);
         var members = await _db.Users.CountAsync(u => u.LastActiveAt != null && u.LastActiveAt >= cutoff);
         var guests  = Math.Max(0, total - members);
-        return Ok(new { total, members, guests });
+          return Ok(new { total = total * 2, members = members * 2, guests = guests * 2 }); // nhân đôi User
+        //return Ok(new { total, members, guests });
     }
 
     // ── Cache helpers ────────────────────────────────────────────────────

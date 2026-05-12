@@ -9,8 +9,8 @@ namespace ProjectApp.Services
     public class GeofencingService
     {
         private const double EARTH_RADIUS_METERS = 6371000;
-        private const int DEFAULT_RADIUS_METERS = 50;
-        private const int COOLDOWN_SECONDS = 300;
+        private const int DEFAULT_RADIUS_METERS = 5;
+        private const int COOLDOWN_SECONDS = 10;
 
         private readonly Dictionary<int, DateTime> _lastTriggered = [];
         private readonly HashSet<int> _insidePois = [];

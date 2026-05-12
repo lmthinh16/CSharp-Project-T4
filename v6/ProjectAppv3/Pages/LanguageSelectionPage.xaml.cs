@@ -21,7 +21,11 @@ public partial class LanguageSelectionPage : ContentPage
         _selectedLang = UserSession.Language ?? "vi";
 
         BtnConfirm.Text = isOnboarding ? "Tiếp tục" : "Lưu";
+        BtnBack.IsVisible = !isOnboarding;
     }
+
+    private async void OnBackClicked(object sender, TappedEventArgs e)
+        => await Navigation.PopAsync();
 
     protected override void OnAppearing()
     {
@@ -78,21 +82,12 @@ public partial class LanguageSelectionPage : ContentPage
         }
 
         // Onboarding: tiếp tục flow bình thường
-        Page next;
-        if (UserSession.Current.IsLoggedIn)
+        if (Preferences.Get("onboarding_done", false))
         {
             Application.Current!.MainPage = new AppShell();
             return;
         }
-        else if (!Preferences.Get("onboarding_done", false))
-        {
-            next = new WelcomePage();
-        }
-        else
-        {
-            next = new LoginPage();
-        }
 
-        await Navigation.PushAsync(next);
+        await Navigation.PushAsync(new WelcomePage());
     }
 }

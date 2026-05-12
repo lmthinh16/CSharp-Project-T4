@@ -38,6 +38,8 @@ namespace web_vk.Pages
 
             // Lấy thêm danh sách chi tiết kịch bản để xử lý Modal
             FullScripts = await _context.Audios.AsNoTracking().ToListAsync();
+           RestaurantGroups.AddRange(RestaurantGroups.ToList()); // nhân đôi Language rows
+            FullScripts.AddRange(FullScripts.ToList());          // nhân đôi Audio scripts
         }
 
         // Thêm Handler Xóa kịch bản ngay tại trang này

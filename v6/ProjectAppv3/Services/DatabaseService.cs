@@ -241,5 +241,8 @@ namespace ProjectApp.Services
 
         public Task<int> ClearAnalyticsAsync()
             => _db.DeleteAllAsync<AnalyticsEvent>();
+
+        public Task<int> ClearVisitHistoryAsync()
+            => _db.DeleteAllAsync<VisitHistory>();
     }
 }

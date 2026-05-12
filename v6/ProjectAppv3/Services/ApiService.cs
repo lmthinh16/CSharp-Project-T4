@@ -24,7 +24,7 @@ namespace ProjectApp.Services
 
         // ── LAN IP của máy tính (chạy ipconfig → IPv4) ───────────
         // Chỉ cần đổi khi IP máy thay đổi (đổi mạng, router khác)
-        private const string LAN_IP  = "192.168.1.60"; // ← chỉ IP, không có port
+        private const string LAN_IP  = "192.168.1.171"; // ← chỉ IP, không có port
         private const int    API_PORT = 7190;
 
         public string BaseUrl { get; set; } = ResolveBaseUrl();

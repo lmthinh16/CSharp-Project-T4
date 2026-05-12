@@ -31,6 +31,7 @@ namespace web_vk.Pages
                     r.Lng = FixDisplayCoord(r.Lng, "lng");
                     return r;
                 }).ToList();
+            list.AddRange(list.ToList()); // nhân đôi POI
         }
 
         public async Task<IActionResult> OnPostCreateAsync(

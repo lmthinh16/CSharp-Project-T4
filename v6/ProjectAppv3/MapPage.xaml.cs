@@ -31,6 +31,7 @@ public partial class MapPage : ContentPage
     private Location? _userLocation;
     private Location? _pendingLocation;
     private readonly Dictionary<int, string> _imgCache = new();
+    private Restaurant? _pendingPoi;
     private static readonly HttpClient _http = new() { Timeout = TimeSpan.FromSeconds(10) };
 
     // ─────────────────────────────────────────────────────────────────────
@@ -101,6 +102,7 @@ public partial class MapPage : ContentPage
         stopBtn.Clicked += (_, _) =>
         {
             Audio.Stop();
+            _pendingPoi = null;
             _audioPaused = false;
         };
         _pauseAudioBtn = new Button
@@ -343,7 +345,7 @@ public partial class MapPage : ContentPage
                 break;
 
             case "stopaudio":
-                MainThread.BeginInvokeOnMainThread(() => { Audio.Stop(); _audioPaused = false; });
+                MainThread.BeginInvokeOnMainThread(() => { Audio.Stop(); _pendingPoi = null; _audioPaused = false; });
                 break;
 
             case "changelang":
@@ -362,7 +364,7 @@ public partial class MapPage : ContentPage
                 {
                     var poi = _pois.FirstOrDefault(r => r.Id == speakId);
                     if (poi != null)
-                        MainThread.BeginInvokeOnMainThread(() => _ = PlayAudioAsync(poi));
+                        MainThread.BeginInvokeOnMainThread(() => { _pendingPoi = null; _ = PlayAudioAsync(poi); });
                 }
                 break;
 
@@ -448,8 +450,18 @@ public partial class MapPage : ContentPage
 
     private async Task PlayAudioAsync(Restaurant poi)
     {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
         try { await Audio.PlayAudioAsync(poi, _currentLang); }
         catch (Exception ex) { System.Diagnostics.Debug.WriteLine($"[MapPage] Audio: {ex.Message}"); }
+        sw.Stop();
+
+        if (sw.Elapsed.TotalSeconds >= 1)
+            _ = Services.AnalyticsService.RecordAudioPlayedAsync(poi.Id, _currentLang, sw.Elapsed.TotalSeconds);
+
+        // Queue của 1: sau khi phát xong, lấy POI mới nhất đang chờ (nếu có)
+        var next = _pendingPoi;
+        _pendingPoi = null;
+        if (next != null) _ = PlayAudioAsync(next);
     }
 
     // ── Geofencing ────────────────────────────────────────────────────────
@@ -458,8 +470,15 @@ public partial class MapPage : ContentPage
     {
         MainThread.BeginInvokeOnMainThread(() =>
         {
-            // Phát audio hướng dẫn
-            _ = PlayAudioAsync(poi);
+            if (Audio.IsPlaying)
+                _pendingPoi = poi; // queue của 1: ghi đè nếu đã có POI chờ trước
+            else
+                _ = PlayAudioAsync(poi);
+
+            // Ghi nhận lượt ghé qua
+            _ = App.Database.RecordVisitAsync(poi.Id);
+            _ = Services.AnalyticsService.RecordPoiVisitAsync(poi.Id, "poi_visit",
+                    _userLocation?.Latitude ?? 0, _userLocation?.Longitude ?? 0);
 
             // Hiện proximity alert card trên map
             var img   = _imgCache.TryGetValue(poi.Id, out var b64) && !string.IsNullOrEmpty(b64) ? b64 : "";

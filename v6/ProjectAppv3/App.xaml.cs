@@ -50,38 +50,17 @@ namespace ProjectApp
             // ✅ Heartbeat: ping server mỗi 2 phút để duy trì trạng thái online
             StartHeartbeatTimer();
 
-            // ── Quyết định màn hình khởi động ────────────────────
-            //
-            // Ưu tiên 1: Session còn hợp lệ (user đã đăng nhập trước đó)
-            //   → vào AppShell thẳng, sync ngầm
-            //
-            // Ưu tiên 2: Onboarding chưa xem
-            //   → WelcomePage (3 slide giới thiệu)
-            //   → WelcomePage.FinishAsync() sẽ set onboarding_done = true
-            //      rồi navigate sang AppShell
-            //
-            // Ưu tiên 3: Đã xem onboarding, chưa đăng nhập
-            //   → LoginPage
-
-            // Sync chạy ngay lúc khởi động bất kể login hay chưa
-            // Đảm bảo data từ CMS luôn được cập nhật dù user ở màn hình nào
             _ = Sync.SyncAllAsync();
 
-            // Khởi tạo ngôn ngữ đã lưu trước khi render bất kỳ page nào
             Services.LocalizationManager.Instance.SetLanguage(UserSession.Language);
 
             if (!Preferences.Get("lang_selected", false))
             {
-                // Lần đầu mở app → chọn ngôn ngữ trước
                 MainPage = new NavigationPage(new Pages.LanguageSelectionPage(isOnboarding: true))
                 {
                     BarBackgroundColor = Color.FromArgb("#0A1628"),
                     BarTextColor = Colors.White
                 };
-            }
-            else if (UserSession.Current.IsLoggedIn)
-            {
-                MainPage = new AppShell();
             }
             else if (!Preferences.Get("onboarding_done", false))
             {
@@ -93,11 +72,7 @@ namespace ProjectApp
             }
             else
             {
-                MainPage = new NavigationPage(new LoginPage())
-                {
-                    BarBackgroundColor = Color.FromArgb("#080D14"),
-                    BarTextColor = Colors.White
-                };
+                MainPage = new AppShell();
             }
         }
 
